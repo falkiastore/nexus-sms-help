@@ -3,90 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reports & Export Help - Nexus SMS</title>
+    <title>Reporting & Data Export - Nexus SMS</title>
     <link rel="stylesheet" href="help-styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=Outfit:wght@400;600;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <header>
-        <div class="container">
-            <h1 class="hero-title">Reports & Data Export</h1>
-            <p class="hero-subtitle">Generate insights and export data with ease</p>
+    <!-- Premium Branding Bar -->
+    <header class="branding-bar">
+        <div class="container branding-content">
+            <a href="index.html" class="brand-logo">
+                <span>NEXUS</span> SMS
+            </a>
+            <nav style="display: flex; gap: 2rem;">
+                <a href="index.html" style="color: var(--text-muted); text-decoration: none; font-weight: 500;">Home</a>
+                <a href="contact.html" style="color: var(--text-muted); text-decoration: none; font-weight: 500;">Contact Us</a>
+                <a href="../../" style="color: var(--accent); text-decoration: none; font-weight: 600;">Launch App →</a>
+            </nav>
         </div>
     </header>
 
-    <div class="container">
-        <nav class="glass">
-            <a href="index.html" class="nav-link">Home</a>
-            <a href="staff.html" class="nav-link">Staff</a>
-            <a href="reports.html" class="nav-link active">Reports</a>
-            <a href="settings.html" class="nav-link">Settings</a>
-            <a href="contact.html" class="nav-link">Support</a>
-        </nav>
+    <div class="container" style="padding-top: 4rem;">
+        <h1 class="hero-title" style="font-size: 3rem;">Report Generation Hub</h1>
+        <p class="hero-subtitle" style="margin-left: 0; text-align: left;">Generate data-driven insights and export official school documents.</p>
 
-        <section class="content-section">
-            <h2 class="section-title">Overview</h2>
-            <div class="glass" style="padding: 2rem; margin-bottom: 2rem;">
-                <p>Nexus SMS provides powerful tools to transform your raw data into actionable reports. You can generate PDF documents for immediate printing or export data to Excel for further analysis.</p>
-            </div>
-
-            <div class="grid">
-                <div class="module-card glass" style="cursor: default;">
-                    <div class="module-icon">📄</div>
-                    <h3 class="module-name">PDF Generation</h3>
-                    <p class="module-desc">Create high-quality PDF reports for attendance, fee receipts, and report cards.</p>
-                </div>
-                <div class="module-card glass" style="cursor: default;">
-                    <div class="module-icon">📊</div>
-                    <h3 class="module-name">Excel Export</h3>
-                    <p class="module-desc">Download entire datasets (Students, Staff, Fees) into CSV/Excel formats.</p>
-                </div>
-                <div class="module-card glass" style="cursor: default;">
-                    <div class="module-icon">📈</div>
-                    <h3 class="module-name">Financial Reports</h3>
-                    <p class="module-desc">Generate monthly collection summaries and arrear lists for auditing.</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="content-section">
-            <h2 class="section-title">How to Export Data</h2>
+        <section class="guide-section">
             
-            <div class="guide-step">
-                <div class="step-number">1</div>
-                <div class="step-content">
-                    <h3>Select Report Type</h3>
-                    <p>Navigate to the Export module and choose the category of data you wish to retrieve (e.g., Student List or Fee Arrears).</p>
+            <div class="step-row">
+                <div class="step-text">
+                    <span class="step-badge">Step 1</span>
+                    <h3>Official PDF Documents</h3>
+                    <p>Nexus SMS can generate high-fidelity PDF documents for official institutional use. This includes Student ID Cards, Certificate of Enrollment, Attendance Registers, and Employee Pay Slips. All PDFs are automatically branded with your school logo and header details.</p>
                 </div>
-            </div>
-
-            <div class="guide-step">
-                <div class="step-number">2</div>
-                <div class="step-content">
-                    <h3>Apply Filters</h3>
-                    <p>Refine your data by selecting Date Ranges, Classes, or specific Payment Statuses to ensure your report is accurate.</p>
-                    <div class="glass" style="height: 150px; display: flex; align-items: center; justify-content: center; margin-top: 1rem; color: var(--text-muted); border-style: dashed;">
-                        [Screenshot: Report Filter Options]
+                <div class="step-visual glass" style="background: white; padding: 2rem; color: black; min-height: 300px; position: relative;">
+                    <div style="border: 2px solid #ddd; height: 100%; border-radius: 4px; padding: 1rem;">
+                        <p style="font-weight: 800; font-size: 0.7rem; text-align: center; margin-bottom: 2rem; border-bottom: 1px solid #eee;">OFFICIAL STUDENT LIST</p>
+                        <div style="display: flex; justify-content: space-between; border-bottom: 1px solid #eee; margin-bottom: 0.5rem; font-size: 0.6rem;">
+                            <span>John Doe</span><span>Class 10-A</span>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; border-bottom: 1px solid #eee; margin-bottom: 0.5rem; font-size: 0.6rem;">
+                            <span>Jane Smith</span><span>Class 10-A</span>
+                        </div>
+                        <div style="position: absolute; bottom: 3rem; right: 3rem; width: 60px; height: 30px; border: 1px dashed red; transform: rotate(-20deg); font-size: 0.5rem; display: flex; align-items: center; justify-content: center; color: red; font-weight: 900;">STAMP</div>
                     </div>
                 </div>
             </div>
 
-            <div class="guide-step">
-                <div class="step-number">3</div>
-                <div class="step-content">
-                    <h3>Download</h3>
-                    <p>Click "Generate" to preview the data, and then select your preferred format (PDF or Excel) to save the file to your device.</p>
+            <div class="step-row">
+                <div class="step-text">
+                    <span class="step-badge">Step 2</span>
+                    <h3>Bulk Excel Exports</h3>
+                    <p>For advanced auditing or custom analysis, use the <strong>Export > CSV</strong> feature. You can download filtered datasets for students, financials, or attendance directly into Microsoft Excel. This is ideal for external audits or custom mailing lists.</p>
+                </div>
+                <div class="step-visual glass" style="display: flex; align-items: center; justify-content: center;">
+                    <div style="text-align: center;">
+                        <div style="font-size: 4rem;">📊</div>
+                        <p style="font-weight: 800; color: var(--success);">Export to .xlsx</p>
+                    </div>
                 </div>
             </div>
+
+            <div class="step-row">
+                <div class="step-text">
+                    <span class="step-badge">Step 3</span>
+                    <h3>Financial Collection Reports</h3>
+                    <p>Accountants can generate daily, weekly, or monthly collection summaries. These reports break down revenue by payment head (Cash vs. Bank) and highlight any manual reversals or discount overrides for transparency.</p>
+                </div>
+                <div class="step-visual glass">
+                    <div style="height: 300px; display: flex; align-items: center; justify-content: center; color: var(--text-muted);">
+                        [Infographic: Financial Audit Flow]
+                    </div>
+                </div>
+            </div>
+
+            <div class="mastery-box">
+                <h4 style="color: var(--success); margin-bottom: 0.5rem; font-family: 'Outfit', sans-serif;">AUDIT TIP: DATA ARCHIVING</h4>
+                <p>We recommend exporting a 'Full Registry Backup' at the end of every academic session. This ensures you have a permanent offline record of all student grades and financial ledger data.</p>
+            </div>
+
         </section>
 
         <footer>
-            <p>&copy; 2026 Nexus SMS. All rights reserved.</p>
-            <div style="margin-top: 1rem;">
-                <a href="index.html" class="btn btn-primary">Back to Help Hub</a>
+            <div style="display: flex; justify-content: space-between; align-items: center; padding: 4rem 0; border-top: 1px solid var(--glass-border);">
+                <a href="notifications.html" class="btn glass">← Previous: Notifications</a>
+                <a href="settings.html" class="btn btn-primary">Next: System Settings →</a>
             </div>
         </footer>
     </div>

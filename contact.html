@@ -3,82 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Support - Nexus SMS</title>
+    <title>Contact Nexus Support - Official Help Center</title>
     <link rel="stylesheet" href="help-styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=Outfit:wght@400;600;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <header>
-        <div class="container">
-            <h1 class="hero-title">Contact Us</h1>
-            <p class="hero-subtitle">We're here to help you get the most out of Nexus SMS</p>
+    <!-- Premium Branding Bar -->
+    <header class="branding-bar">
+        <div class="container branding-content">
+            <a href="index.html" class="brand-logo">
+                <span>NEXUS</span> SMS
+            </a>
+            <nav style="display: flex; gap: 2rem;">
+                <a href="index.html" style="color: var(--text-muted); text-decoration: none; font-weight: 500;">Home</a>
+                <a href="contact.html" style="color: white; text-decoration: none; font-weight: 600;">Contact Us</a>
+                <a href="../../" style="color: var(--accent); text-decoration: none; font-weight: 600;">Launch App →</a>
+            </nav>
         </div>
     </header>
 
-    <div class="container">
-        <nav class="glass">
-            <a href="index.html" class="nav-link">Home</a>
-            <a href="settings.html" class="nav-link">Settings</a>
-            <a href="contact.html" class="nav-link active">Support</a>
-        </nav>
+    <div class="container" style="padding-top: 6rem;">
+        <div class="text-center" style="margin-bottom: 6rem;">
+            <h1 class="hero-title">Technical Support & Contact</h1>
+            <p class="hero-subtitle">Our dedicated team is here to ensure your educational institution runs smoothly. Reach out for assistance, training, or feature requests.</p>
+        </div>
 
-        <div class="grid" style="margin-top: 4rem;">
-            <!-- Left Column: Contact Form Placeholder -->
-            <div class="glass" style="padding: 3rem;">
-                <h2 class="section-title">Send a Message</h2>
-                <p style="color: var(--text-muted); margin-bottom: 2rem;">Have a question or need a new feature? Reach out to our technical team.</p>
-                
-                <div style="display: flex; flex-direction: column; gap: 1.5rem;">
-                    <div style="display: flex; flex-direction: column; gap: 0.5rem;">
-                        <label style="font-weight: 600;">School Name</label>
-                        <div class="glass" style="padding: 1rem; border-color: var(--glass-border);">Nexus International School</div>
+        <div class="grid" style="grid-template-columns: 1fr 1fr; align-items: start; gap: 6rem;">
+            <!-- Support Ticketing Form -->
+            <div class="glass" style="padding: 4rem;">
+                <h2 style="font-family: 'Outfit', sans-serif; font-size: 2rem; margin-bottom: 2rem;">Priority Support Request</h2>
+                <form onsubmit="return false;" style="display: flex; flex-direction: column; gap: 2rem;">
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+                        <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+                            <label style="font-weight: 600; font-size: 0.9rem; color: var(--text-muted);">Institution Name</label>
+                            <input type="text" class="glass" style="padding: 1rem; color: white;" placeholder="e.g. Nexus Academy">
+                        </div>
+                        <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+                            <label style="font-weight: 600; font-size: 0.9rem; color: var(--text-muted);">Admin Email</label>
+                            <input type="email" class="glass" style="padding: 1rem; color: white;" placeholder="admin@school.com">
+                        </div>
                     </div>
+                    
                     <div style="display: flex; flex-direction: column; gap: 0.5rem;">
-                        <label style="font-weight: 600;">Subject</label>
-                        <div class="glass" style="padding: 1rem; border-color: var(--glass-border);">Technical Assistance</div>
+                        <label style="font-weight: 600; font-size: 0.9rem; color: var(--text-muted);">Module Priority</label>
+                        <select class="glass" style="padding: 1rem; color: white; background: var(--surface);">
+                            <option>Student Management</option>
+                            <option>Financials & Billing</option>
+                            <option>Academic Grading</option>
+                            <option>System Configuration</option>
+                            <option>General Inquiry</option>
+                        </select>
                     </div>
+
                     <div style="display: flex; flex-direction: column; gap: 0.5rem;">
-                        <label style="font-weight: 600;">Message</label>
-                        <div class="glass" style="padding: 1rem; border-color: var(--glass-border); min-height: 150px;">How do I generate a collective fee report for the entire year?</div>
+                        <label style="font-weight: 600; font-size: 0.9rem; color: var(--text-muted);">Message Detail</label>
+                        <textarea class="glass" style="padding: 1rem; color: white; min-height: 200px;" placeholder="Please describe your technical query in detail..."></textarea>
                     </div>
-                    <button class="btn btn-primary" style="border: none; cursor: not-allowed;">Submit Request</button>
-                    <p style="font-size: 0.8rem; color: var(--text-muted); text-align: center;">Note: This is a help manual preview form.</p>
-                </div>
+
+                    <button class="btn btn-primary" style="border: none; cursor: pointer;">Submit Support Ticket</button>
+                    <p style="font-size: 0.8rem; color: var(--text-muted); text-align: center;">Average Response Time: <span style="color: var(--accent); font-weight: 700;">2 Hours</span></p>
+                </form>
             </div>
 
-            <!-- Right Column: Contact Details -->
-            <div style="display: flex; flex-direction: column; gap: 2rem;">
-                <div class="glass" style="padding: 2rem;">
-                    <h3 class="module-name" style="color: var(--accent);">Technical Support</h3>
-                    <p style="margin: 1rem 0;">Email: support@nexussms.com</p>
-                    <p>WhatsApp: +1 (234) 567-890</p>
+            <!-- Global Support Hub -->
+            <div style="display: flex; flex-direction: column; gap: 2.5rem;">
+                <h2 style="font-family: 'Outfit', sans-serif; font-size: 2rem; margin-bottom: 2rem;">Support Channels</h2>
+                
+                <div class="glass" style="display: flex; align-items: center; gap: 2rem; border-left: 6px solid #25d366;">
+                    <div style="font-size: 2.5rem;">💬</div>
+                    <div>
+                        <h4 style="font-size: 1.2rem; margin-bottom: 0.5rem;">WhatsApp Concierge</h4>
+                        <p style="color: var(--text-muted); margin-bottom: 0.8rem;">Instant chat support for technical emergencies.</p>
+                        <a href="#" style="color: #25d366; font-weight: 800; text-decoration: none;">+1 (234) 567-890 →</a>
+                    </div>
                 </div>
 
-                <div class="glass" style="padding: 2rem;">
-                    <h3 class="module-name" style="color: var(--success);">Sales & Billing</h3>
-                    <p style="margin: 1rem 0;">Email: sales@nexussms.com</p>
-                    <p>Phone: +1 (234) 567-891</p>
+                <div class="glass" style="display: flex; align-items: center; gap: 2rem; border-left: 6px solid var(--accent);">
+                    <div style="font-size: 2.5rem;">📧</div>
+                    <div>
+                        <h4 style="font-size: 1.2rem; margin-bottom: 0.5rem;">Email Helpdesk</h4>
+                        <p style="color: var(--text-muted); margin-bottom: 0.8rem;">Official correspondence and feature requests.</p>
+                        <a href="mailto:support@nexussms.com" style="color: var(--accent); font-weight: 800; text-decoration: none;">support@nexussms.com →</a>
+                    </div>
                 </div>
 
-                <div class="glass" style="padding: 2rem; background: var(--primary-gradient);">
-                    <h3 class="module-name" style="color: white; margin-bottom: 1rem;">Operating Hours</h3>
-                    <p style="color: rgba(255,255,255,0.9);">Monday - Friday</p>
-                    <p style="color: rgba(255,255,255,0.9); font-weight: 800; font-size: 1.2rem;">09:00 AM - 06:00 PM</p>
-                    <p style="color: rgba(255,255,255,0.7); font-size: 0.8rem; margin-top: 1rem;">(GMT +5)</p>
+                <div class="glass" style="padding: 3rem; background: var(--primary-gradient);">
+                    <h4 style="font-size: 1.5rem; font-weight: 900; margin-bottom: 1.5rem; font-family: 'Outfit', sans-serif;">Standard Business Hours</h4>
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 1rem;">
+                        <span>Monday - Friday</span>
+                        <span style="font-weight: 800;">09:00 - 18:00</span>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 2rem;">
+                        <span>Saturday</span>
+                        <span style="font-weight: 800;">10:00 - 14:00</span>
+                    </div>
+                    <p style="font-size: 0.85rem; color: rgba(255,255,255,0.7);">Our team is available 24/7 for license-critical server renewals and security alerts.</p>
+                </div>
+
+                <div class="glass" style="text-align: center;">
+                    <h4 style="margin-bottom: 1rem;">Remote Diagnostic</h4>
+                    <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1.5rem;">Need hands-on help? Request a remote AnyDesk session with our engineer.</p>
+                    <a href="#" class="btn glass" style="border-radius: 12px; font-size: 0.9rem; padding: 0.8rem 1.5rem;">Schedule Session</a>
                 </div>
             </div>
         </div>
-
-        <footer>
-            <p>&copy; 2026 Nexus SMS. All rights reserved.</p>
-            <div style="margin-top: 1rem;">
-                <a href="index.html" class="btn btn-primary">Back to Help Hub</a>
-            </div>
-        </footer>
     </div>
+
+    <!-- Mega Footer -->
+    <footer class="mega-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <div class="footer-logo">NEXUS SMS</div>
+                <p style="color: var(--text-muted); margin-bottom: 2rem;">Committed to technical excellence and user-centric educational tools.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Help Hub</h4>
+                <ul>
+                    <li><a href="index.html">Main Hub</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="students.html">Students</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Connect</h4>
+                <div style="display: flex; gap: 1rem;">
+                    <a href="#">TW</a>
+                    <a href="#">FB</a>
+                    <a href="#">LN</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 </body>
 </html>

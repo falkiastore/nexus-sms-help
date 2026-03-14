@@ -3,93 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Financials Help - Nexus SMS</title>
+    <title>Financial Management Guide - Nexus SMS</title>
     <link rel="stylesheet" href="help-styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=Outfit:wght@400;600;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <header>
-        <div class="container">
-            <h1 class="hero-title">Fee Management</h1>
-            <p class="hero-subtitle">Manage school finances, invoices, and payments</p>
+    <!-- Premium Branding Bar -->
+    <header class="branding-bar">
+        <div class="container branding-content">
+            <a href="index.html" class="brand-logo">
+                <span>NEXUS</span> SMS
+            </a>
+            <nav style="display: flex; gap: 2rem;">
+                <a href="index.html" style="color: var(--text-muted); text-decoration: none; font-weight: 500;">Home</a>
+                <a href="contact.html" style="color: var(--text-muted); text-decoration: none; font-weight: 500;">Contact Us</a>
+                <a href="../../" style="color: var(--accent); text-decoration: none; font-weight: 600;">Launch App →</a>
+            </nav>
         </div>
     </header>
 
-    <div class="container">
-        <nav class="glass">
-            <a href="index.html" class="nav-link">Home</a>
-            <a href="attendance.html" class="nav-link">Attendance</a>
-            <a href="fees.html" class="nav-link active">Financials</a>
-            <a href="academics.html" class="nav-link">Academics</a>
-            <a href="contact.html" class="nav-link">Support</a>
-        </nav>
+    <div class="container" style="padding-top: 4rem;">
+        <h1 class="hero-title" style="font-size: 3rem;">Financial & Fee Audit Guide</h1>
+        <p class="hero-subtitle" style="margin-left: 0; text-align: left;">Master the school's financial backbone—from fee structures to revenue reporting.</p>
 
-        <section class="content-section">
-            <h2 class="section-title">Overview</h2>
-            <div class="glass" style="padding: 2rem; margin-bottom: 2rem;">
-                <p>The Financials module handles all fee-related activities, from defining fee structures to processing student payments and generating receipts.</p>
-            </div>
-
-            <div class="grid">
-                <div class="module-card glass" style="cursor: default;">
-                    <div class="module-icon">💳</div>
-                    <h3 class="module-name">Fee Structures</h3>
-                    <p class="module-desc">Define Monthly, Admission, Exam, and Transport fees per class.</p>
-                </div>
-                <div class="module-card glass" style="cursor: default;">
-                    <div class="module-icon">📄</div>
-                    <h3 class="module-name">Invoicing</h3>
-                    <p class="module-desc">Automatically generate monthly fee challans for all active students.</p>
-                </div>
-                <div class="module-card glass" style="cursor: default;">
-                    <div class="module-icon">🏦</div>
-                    <h3 class="module-name">Payment Tracking</h3>
-                    <p class="module-desc">Record payments, track arrears, and generate financial reports.</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="content-section">
-            <h2 class="section-title">Processing Payments</h2>
+        <section class="guide-section">
             
-            <div class="guide-step">
-                <div class="step-number">1</div>
-                <div class="step-content">
-                    <h3>Find Student</h3>
-                    <p>Enter the Student ID or scan the QR code on the fee challan to pull up the student's pending dues.</p>
+            <div class="step-row">
+                <div class="step-text">
+                    <span class="step-badge">Phase 1: Setup</span>
+                    <h3>Defining Fee Structures</h3>
+                    <p>Before collecting payments, you must define your 'Fee Heads' (e.g., Monthly Tuition, Admission Fee, Transport, Library). Assign these rates per Class or Level to ensure the system generates accurate challans for the entire student body.</p>
+                </div>
+                <div class="step-visual">
+                    <img src="assets/financials_mockup.png" class="step-image" alt="Financial Dashboard Mockup">
                 </div>
             </div>
 
-            <div class="guide-step">
-                <div class="step-number">2</div>
-                <div class="step-content">
-                    <h3>Collect Fee</h3>
-                    <p>Select the months being paid for, enter the amount received, and specify the payment method (Cash/Bank).</p>
-                    <div class="glass" style="height: 200px; display: flex; align-items: center; justify-content: center; margin-top: 1rem; color: var(--text-muted); border-style: dashed;">
-                        [Screenshot: Collection Form]
+            <div class="step-row">
+                <div class="step-text">
+                    <span class="step-badge">Phase 2: Invoicing</span>
+                    <h3>The Monthly Billing Cycle</h3>
+                    <p>At the start of each month, use the 'Generate Collective Invoices' tool. The system will calculate arrears, apply current month fees, and add any specific fines or discounts for thousands of students in seconds.</p>
+                </div>
+                <div class="step-visual glass">
+                    <div style="height: 300px; display: flex; align-items: center; justify-content: center; color: var(--text-muted);">
+                        [Infographic: Invoicing Logic & Arrears Calculation]
                     </div>
                 </div>
             </div>
 
-            <div class="guide-step">
-                <div class="step-number">3</div>
-                <div class="step-content">
-                    <h3>Generate Receipt</h3>
-                    <p>Save the transaction to generate a printable receipt. The system will update the student's ledger instantly.</p>
+            <div class="step-row">
+                <div class="step-text">
+                    <span class="step-badge">Phase 3: Collection</span>
+                    <h3>Recording Payments & Receipts</h3>
+                    <p>When a parent submits a fee, search for the student via ID or Mobile Number. The system displays all pending dues. Enter the amount received, select the payment bank/cash head, and click 'Post Transaction' to generate a thermal or A4 receipt instantly.</p>
+                </div>
+                <div class="step-visual glass">
+                    <div style="height: 300px; display: flex; align-items: center; justify-content: center; color: var(--text-muted);">
+                        [Form Detail: Transaction Posting Screen]
+                    </div>
                 </div>
             </div>
+
+            <div class="step-row">
+                <div class="step-text">
+                    <span class="step-badge">Phase 4: Auditing</span>
+                    <h3>Revenue Insights & Arrears</h3>
+                    <p>Use the 'Financial Summary' dashboard to monitor your collection vs. projection. You can generate 'Defaulter Lists' grouped by Class and send automated 'Fee Due' SMS alerts to parents with a single click.</p>
+                </div>
+                <div class="step-visual glass">
+                    <div style="height: 300px; display: flex; align-items: center; justify-content: center; color: var(--text-muted);">
+                        [Chart View: Arrears vs. Collection Trends]
+                    </div>
+                </div>
+            </div>
+
+            <div class="mastery-box">
+                <h4 style="color: var(--success); margin-bottom: 0.5rem; font-family: 'Outfit', sans-serif;">PRO TIP: SCHOLARSHIP MANAGEMENT</h4>
+                <p>You can apply recurring 'Concession Profiles' to scholarship students. Once set, the system will automatically deduct the discount amount every month without manual intervention.</p>
+            </div>
+
         </section>
 
         <footer>
-            <p>&copy; 2026 Nexus SMS. All rights reserved.</p>
-            <div style="margin-top: 1rem;">
-                <a href="index.html" class="btn btn-primary">Back to Help Hub</a>
+            <div style="display: flex; justify-content: space-between; align-items: center; padding: 4rem 0; border-top: 1px solid var(--glass-border);">
+                <a href="attendance.html" class="btn glass">← Previous: Attendance</a>
+                <a href="academics.html" class="btn btn-primary">Next: Academic Management →</a>
             </div>
         </footer>
     </div>
+
+    <!-- Mega Footer -->
+    <footer class="mega-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <div class="footer-logo">NEXUS SMS</div>
+                <p style="color: var(--text-muted);">Transparent and secure financial management for modern schools.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Finance Resources</h4>
+                <ul>
+                    <li><a href="index.html">Main Hub</a></li>
+                    <li><a href="fees.html">Fee Setup Guide</a></li>
+                    <li><a href="reports.html">Financial Reports</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="contact.html">Billing Support</a></li>
+                    <li><a href="license.html">Subscription Status</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Security Policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 
 </body>
 </html>

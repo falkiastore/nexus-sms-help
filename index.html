@@ -3,113 +3,151 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nexus SMS - Help Manual</title>
+    <title>Nexus SMS - Premium Help Center</title>
     <link rel="stylesheet" href="help-styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    <style>
-        .hero-title { font-family: 'Outfit', sans-serif; }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=Outfit:wght@400;600;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <header>
-        <div class="container">
-            <h1 class="hero-title">Nexus SMS Help Center</h1>
-            <p class="hero-subtitle">Everything you need to master your school management system</p>
+    <!-- Premium Branding Bar -->
+    <header class="branding-bar">
+        <div class="container branding-content">
+            <a href="index.html" class="brand-logo">
+                <span>NEXUS</span> SMS
+            </a>
+            <nav style="display: flex; gap: 2rem;">
+                <a href="index.html" style="color: white; text-decoration: none; font-weight: 600;">Home</a>
+                <a href="contact.html" style="color: var(--text-muted); text-decoration: none; font-weight: 500;">Contact Us</a>
+                <a href="../../" style="color: var(--accent); text-decoration: none; font-weight: 600;">Launch App →</a>
+            </nav>
         </div>
     </header>
 
-    <div class="container">
-        <nav class="glass">
-            <a href="index.html" class="nav-link active">Home</a>
-            <a href="contact.html" class="nav-link">Contact Support</a>
-        </nav>
-
-        <section class="content-section">
-            <h2 class="section-title">Explore Modules</h2>
-            <div class="grid">
-                <!-- Dashboard -->
-                <a href="dashboard.html" class="module-card glass">
-                    <div class="module-icon">📊</div>
-                    <h3 class="module-name">Dashboard</h3>
-                    <p class="module-desc">Real-time statistics, academic highlights, and daily overview of school operations.</p>
-                </a>
-
-                <!-- Students -->
-                <a href="students.html" class="module-card glass">
-                    <div class="module-icon">🎓</div>
-                    <h3 class="module-name">Students</h3>
-                    <p class="module-desc">Manage student admissions, profiles, parents' info, and academic history.</p>
-                </a>
-
-                <!-- Staff -->
-                <a href="staff.html" class="module-card glass">
-                    <div class="module-icon">👨‍🏫</div>
-                    <h3 class="module-name">Staff</h3>
-                    <p class="module-desc">Handle staff records, designations, and department assignments seamlessly.</p>
-                </a>
-
-                <!-- Attendance -->
-                <a href="attendance.html" class="module-card glass">
-                    <div class="module-icon">📅</div>
-                    <h3 class="module-name">Attendance</h3>
-                    <p class="module-desc">Track daily student and staff attendance with automated reporting.</p>
-                </a>
-
-                <!-- Fees -->
-                <a href="fees.html" class="module-card glass">
-                    <div class="module-icon">💰</div>
-                    <h3 class="module-name">Financials</h3>
-                    <p class="module-desc">Comprehensive fee management, invoicing, and school expense tracking.</p>
-                </a>
-
-                <!-- Grades -->
-                <a href="academics.html" class="module-card glass">
-                    <div class="module-icon">📝</div>
-                    <h3 class="module-name">Academics</h3>
-                    <p class="module-desc">Manage examination types, enter marks, and generate report cards.</p>
-                </a>
-
-                <!-- Notifications -->
-                <a href="notifications.html" class="module-card glass">
-                    <div class="module-icon">🔔</div>
-                    <h3 class="module-name">Notifications</h3>
-                    <p class="module-desc">Send automated SMS and alerts to parents, students, and staff.</p>
-                </a>
-
-                <!-- Export -->
-                <a href="reports.html" class="module-card glass">
-                    <div class="module-icon">📥</div>
-                    <h3 class="module-name">Reports & Export</h3>
-                    <p class="module-desc">Generate PDF and Excel reports for all major school data modules.</p>
-                </a>
-
-                <!-- Settings -->
-                <a href="settings.html" class="module-card glass">
-                    <div class="module-icon">⚙️</div>
-                    <h3 class="module-name">System Settings</h3>
-                    <p class="module-desc">Configure school branding, academic years, and system preferences.</p>
-                </a>
-
-                <!-- License -->
-                <a href="license.html" class="module-card glass">
-                    <div class="module-icon">🛡️</div>
-                    <h3 class="module-name">License Control</h3>
-                    <p class="module-desc">Manage software activation, subscription expiry, and usage limits.</p>
-                </a>
+    <!-- Deep Hero Section -->
+    <section class="hero">
+        <div class="container text-center">
+            <h1 class="hero-title">Nexus SMS Mastery Portal</h1>
+            <p class="hero-subtitle">Comprehensive step-by-step documentation, visual guides, and technical support for your school management system.</p>
+            <div style="margin-top: 3rem; display: flex; justify-content: center; gap: 1.5rem;">
+                <a href="#explore" class="btn btn-primary">Start Exploring</a>
+                <a href="contact.html" class="btn glass" style="border-radius: 14px;">Contact Support</a>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <footer>
-            <p>&copy; 2026 Nexus SMS. All rights reserved.</p>
-            <div style="margin-top: 1rem;">
-                <a href="contact.html" class="btn btn-primary">Get Technical Support</a>
-            </div>
-        </footer>
+    <div class="container" id="explore">
+        <!-- Module Grid -->
+        <h2 style="font-family: 'Outfit', sans-serif; font-size: 2.2rem; margin-bottom: 2rem; border-left: 5px solid var(--accent); padding-left: 1.5rem;">Functional Modules</h2>
+        <div class="grid">
+            <!-- Dashboard -->
+            <a href="dashboard.html" class="module-card glass">
+                <div class="module-icon">📊</div>
+                <h3 class="module-title">Operational Dashboard</h3>
+                <p class="module-desc">Real-time statistics, academic highlights, and a deep-dive into your school's daily overview.</p>
+                <span style="color: var(--accent); margin-top: auto; font-weight: 700;">Explore Manual →</span>
+            </a>
+
+            <!-- Students -->
+            <a href="students.html" class="module-card glass">
+                <div class="module-icon">🎓</div>
+                <h3 class="module-title">Student Registry</h3>
+                <p class="module-desc">Exhaustive guide to admissions, profile management, and maintaining parent/guardian data.</p>
+                <span style="color: var(--accent); margin-top: auto; font-weight: 700;">Explore Manual →</span>
+            </a>
+
+            <!-- Attendance -->
+            <a href="attendance.html" class="module-card glass">
+                <div class="module-icon">📅</div>
+                <h3 class="module-title">Attendance Tracking</h3>
+                <p class="module-desc">Manage daily attendance, bulk marking procedures, and automated absence alerts via SMS.</p>
+                <span style="color: var(--accent); margin-top: auto; font-weight: 700;">Explore Manual →</span>
+            </a>
+
+            <!-- Fees -->
+            <a href="fees.html" class="module-card glass">
+                <div class="module-icon">💰</div>
+                <h3 class="module-title">Financial Audit</h3>
+                <p class="module-desc">Complete fee management workflow, invoicing, challan generation, and revenue auditing.</p>
+                <span style="color: var(--accent); margin-top: auto; font-weight: 700;">Explore Manual →</span>
+            </a>
+
+            <!-- Academics -->
+            <a href="academics.html" class="module-card glass">
+                <div class="module-icon">📝</div>
+                <h3 class="module-title">Academic & Grades</h3>
+                <p class="module-desc">A step-by-step guide to exam setup, marks entry, and automated report card generation.</p>
+                <span style="color: var(--accent); margin-top: auto; font-weight: 700;">Explore Manual →</span>
+            </a>
+
+            <!-- Notifications -->
+            <a href="notifications.html" class="module-card glass">
+                <div class="module-icon">🔔</div>
+                <h3 class="module-title">Notification Engine</h3>
+                <p class="module-desc">Learn how to send automated announcements, fee reminders, and attendance SMS.</p>
+                <span style="color: var(--accent); margin-top: auto; font-weight: 700;">Explore Manual →</span>
+            </a>
+
+            <!-- Reports -->
+            <a href="reports.html" class="module-card glass">
+                <div class="module-icon">📥</div>
+                <h3 class="module-title">Reporting & Export</h3>
+                <p class="module-desc">Generate PDF reports and export clean datasets for students, staff, and finances.</p>
+                <span style="color: var(--accent); margin-top: auto; font-weight: 700;">Explore Manual →</span>
+            </a>
+
+            <!-- Settings -->
+            <a href="settings.html" class="module-card glass">
+                <div class="module-icon">⚙️</div>
+                <h3 class="module-title">System Settings</h3>
+                <p class="module-desc">Configure school branding, academic years, holiday calendars, and department structures.</p>
+                <span style="color: var(--accent); margin-top: auto; font-weight: 700;">Explore Manual →</span>
+            </a>
+        </div>
     </div>
+
+    <!-- Mega Footer -->
+    <footer class="mega-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <div class="footer-logo">NEXUS SMS</div>
+                <p style="color: var(--text-muted); margin-bottom: 2rem;">A comprehensive, cloud-based school management solution designed for modern educational institutions.</p>
+                <div style="display: flex; gap: 1rem;">
+                    <a href="#" class="glass" style="padding: 0.5rem; border-radius: 8px;">TW</a>
+                    <a href="#" class="glass" style="padding: 0.5rem; border-radius: 8px;">FB</a>
+                    <a href="#" class="glass" style="padding: 0.5rem; border-radius: 8px;">LI</a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="fees.html">Financials</a></li>
+                    <li><a href="contact.html">Support</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="license.html">License Status</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Security</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Contact Info</h4>
+                <p style="margin-bottom: 1rem;">support@nexussms.com</p>
+                <p>+1 (234) 567-890</p>
+            </div>
+        </div>
+        <div class="container copy-bar">
+            <p>&copy; 2026 Nexus SMS Help Portal. All Rights Reserved.</p>
+            <p>Designed for Excellence</p>
+        </div>
+    </footer>
 
 </body>
 </html>

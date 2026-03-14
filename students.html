@@ -3,101 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Students Help - Nexus SMS</title>
+    <title>Student Registry Guide - Nexus SMS</title>
     <link rel="stylesheet" href="help-styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=Outfit:wght@400;600;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <header>
-        <div class="container">
-            <h1 class="hero-title">Student Management</h1>
-            <p class="hero-subtitle">Comprehensive guide to managing your student registry</p>
+    <!-- Premium Branding Bar -->
+    <header class="branding-bar">
+        <div class="container branding-content">
+            <a href="index.html" class="brand-logo">
+                <span>NEXUS</span> SMS
+            </a>
+            <nav style="display: flex; gap: 2rem;">
+                <a href="index.html" style="color: var(--text-muted); text-decoration: none; font-weight: 500;">Home</a>
+                <a href="contact.html" style="color: var(--text-muted); text-decoration: none; font-weight: 500;">Contact Us</a>
+                <a href="../../" style="color: var(--accent); text-decoration: none; font-weight: 600;">Launch App →</a>
+            </nav>
         </div>
     </header>
 
-    <div class="container">
-        <nav class="glass">
-            <a href="index.html" class="nav-link">Home</a>
-            <a href="dashboard.html" class="nav-link">Dashboard</a>
-            <a href="students.html" class="nav-link active">Students</a>
-            <a href="attendance.html" class="nav-link">Attendance</a>
-            <a href="contact.html" class="nav-link">Support</a>
-        </nav>
+    <div class="container" style="padding-top: 4rem;">
+        <h1 class="hero-title" style="font-size: 3rem;">Student Management Manual</h1>
+        <p class="hero-subtitle" style="margin-left: 0; text-align: left;">Everything you need to know about registering and managing your student body.</p>
 
-        <section class="content-section">
-            <h2 class="section-title">Module Overview</h2>
-            <div class="glass" style="padding: 2rem; margin-bottom: 2rem;">
-                <p>The Students module is the heart of Nexus SMS. It allows you to register new students, maintain detailed profiles, manage parent/guardian information, and track academic enrollment status.</p>
-            </div>
-
-            <div class="grid">
-                <div class="module-card glass" style="cursor: default;">
-                    <div class="module-icon">📝</div>
-                    <h3 class="module-name">New Admission</h3>
-                    <p class="module-desc">Add new students to the system with automated ID generation and class assignment.</p>
-                </div>
-                <div class="module-card glass" style="cursor: default;">
-                    <div class="module-icon">👤</div>
-                    <h3 class="module-name">Student Profiles</h3>
-                    <p class="module-desc">View and edit personal details, medical info, and emergency contacts.</p>
-                </div>
-                <div class="module-card glass" style="cursor: default;">
-                    <div class="module-icon">👨‍👩‍👦</div>
-                    <h3 class="module-name">Parent Info</h3>
-                    <p class="module-desc">Manage guardian details and contact information for automated SMS alerts.</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="content-section">
-            <h2 class="section-title">Key Procedures</h2>
+        <section class="guide-section">
             
-            <div class="guide-step">
-                <div class="step-number">1</div>
-                <div class="step-content">
-                    <h3>Adding a New Student</h3>
-                    <p>Navigate to the Students module and click on "Add New Student". Fill in the mandatory fields: Name, Date of Birth, Class, and Parent Contact. The system will automatically generate a unique Student ID.</p>
-                    <div class="glass" style="height: 200px; display: flex; align-items: center; justify-content: center; margin-top: 1rem; color: var(--text-muted); border-style: dashed;">
-                        [Screenshot: New Student Form]
+            <div class="step-row">
+                <div class="step-text">
+                    <span class="step-badge">Procedural Step 1</span>
+                    <h3>Accessing the Registry</h3>
+                    <p>Navigate to the 'Students' module from the primary sidebar. This main view displays your entire student registry. You can use the smart-filter bar at the top to instantly narrow down students by Admission Year, Current Class, or Academic Status (Active/Withdrawn).</p>
+                </div>
+                <div class="step-visual">
+                    <img src="assets/students_mockup.png" class="step-image" alt="Student Profile Mockup">
+                </div>
+            </div>
+
+            <div class="step-row">
+                <div class="step-text">
+                    <span class="step-badge">Procedural Step 2</span>
+                    <h3>The New Admission Workflow</h3>
+                    <p>To register a new student, click the high-priority 'Add New' button. The system will guide you through a three-stage wizard:
+                        <br><br>• <strong>Personal Details:</strong> Name, DOB, medical info.
+                        <br>• <strong>Enrollment:</strong> Class assignment and ID generation.
+                        <br>• <strong>Parental Linkage:</strong> Connecting the student to a new or existing guardian account.
+                    </p>
+                </div>
+                <div class="step-visual glass">
+                    <div style="height: 300px; display: flex; align-items: center; justify-content: center; color: var(--text-muted);">
+                        [Wizard UI: Student Admission Flow]
                     </div>
                 </div>
             </div>
 
-            <div class="guide-step">
-                <div class="step-number">2</div>
-                <div class="step-content">
-                    <h3>Searching and Filtering</h3>
-                    <p>Use the search bar at the top of the student registry to quickly find a student by name or ID. You can also filter the list by Class or Section to narrow down your selection.</p>
-                    <div class="glass" style="height: 150px; display: flex; align-items: center; justify-content: center; margin-top: 1rem; color: var(--text-muted); border-style: dashed;">
-                        [Screenshot: Filter Controls]
+            <div class="step-row">
+                <div class="step-text">
+                    <span class="step-badge">Procedural Step 3</span>
+                    <h3>Managing Parent Communications</h3>
+                    <p>Each student profile is tethered to a Parent/Guardian contact. It is critical to ensure the 'Primary Contact Number' is formatted correctly to enable the <strong>Nexus Notification Engine</strong> for automated SMS attendance and fee alerts.</p>
+                </div>
+                <div class="step-visual glass">
+                    <div style="height: 300px; display: flex; align-items: center; justify-content: center; color: var(--text-muted);">
+                        [Form Detail: Contact Phone Field Explainer]
                     </div>
                 </div>
             </div>
 
-            <div class="guide-step">
-                <div class="step-number">3</div>
-                <div class="step-content">
-                    <h3>Updating Student Records</h3>
-                    <p>Click the "Edit" icon next to any student record to modify their information. Ensure you save changes to keep the Registry up to date.</p>
+            <div class="step-row">
+                <div class="step-text">
+                    <span class="step-badge">Procedural Step 4</span>
+                    <h3>Bulk Data Management</h3>
+                    <p>Need to move an entire class to the next academic level? Use the 'Bulk Operations' menu to perform class promotions, section shifts, or to generate bulk ID cards for a whole grade level at once.</p>
+                </div>
+                <div class="step-visual glass">
+                    <div style="height: 300px; display: flex; align-items: center; justify-content: center; color: var(--text-muted);">
+                        [Action Pad: Bulk Operations Menu]
+                    </div>
                 </div>
             </div>
+
+            <div class="mastery-box" style="background: linear-gradient(135deg, rgba(56, 189, 248, 0.1) 0%, transparent 100%); border-left-color: var(--accent);">
+                <h4 style="color: var(--accent); margin-bottom: 0.5rem; font-family: 'Outfit', sans-serif;">DID YOU KNOW? SMART SEARCH</h4>
+                <p>You can search for a student using just their Parent's Phone Number or the student's unique Roll Number directly in the global search bar at any time.</p>
+            </div>
+
         </section>
-
-        <footer class="glass" style="padding: 2rem; background: rgba(56, 189, 248, 0.1);">
-            <h3 style="color: var(--accent); margin-bottom: 0.5rem;">Pro Tip</h3>
-            <p>Always ensure the Parent Mobile Number is entered correctly to enable automated SMS notifications for attendance and fees.</p>
-        </footer>
 
         <footer>
-            <p>&copy; 2026 Nexus SMS. All rights reserved.</p>
-            <div style="margin-top: 1rem;">
-                <a href="index.html" class="btn btn-primary">Back to Help Hub</a>
+            <div style="display: flex; justify-content: space-between; align-items: center; padding: 4rem 0; border-top: 1px solid var(--glass-border);">
+                <a href="dashboard.html" class="btn glass">← Previous: Dashboard</a>
+                <a href="attendance.html" class="btn btn-primary">Next: Attendance Tracking →</a>
             </div>
         </footer>
     </div>
+
+    <!-- Mega Footer -->
+    <footer class="mega-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <div class="footer-logo">NEXUS SMS</div>
+                <p style="color: var(--text-muted);">Empowering educational institutions through intelligent data management.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="index.html">Main Hub</a></li>
+                    <li><a href="reports.html">Reporting Guide</a></li>
+                    <li><a href="fees.html">Financial Setup</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Get Help</h4>
+                <ul>
+                    <li><a href="contact.html">Support Hotline</a></li>
+                    <li><a href="#">Knowledge Base</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Account</h4>
+                <ul>
+                    <li><a href="license.html">License Control</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 
 </body>
 </html>

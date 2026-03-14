@@ -3,88 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>License Control Help - Nexus SMS</title>
+    <title>License Control Guide - Nexus SMS</title>
     <link rel="stylesheet" href="help-styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=Outfit:wght@400;600;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <header>
-        <div class="container">
-            <h1 class="hero-title">License Management</h1>
-            <p class="hero-subtitle">Secure and manage your software subscription</p>
+    <!-- Premium Branding Bar -->
+    <header class="branding-bar">
+        <div class="container branding-content">
+            <a href="index.html" class="brand-logo">
+                <span>NEXUS</span> SMS
+            </a>
+            <nav style="display: flex; gap: 2rem;">
+                <a href="index.html" style="color: var(--text-muted); text-decoration: none; font-weight: 500;">Home</a>
+                <a href="contact.html" style="color: var(--text-muted); text-decoration: none; font-weight: 500;">Contact Us</a>
+                <a href="../../" style="color: var(--accent); text-decoration: none; font-weight: 600;">Launch App →</a>
+            </nav>
         </div>
     </header>
 
-    <div class="container">
-        <nav class="glass">
-            <a href="index.html" class="nav-link">Home</a>
-            <a href="settings.html" class="nav-link">Settings</a>
-            <a href="contact.html" class="nav-link">Support</a>
-        </nav>
+    <div class="container" style="padding-top: 4rem;">
+        <h1 class="hero-title" style="font-size: 3rem;">License & Subscription Guide</h1>
+        <p class="hero-subtitle" style="margin-left: 0; text-align: left;">Secure your software investment and manage multi-school licenses.</p>
 
-        <section class="content-section">
-            <h2 class="section-title">Overview</h2>
-            <div class="glass" style="padding: 2rem; margin-bottom: 2rem;">
-                <p>Nexus SMS uses a secure licensing system to ensure your school's data remains protected and your subscription is always up to date. The License Control module allows you to view your current plan, expiry date, and upgrade your limits.</p>
-            </div>
-
-            <div class="grid">
-                <div class="module-card glass" style="cursor: default;">
-                    <div class="module-icon">🛡️</div>
-                    <h3 class="module-name">Activation</h3>
-                    <p class="module-desc">Activate your software using the unique License Key provided during onboarding.</p>
-                </div>
-                <div class="module-card glass" style="cursor: default;">
-                    <div class="module-icon">📅</div>
-                    <h3 class="module-name">Expiry Tracking</h3>
-                    <p class="module-desc">Monitor your license validity and receive alerts before your subscription ends.</p>
-                </div>
-                <div class="module-card glass" style="cursor: default;">
-                    <div class="module-icon">🚀</div>
-                    <h3 class="module-name">Usage Limits</h3>
-                    <p class="module-desc">View your student and staff limits based on your current subscription plan.</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="content-section">
-            <h2 class="section-title">Management Steps</h2>
+        <section class="guide-section">
             
-            <div class="guide-step">
-                <div class="step-number">1</div>
-                <div class="step-content">
-                    <h3>Check License Status</h3>
-                    <p>Navigate to Settings > License. Here you will see the active status of your software and the date of next renewal.</p>
+            <div class="step-row">
+                <div class="step-text">
+                    <span class="step-badge">Core Security</span>
+                    <h3>Product Activation</h3>
+                    <p>Upon installation, Nexus SMS requires a unique **Product Key** for activation. This key binds your software instance to your specific Google Cloud database. Never share this key with unauthorized personnel, as it grants full administrative access to your institution's data.</p>
+                </div>
+                <div class="step-visual glass" style="display: flex; align-items: center; justify-content: center; background: radial-gradient(circle, #6366f1 0%, transparent 70%);">
+                    <div style="font-size: 5rem;">🛡️</div>
                 </div>
             </div>
 
-            <div class="guide-step">
-                <div class="step-number">2</div>
-                <div class="step-content">
-                    <h3>Renewing Subscription</h3>
-                    <p>When your license is near expiry, click on "Renew License" to generate a payment request or contact your vendor directly.</p>
-                    <div class="glass" style="height: 150px; display: flex; align-items: center; justify-content: center; margin-top: 1rem; color: var(--text-muted); border-style: dashed;">
-                        [Screenshot: License Renewal Dialog]
+            <div class="step-row">
+                <div class="step-text">
+                    <span class="step-badge">Subscription</span>
+                    <h3>Expiry & Renewals</h3>
+                    <p>Your license is valid for a set term. You will see an 'Expiry Warning' on the main dashboard 30 days prior to the end of your term. To avoid service interruption, ensure you renew your subscription before the expiry date.</p>
+                </div>
+                <div class="step-visual glass" style="padding: 2rem; border-left: 6px solid #eab308; background: rgba(234, 179, 8, 0.05);">
+                    <h4 style="color: #eab308; margin-bottom: 1rem;">Subscription Alert</h4>
+                    <p style="font-size: 1.5rem; font-weight: 900; margin-bottom: 0.5rem;">14 Days Left</p>
+                    <p style="color: var(--text-muted); font-size: 0.8rem;">Renewal due by March 28, 2026</p>
+                </div>
+            </div>
+
+            <div class="step-row">
+                <div class="step-text">
+                    <span class="step-badge">Multi-Tenant</span>
+                    <h3>Corporate Management</h3>
+                    <p>For large organizations managing multiple schools, the **License Control Plane** provides a centralized view of all branch performances, aggregate collection data, and global license distribution status.</p>
+                </div>
+                <div class="step-visual glass">
+                    <div style="height: 200px; display: flex; align-items: center; justify-content: center; color: var(--text-muted);">
+                        [Diagram: Multi-School Cloud Architecture]
                     </div>
                 </div>
             </div>
 
-            <div class="guide-step">
-                <div class="step-number">3</div>
-                <div class="step-content">
-                    <h3>Security Keys</h3>
-                    <p>Ensure your License Key is kept private. It is used to authenticate your school's specific cloud database instance.</p>
-                </div>
+            <div class="mastery-box">
+                <h4 style="color: var(--accent); margin-bottom: 0.5rem; font-family: 'Outfit', sans-serif;">NOTE: LICENSE UPGRADES</h4>
+                <p>Upgrading your student limit does not require a software re-installation. Once your new tier is approved, the system limits will expand automatically in real-time across all your school branches.</p>
             </div>
+
         </section>
 
         <footer>
-            <p>&copy; 2026 Nexus SMS. All rights reserved.</p>
-            <div style="margin-top: 1rem;">
-                <a href="index.html" class="btn btn-primary">Back to Help Hub</a>
+            <div style="display: flex; justify-content: space-between; align-items: center; padding: 4rem 0; border-top: 1px solid var(--glass-border);">
+                <a href="settings.html" class="btn glass">← Previous: Settings</a>
+                <a href="index.html" class="btn btn-primary">Finish: Back to Hub →</a>
             </div>
         </footer>
     </div>

@@ -3,90 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Notifications Help - Nexus SMS</title>
+    <title>Notification Engine Guide - Nexus SMS</title>
     <link rel="stylesheet" href="help-styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=Outfit:wght@400;600;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <header>
-        <div class="container">
-            <h1 class="hero-title">Communication Hub</h1>
-            <p class="hero-subtitle">Automated SMS and system notifications</p>
+    <!-- Premium Branding Bar -->
+    <header class="branding-bar">
+        <div class="container branding-content">
+            <a href="index.html" class="brand-logo">
+                <span>NEXUS</span> SMS
+            </a>
+            <nav style="display: flex; gap: 2rem;">
+                <a href="index.html" style="color: var(--text-muted); text-decoration: none; font-weight: 500;">Home</a>
+                <a href="contact.html" style="color: var(--text-muted); text-decoration: none; font-weight: 500;">Contact Us</a>
+                <a href="../../" style="color: var(--accent); text-decoration: none; font-weight: 600;">Launch App →</a>
+            </nav>
         </div>
     </header>
 
-    <div class="container">
-        <nav class="glass">
-            <a href="index.html" class="nav-link">Home</a>
-            <a href="academics.html" class="nav-link">Academics</a>
-            <a href="notifications.html" class="nav-link active">Notifications</a>
-            <a href="reports.html" class="nav-link">Reports</a>
-            <a href="contact.html" class="nav-link">Support</a>
-        </nav>
+    <div class="container" style="padding-top: 4rem;">
+        <h1 class="hero-title" style="font-size: 3rem;">Notification Engine Guide</h1>
+        <p class="hero-subtitle" style="margin-left: 0; text-align: left;">Learn how to automate school-to-parent communication using SMS and system alerts.</p>
 
-        <section class="content-section">
-            <h2 class="section-title">Overview</h2>
-            <div class="glass" style="padding: 2rem; margin-bottom: 2rem;">
-                <p>Nexus SMS keeps parents and staff informed through a robust notification system. This includes automated SMS for attendance and fees, as well as manual broadcasts for school news.</p>
-            </div>
-
-            <div class="grid">
-                <div class="module-card glass" style="cursor: default;">
-                    <div class="module-icon">🚫</div>
-                    <h3 class="module-name">Absence Alerts</h3>
-                    <p class="module-desc">Real-time SMS sent to parents when a student is marked absent.</p>
-                </div>
-                <div class="module-card glass" style="cursor: default;">
-                    <div class="module-icon">💸</div>
-                    <h3 class="module-name">Fee Reminders</h3>
-                    <p class="module-desc">Automatic notifications for pending dues and payment confirmations.</p>
-                </div>
-                <div class="module-card glass" style="cursor: default;">
-                    <div class="module-icon">📢</div>
-                    <h3 class="module-name">Broadcasting</h3>
-                    <p class="module-desc">Send custom announcements to groups of parents or staff members.</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="content-section">
-            <h2 class="section-title">Messaging Workflow</h2>
+        <section class="guide-section">
             
-            <div class="guide-step">
-                <div class="step-number">1</div>
-                <div class="step-content">
-                    <h3>Select Recipients</h3>
-                    <p>Choose whether to send a message to a Specific Class, All Students, or individual staff members.</p>
+            <div class="step-row">
+                <div class="step-text">
+                    <span class="step-badge">Capability 1</span>
+                    <h3>Automated Absence Alerts</h3>
+                    <p>The most widely used feature of Nexus SMS is the automated absence alert. When attendance is saved, the system identifies all students marked 'Absent' and queues an SMS to their primary guardian. This ensures 100% transparency between school and home.</p>
+                </div>
+                <!-- High-fidelity CSS Preview -->
+                <div class="step-visual glass" style="background: var(--surface);">
+                     <div style="padding: 2rem;">
+                        <div class="glass" style="max-width: 300px; margin: 0 auto; padding: 1rem; border-radius: 20px 20px 20px 0; background: #2563eb; color: white;">
+                            <p style="font-size: 0.9rem;">Dear Parent, your child <strong>Salman</strong> is marked ABSENT today (Mar 14). Please contact the office for any queries. - Nexus SMS</p>
+                        </div>
+                        <p style="text-align: center; margin-top: 1rem; font-size: 0.8rem; color: var(--text-muted);">Sample SMS Preview</p>
+                     </div>
                 </div>
             </div>
 
-            <div class="guide-step">
-                <div class="step-number">2</div>
-                <div class="step-content">
-                    <h3>Compose Message</h3>
-                    <p>Enter your announcement. The system supports dynamic tags like [StudentName] to personalize the message.</p>
-                    <div class="glass" style="height: 150px; display: flex; align-items: center; justify-content: center; margin-top: 1rem; color: var(--text-muted); border-style: dashed;">
-                        [Screenshot: Compose Notification]
+            <div class="step-row">
+                <div class="step-text">
+                    <span class="step-badge">Capability 2</span>
+                    <h3>Fee Collection Confirmations</h3>
+                    <p>Building trust with parents starts with timely financial updates. Whenever a fee is posted, an automated confirmation SMS is sent, including the Amount Received and current Arrears Balance.</p>
+                </div>
+                <div class="step-visual glass" style="background: var(--surface); display: flex; align-items: center; justify-content: center;">
+                    <div style="text-align: center;">
+                        <div style="font-size: 3rem; margin-bottom: 1rem;">📱</div>
+                        <h4 style="margin-bottom: 0.5rem;">Billing Notification</h4>
+                        <p style="color: var(--text-muted); font-size: 0.9rem;">Triggered on 'Post Transaction'</p>
                     </div>
                 </div>
             </div>
 
-            <div class="guide-step">
-                <div class="step-number">3</div>
-                <div class="step-content">
-                    <h3>Send and Track</h3>
-                    <p>Review the SMS count and click "Broadcast". You can track the delivery status in the Notification Logs.</p>
+            <div class="step-row">
+                <div class="step-text">
+                    <span class="step-badge">Capability 3</span>
+                    <h3>Bulk Broadcasting</h3>
+                    <p>Need to announce a sudden holiday or an upcoming parent-teacher meeting? Use the 'SMS Broadcast' module. You can select entire classes, staff members, or the whole school to send a custom announcement in seconds.</p>
+                </div>
+                <div class="step-visual glass" style="padding: 2rem;">
+                    <div style="display: flex; flex-direction: column; gap: 1rem;">
+                        <div style="height: 10px; width: 60%; background: var(--glass-border); border-radius: 5px;"></div>
+                        <div style="height: 10px; width: 100%; background: var(--glass-border); border-radius: 5px;"></div>
+                        <div style="height: 80px; width: 100%; border: 1px solid var(--accent); border-radius: 10px; padding: 1rem; color: var(--text-muted); font-size: 0.8rem;">Type message here...</div>
+                        <div style="height: 40px; width: 100%; background: var(--accent); border-radius: 10px;"></div>
+                    </div>
                 </div>
             </div>
+
+            <div class="mastery-box">
+                <h4 style="color: var(--success); margin-bottom: 0.5rem; font-family: 'Outfit', sans-serif;">PRO TIP: SMS LOGS</h4>
+                <p>Always check the 'SMS Logs' in the Notifications module to verify delivery status. If a message fails, it's usually due to an incorrect phone format (+ CountryCode is required).</p>
+            </div>
+
         </section>
 
         <footer>
-            <p>&copy; 2026 Nexus SMS. All rights reserved.</p>
-            <div style="margin-top: 1rem;">
-                <a href="index.html" class="btn btn-primary">Back to Help Hub</a>
+            <div style="display: flex; justify-content: space-between; align-items: center; padding: 4rem 0; border-top: 1px solid var(--glass-border);">
+                <a href="academics.html" class="btn glass">← Previous: Academics</a>
+                <a href="reports.html" class="btn btn-primary">Next: Reporting & Export →</a>
             </div>
         </footer>
     </div>

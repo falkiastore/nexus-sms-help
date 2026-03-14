@@ -3,90 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Attendance Help - Nexus SMS</title>
+    <title>Attendance Tracking Guide - Nexus SMS</title>
     <link rel="stylesheet" href="help-styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=Outfit:wght@400;600;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <header>
-        <div class="container">
-            <h1 class="hero-title">Attendance Tracking</h1>
-            <p class="hero-subtitle">Manage daily attendance for students and staff</p>
+    <!-- Premium Branding Bar -->
+    <header class="branding-bar">
+        <div class="container branding-content">
+            <a href="index.html" class="brand-logo">
+                <span>NEXUS</span> SMS
+            </a>
+            <nav style="display: flex; gap: 2rem;">
+                <a href="index.html" style="color: var(--text-muted); text-decoration: none; font-weight: 500;">Home</a>
+                <a href="contact.html" style="color: var(--text-muted); text-decoration: none; font-weight: 500;">Contact Us</a>
+                <a href="../../" style="color: var(--accent); text-decoration: none; font-weight: 600;">Launch App →</a>
+            </nav>
         </div>
     </header>
 
-    <div class="container">
-        <nav class="glass">
-            <a href="index.html" class="nav-link">Home</a>
-            <a href="students.html" class="nav-link">Students</a>
-            <a href="attendance.html" class="nav-link active">Attendance</a>
-            <a href="fees.html" class="nav-link">Financials</a>
-            <a href="contact.html" class="nav-link">Support</a>
-        </nav>
+    <div class="container" style="padding-top: 4rem;">
+        <h1 class="hero-title" style="font-size: 3rem;">Attendance Mastery Guide</h1>
+        <p class="hero-subtitle" style="margin-left: 0; text-align: left;">Efficiently track daily presence and keep parents informed with automated alerts.</p>
 
-        <section class="content-section">
-            <h2 class="section-title">Overview</h2>
-            <div class="glass" style="padding: 2rem; margin-bottom: 2rem;">
-                <p>Nexus SMS provides a streamlined way to record and track daily attendance. The system supports bulk marking, attendance reports, and automated SMS alerts to parents of absent students.</p>
-            </div>
-
-            <div class="grid">
-                <div class="module-card glass" style="cursor: default;">
-                    <div class="module-icon">📊</div>
-                    <h3 class="module-name">Bulk Marking</h3>
-                    <p class="module-desc">Quickly mark entire classes as Present or Absent in one go.</p>
-                </div>
-                <div class="module-card glass" style="cursor: default;">
-                    <div class="module-icon">📱</div>
-                    <h3 class="module-name">SMS Alerts</h3>
-                    <p class="module-desc">Automatically notify parents via SMS as soon as a student is marked absent.</p>
-                </div>
-                <div class="module-card glass" style="cursor: default;">
-                    <div class="module-icon">📈</div>
-                    <h3 class="module-name">Reporting</h3>
-                    <p class="module-desc">Generate monthly and yearly attendance summaries for any student or class.</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="content-section">
-            <h2 class="section-title">Marking Attendance</h2>
+        <section class="guide-section">
             
-            <div class="guide-step">
-                <div class="step-number">1</div>
-                <div class="step-content">
-                    <h3>Select Class and Date</h3>
-                    <p>Go to the Attendance module, select the Class, Section, and the current Date. The list of students will populate automatically.</p>
-                    <div class="glass" style="height: 150px; display: flex; align-items: center; justify-content: center; margin-top: 1rem; color: var(--text-muted); border-style: dashed;">
-                        [Screenshot: Attendance Filters]
+            <div class="step-row">
+                <div class="step-text">
+                    <span class="step-badge">Operational Step 1</span>
+                    <h3>Sheet Selection & Loading</h3>
+                    <p>Enter the attendance module and select the specific <strong>Class</strong> and <strong>Section</strong>. Choose the target date (today's date is selected by default). The system will instantly fetch the student roster based on the current academic enrollment.</p>
+                </div>
+                <div class="step-visual glass">
+                    <div style="height: 300px; display: flex; align-items: center; justify-content: center; color: var(--text-muted);">
+                        [UI Preview: Filter Selection Bar]
                     </div>
                 </div>
             </div>
 
-            <div class="guide-step">
-                <div class="step-number">2</div>
-                <div class="step-content">
-                    <h3>Assign Status</h3>
-                    <p>By default, all students are marked "Present". Simply toggle the status to "Absent", "Late", or "Leave" for those who are not present.</p>
+            <div class="step-row">
+                <div class="step-text">
+                    <span class="step-badge">Operational Step 2</span>
+                    <h3>Smart Marking & Bulk Actions</h3>
+                    <p>By default, all students are marked as <strong>'Present'</strong> to save time. Use the toggle buttons next to a student's name to change their status to 'Absent', 'Late', or 'Leave'. You can also use the 'Bulk Absent' tool for specific groups during events.</p>
+                </div>
+                <div class="step-visual glass">
+                    <div style="height: 300px; display: flex; align-items: center; justify-content: center; color: var(--text-muted);">
+                        [Action Pad: Attendance Marking Interface]
+                    </div>
                 </div>
             </div>
 
-            <div class="guide-step">
-                <div class="step-number">3</div>
-                <div class="step-content">
-                    <h3>Save and Notify</h3>
-                    <p>Review the list and click "Save Attendance". If configured, the system will immediately queue SMS alerts for absent students.</p>
+            <div class="step-row">
+                <div class="step-text">
+                    <span class="step-badge">Operational Step 3</span>
+                    <h3>Automated SMS Dispatch</h3>
+                    <p>Once you click 'Save Attendance', the Nexus Notification Engine kicks in. If enabled, parent contacts for all students marked 'Absent' will receive an immediate SMS alert: <em>"Dear Parent, [StudentName] is absent today from school."</em></p>
+                </div>
+                <div class="step-visual glass">
+                    <div style="height: 300px; display: flex; align-items: center; justify-content: center; color: var(--text-muted);">
+                        [Infographic: SMS Alert Logic Flow]
+                    </div>
                 </div>
             </div>
+
+            <div class="step-row">
+                <div class="step-text">
+                    <span class="step-badge">Operational Step 4</span>
+                    <h3>Consolidated Monthly Reports</h3>
+                    <p>Navigating to the 'Reports' section from within the attendance module allows you to generate PDF registers for any month. These reports highlight total days present, percentage of attendance, and frequent late-comers.</p>
+                </div>
+                <div class="step-visual glass">
+                    <div style="height: 300px; display: flex; align-items: center; justify-content: center; color: var(--text-muted);">
+                        [Report Sample: Monthly Attendance PDF]
+                    </div>
+                </div>
+            </div>
+
+            <div class="mastery-box" style="background: linear-gradient(135deg, rgba(239, 68, 68, 0.1) 0%, transparent 100%); border-left-color: #ef4444;">
+                <h4 style="color: #ef4444; margin-bottom: 0.5rem; font-family: 'Outfit', sans-serif;">CRITICAL: DOUBLE-SAVE GUARD</h4>
+                <p>Nexus SMS features a safety lock to prevent duplicate attendance marking for the same class on the same day. If you need to correct an entry, use the 'Modify' feature instead of adding a new record.</p>
+            </div>
+
         </section>
 
         <footer>
-            <p>&copy; 2026 Nexus SMS. All rights reserved.</p>
-            <div style="margin-top: 1rem;">
-                <a href="index.html" class="btn btn-primary">Back to Help Hub</a>
+            <div style="display: flex; justify-content: space-between; align-items: center; padding: 4rem 0; border-top: 1px solid var(--glass-border);">
+                <a href="students.html" class="btn glass">← Previous: Student Registry</a>
+                <a href="fees.html" class="btn btn-primary">Next: Financial Management →</a>
             </div>
         </footer>
     </div>

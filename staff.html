@@ -3,90 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Staff Help - Nexus SMS</title>
+    <title>Staff & HR Management Guide - Nexus SMS</title>
     <link rel="stylesheet" href="help-styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=Outfit:wght@400;600;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <header>
-        <div class="container">
-            <h1 class="hero-title">Staff Management</h1>
-            <p class="hero-subtitle">Manage teachers and administrative staff records</p>
+    <!-- Premium Branding Bar -->
+    <header class="branding-bar">
+        <div class="container branding-content">
+            <a href="index.html" class="brand-logo">
+                <span>NEXUS</span> SMS
+            </a>
+            <nav style="display: flex; gap: 2rem;">
+                <a href="index.html" style="color: var(--text-muted); text-decoration: none; font-weight: 500;">Home</a>
+                <a href="contact.html" style="color: var(--text-muted); text-decoration: none; font-weight: 500;">Contact Us</a>
+                <a href="../../" style="color: var(--accent); text-decoration: none; font-weight: 600;">Launch App →</a>
+            </nav>
         </div>
     </header>
 
-    <div class="container">
-        <nav class="glass">
-            <a href="index.html" class="nav-link">Home</a>
-            <a href="students.html" class="nav-link">Students</a>
-            <a href="staff.html" class="nav-link active">Staff</a>
-            <a href="reports.html" class="nav-link">Reports</a>
-            <a href="contact.html" class="nav-link">Support</a>
-        </nav>
+    <div class="container" style="padding-top: 4rem;">
+        <h1 class="hero-title" style="font-size: 3rem;">Staff & HR Operational Manual</h1>
+        <p class="hero-subtitle" style="margin-left: 0; text-align: left;">Manage your school's most valuable asset—your professional staff and faculty.</p>
 
-        <section class="content-section">
-            <h2 class="section-title">Overview</h2>
-            <div class="glass" style="padding: 2rem; margin-bottom: 2rem;">
-                <p>The Staff module allows for the management of all school personnel. You can register new staff members, assign them to departments, and track their professional details and contact information.</p>
-            </div>
-
-            <div class="grid">
-                <div class="module-card glass" style="cursor: default;">
-                    <div class="module-icon">👩‍🏫</div>
-                    <h3 class="module-name">Staff Registry</h3>
-                    <p class="module-desc">Maintain a digital directory of all teachers, admins, and support staff.</p>
-                </div>
-                <div class="module-card glass" style="cursor: default;">
-                    <div class="module-icon">🏢</div>
-                    <h3 class="module-name">Departments</h3>
-                    <p class="module-desc">Organize staff by academic departments (e.g., Science, Arts) or administrative roles.</p>
-                </div>
-                <div class="module-card glass" style="cursor: default;">
-                    <div class="module-icon">📞</div>
-                    <h3 class="module-name">Contact Directory</h3>
-                    <p class="module-desc">Quick access to staff phone numbers and emails for internal coordination.</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="content-section">
-            <h2 class="section-title">Managing Personnel</h2>
+        <section class="guide-section">
             
-            <div class="guide-step">
-                <div class="step-number">1</div>
-                <div class="step-content">
-                    <h3>Adding Staff</h3>
-                    <p>Enter essential details like Name, Designation, Date of Joining, and Qualification. Assign a unique Staff ID for systematic tracking.</p>
+            <div class="step-row">
+                <div class="step-text">
+                    <span class="step-badge">Step 1</span>
+                    <h3>The Staff Registry</h3>
+                    <p>Access the <strong>Staff</strong> module to view a comprehensive list of all teaching and non-teaching personnel. You can find staff members by Department (e.g., Mathematics, Administration, Security) or by their unique Staff ID. The registry provides a high-level view of their contact details and current employment status.</p>
+                </div>
+                <div class="step-visual glass" style="display: flex; align-items: center; justify-content: center; background: var(--surface);">
+                     <div style="font-size: 5rem;">🧑‍🏫</div>
                 </div>
             </div>
 
-            <div class="guide-step">
-                <div class="step-number">2</div>
-                <div class="step-content">
-                    <h3>Assigning Roles</h3>
-                    <p>Specify the staff member's role within the school hierarchy to ensure they appear correctly in reports and payroll modules.</p>
-                    <div class="glass" style="height: 150px; display: flex; align-items: center; justify-content: center; margin-top: 1rem; color: var(--text-muted); border-style: dashed;">
-                        [Screenshot: Staff Role Assignment]
+            <div class="step-row">
+                <div class="step-text">
+                    <span class="step-badge">Step 2</span>
+                    <h3>Onboarding New Personnel</h3>
+                    <p>When hiring, use the 'Add Staff' wizard. It is essential to capture:
+                        <br><br>• <strong>Professional Info:</strong> Qualification, Designation, and Department.
+                        <br>• <strong>Personal Details:</strong> Secure storage of NIC/ID card numbers and address.
+                        <br>• <strong>Contact:</strong> Mobile numbers for receiving internal system notifications.
+                    </p>
+                </div>
+                <div class="step-visual glass" style="padding: 2rem;">
+                    <div style="display: flex; flex-direction: column; gap: 1rem;">
+                        <div style="height: 40px; width: 100%; border: 1px dashed var(--accent); border-radius: 10px; display: flex; align-items: center; justify-content: center; color: var(--accent);">+ Upload Staff Photograph</div>
+                        <div style="height: 20px; width: 80%; background: var(--glass-border); border-radius: 5px;"></div>
+                        <div style="height: 20px; width: 100%; background: var(--glass-border); border-radius: 5px;"></div>
                     </div>
                 </div>
             </div>
 
-            <div class="guide-step">
-                <div class="step-number">3</div>
-                <div class="step-content">
-                    <h3>Review and Update</h3>
-                    <p>Keep the registry current by updating profiles when designations change or when staff members leave the institution.</p>
+            <div class="step-row">
+                <div class="step-text">
+                    <span class="step-badge">Step 3</span>
+                    <h3>Departmental Hierarchy</h3>
+                    <p>Organize your faculty by creating custom 'Departments' in the System Settings. You can then assign Department Heads to oversee academic performance and attendance for their respective teams.</p>
+                </div>
+                <div class="step-visual glass">
+                    <div style="height: 200px; display: flex; align-items: center; justify-content: center; color: var(--text-muted);">
+                        [Diagram: School Organizational Structure]
+                    </div>
                 </div>
             </div>
+
+            <div class="mastery-box" style="background: linear-gradient(135deg, rgba(56, 189, 248, 0.1) 0%, transparent 100%); border-left-color: var(--accent);">
+                <h4 style="color: var(--accent); margin-bottom: 0.5rem; font-family: 'Outfit', sans-serif;">HR TIP: EMERGENCY CONTACTS</h4>
+                <p>We recommend always populating the 'Emergency Contact' field for staff members. In the event of a medical emergency on campus, this information is instantly accessible to administrators from the staff registry.</p>
+            </div>
+
         </section>
 
         <footer>
-            <p>&copy; 2026 Nexus SMS. All rights reserved.</p>
-            <div style="margin-top: 1rem;">
-                <a href="index.html" class="btn btn-primary">Back to Help Hub</a>
+            <div style="display: flex; justify-content: space-between; align-items: center; padding: 4rem 0; border-top: 1px solid var(--glass-border);">
+                <a href="students.html" class="btn glass">← Previous: Students</a>
+                <a href="attendance.html" class="btn btn-primary">Next: Attendance Tracking →</a>
             </div>
         </footer>
     </div>
