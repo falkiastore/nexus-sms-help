@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financials Help - Nexus SMS</title>
+    <link rel="stylesheet" href="help-styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1 class="hero-title">Fee Management</h1>
+            <p class="hero-subtitle">Manage school finances, invoices, and payments</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <nav class="glass">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="attendance.html" class="nav-link">Attendance</a>
+            <a href="fees.html" class="nav-link active">Financials</a>
+            <a href="academics.html" class="nav-link">Academics</a>
+            <a href="contact.html" class="nav-link">Support</a>
+        </nav>
+
+        <section class="content-section">
+            <h2 class="section-title">Overview</h2>
+            <div class="glass" style="padding: 2rem; margin-bottom: 2rem;">
+                <p>The Financials module handles all fee-related activities, from defining fee structures to processing student payments and generating receipts.</p>
+            </div>
+
+            <div class="grid">
+                <div class="module-card glass" style="cursor: default;">
+                    <div class="module-icon">💳</div>
+                    <h3 class="module-name">Fee Structures</h3>
+                    <p class="module-desc">Define Monthly, Admission, Exam, and Transport fees per class.</p>
+                </div>
+                <div class="module-card glass" style="cursor: default;">
+                    <div class="module-icon">📄</div>
+                    <h3 class="module-name">Invoicing</h3>
+                    <p class="module-desc">Automatically generate monthly fee challans for all active students.</p>
+                </div>
+                <div class="module-card glass" style="cursor: default;">
+                    <div class="module-icon">🏦</div>
+                    <h3 class="module-name">Payment Tracking</h3>
+                    <p class="module-desc">Record payments, track arrears, and generate financial reports.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2 class="section-title">Processing Payments</h2>
+            
+            <div class="guide-step">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                    <h3>Find Student</h3>
+                    <p>Enter the Student ID or scan the QR code on the fee challan to pull up the student's pending dues.</p>
+                </div>
+            </div>
+
+            <div class="guide-step">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                    <h3>Collect Fee</h3>
+                    <p>Select the months being paid for, enter the amount received, and specify the payment method (Cash/Bank).</p>
+                    <div class="glass" style="height: 200px; display: flex; align-items: center; justify-content: center; margin-top: 1rem; color: var(--text-muted); border-style: dashed;">
+                        [Screenshot: Collection Form]
+                    </div>
+                </div>
+            </div>
+
+            <div class="guide-step">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                    <h3>Generate Receipt</h3>
+                    <p>Save the transaction to generate a printable receipt. The system will update the student's ledger instantly.</p>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 Nexus SMS. All rights reserved.</p>
+            <div style="margin-top: 1rem;">
+                <a href="index.html" class="btn btn-primary">Back to Help Hub</a>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>
