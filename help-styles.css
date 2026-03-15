@@ -27,16 +27,20 @@ body {
     overflow-x: hidden;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s;
+}
+
 /* Premium Header / Branding Bar */
 .branding-bar {
-    background: rgba(15, 23, 42, 0.85);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
+    background: #0f172a; /* Explicit dark background */
     border-bottom: 1px solid var(--glass-border);
-    height: var(--nav-height);
+    height: 80px;
     position: sticky;
     top: 0;
-    z-index: 2000;
+    z-index: 9999;
 }
 
 .branding-content {
@@ -49,12 +53,11 @@ body {
 .brand-logo {
     display: flex;
     align-items: center;
-    gap: 0.75rem;
-    font-size: 1.6rem;
+    gap: 0.5rem;
+    font-size: 1.5rem;
     font-weight: 800;
     font-family: 'Outfit', sans-serif;
-    text-decoration: none;
-    color: white;
+    color: white !important;
 }
 
 .brand-logo span {
@@ -67,64 +70,62 @@ body {
 /* Detailed Navigation Menu */
 .main-nav {
     display: flex;
-    gap: 2rem;
+    align-items: center;
+    gap: 1.5rem;
+    height: 100%;
 }
 
 .nav-item {
     position: relative;
-    padding: 1rem 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .nav-link {
-    color: var(--text-muted);
-    text-decoration: none;
+    color: var(--text-muted) !important;
     font-weight: 600;
     font-size: 0.95rem;
-    transition: all 0.3s;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
+    padding: 0.5rem 0.75rem;
+    border-radius: 8px;
+    white-space: nowrap;
 }
 
-.nav-link:hover, .nav-item:hover .nav-link {
-    color: var(--text-main);
+.nav-link:hover, .nav-item:hover > .nav-link {
+    color: white !important;
+    background: rgba(255,255,255,0.05);
 }
 
 .dropdown {
     position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translateX(-50%) translateY(10px);
-    background: var(--surface);
+    top: 70px;
+    left: 0;
+    background: #1e293b; 
     border: 1px solid var(--glass-border);
-    border-radius: 16px;
-    width: 240px;
-    padding: 1rem;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.3s;
+    border-radius: 12px;
+    width: 260px;
+    padding: 0.5rem;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+    display: none; /* Bulletproof hidden */
+    z-index: 10000;
 }
 
 .nav-item:hover .dropdown {
-    opacity: 1;
-    visibility: visible;
-    transform: translateX(-50%) translateY(0);
+    display: block; /* Bulletproof show */
 }
 
 .dropdown-link {
     display: block;
-    padding: 0.75rem 1rem;
-    color: var(--text-muted);
-    text-decoration: none;
+    padding: 0.8rem 1rem;
+    color: var(--text-muted) !important;
     font-size: 0.9rem;
     border-radius: 8px;
-    transition: all 0.2s;
+    white-space: nowrap;
 }
 
 .dropdown-link:hover {
-    background: rgba(255,255,255,0.05);
-    color: var(--accent);
+    background: rgba(255,255,255,0.08);
+    color: var(--accent) !important;
     padding-left: 1.5rem;
 }
 
