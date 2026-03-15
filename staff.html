@@ -17,77 +17,163 @@
             <a href="index.html" class="brand-logo">
                 <span>NEXUS</span> SMS
             </a>
-            <nav style="display: flex; gap: 2rem;">
-                <a href="index.html" style="color: var(--text-muted); text-decoration: none; font-weight: 500;">Home</a>
-                <a href="contact.html" style="color: var(--text-muted); text-decoration: none; font-weight: 500;">Contact Us</a>
-                <a href="../../" style="color: var(--accent); text-decoration: none; font-weight: 600;">Launch App →</a>
+            
+            <nav class="main-nav">
+                <div class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </div>
+                <div class="nav-item">
+                    <a href="#" class="nav-link">Modules ▾</a>
+                    <div class="dropdown">
+                        <a href="dashboard.html" class="dropdown-link">📊 Operational Dashboard</a>
+                        <a href="students.html" class="dropdown-link">🎓 Student Registry</a>
+                        <a href="attendance.html" class="dropdown-link">📅 Attendance Tracking</a>
+                        <a href="fees.html" class="dropdown-link">💰 Financial Management</a>
+                        <a href="academics.html" class="dropdown-link">📝 Academic & Grading</a>
+                        <a href="staff.html" class="dropdown-link">👥 Staff Management</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    <a href="#" class="nav-link">Resources ▾</a>
+                    <div class="dropdown">
+                        <a href="faq.html" class="dropdown-link">❓ Common FAQs</a>
+                        <a href="rbac.html" class="dropdown-link">🔐 Roles & Security</a>
+                        <a href="notifications.html" class="dropdown-link">🔔 Notification Engine</a>
+                        <a href="reports.html" class="dropdown-link">📥 Reports & Data</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    <a href="contact.html" class="nav-link">Support</a>
+                </div>
             </nav>
+
+            <a href="../../" class="btn btn-primary" style="padding: 0.6rem 1.5rem; font-size: 0.9rem;">Launch App →</a>
         </div>
     </header>
 
-    <div class="container" style="padding-top: 4rem;">
-        <h1 class="hero-title" style="font-size: 3rem;">Staff & HR Operational Manual</h1>
-        <p class="hero-subtitle" style="margin-left: 0; text-align: left;">Manage your school's most valuable asset—your professional staff and faculty.</p>
+    <div class="container" style="padding-top: 6rem;">
+        <div style="max-width: 900px;">
+            <h1 class="hero-title" style="font-size: 4rem; text-align: left;">Staff Management</h1>
+            <p class="hero-subtitle" style="margin-left: 0; text-align: left; font-size: 1.5rem;">The complete guide to HR operations, organizational hierarchy, and granular access control for your faculty and administration.</p>
+        </div>
 
         <section class="guide-section">
             
             <div class="step-row">
                 <div class="step-text">
-                    <span class="step-badge">Step 1</span>
-                    <h3>The Staff Registry</h3>
-                    <p>Access the <strong>Staff</strong> module to view a comprehensive list of all teaching and non-teaching personnel. You can find staff members by Department (e.g., Mathematics, Administration, Security) or by their unique Staff ID. The registry provides a high-level view of their contact details and current employment status.</p>
+                    <span class="step-badge">Phase 1: HR Registry</span>
+                    <h3>The Professional Roster</h3>
+                    <p>Maintain a secure, centralized database of all institutional personnel. The Staff Registry allows for instant filtering by <strong>Department</strong>, <strong>Designation</strong>, or <strong>Appointment Date</strong>.</p>
+                    <div class="pro-box">
+                        <span class="box-label">HR Tip: Document Management</span>
+                        You can attach digital copies of staff qualifications and employment contracts directly to their professional profile for easy administrative retrieval.
+                    </div>
                 </div>
-                <div class="step-visual glass" style="display: flex; align-items: center; justify-content: center; background: var(--surface);">
-                     <div style="font-size: 5rem;">🧑‍🏫</div>
-                </div>
-            </div>
-
-            <div class="step-row">
-                <div class="step-text">
-                    <span class="step-badge">Step 2</span>
-                    <h3>Onboarding New Personnel</h3>
-                    <p>When hiring, use the 'Add Staff' wizard. It is essential to capture:
-                        <br><br>• <strong>Professional Info:</strong> Qualification, Designation, and Department.
-                        <br>• <strong>Personal Details:</strong> Secure storage of NIC/ID card numbers and address.
-                        <br>• <strong>Contact:</strong> Mobile numbers for receiving internal system notifications.
-                    </p>
-                </div>
-                <div class="step-visual glass" style="padding: 2rem;">
-                    <div style="display: flex; flex-direction: column; gap: 1rem;">
-                        <div style="height: 40px; width: 100%; border: 1px dashed var(--accent); border-radius: 10px; display: flex; align-items: center; justify-content: center; color: var(--accent);">+ Upload Staff Photograph</div>
-                        <div style="height: 20px; width: 80%; background: var(--glass-border); border-radius: 5px;"></div>
-                        <div style="height: 20px; width: 100%; background: var(--glass-border); border-radius: 5px;"></div>
+                <div class="step-image-wrap">
+                    <div style="height: 350px; background: rgba(255,255,255,0.05); display: flex; align-items: center; justify-content: center; color: var(--text-muted); border-radius: 20px;">
+                        [Placeholder: staff_registry_view.png]
                     </div>
                 </div>
             </div>
 
             <div class="step-row">
                 <div class="step-text">
-                    <span class="step-badge">Step 3</span>
-                    <h3>Departmental Hierarchy</h3>
-                    <p>Organize your faculty by creating custom 'Departments' in the System Settings. You can then assign Department Heads to oversee academic performance and attendance for their respective teams.</p>
+                    <span class="step-badge">Phase 2: Security</span>
+                    <h3>Role-Based Access (RBAC)</h3>
+                    <p>Security is paramount. Nexus SMS employs a sophisticated RBAC system to ensure staff members only access tools relevant to their position.</p>
+                    <ul>
+                        <li style="margin-bottom: 1rem;"><strong>Teacher Role:</strong> Restricted to attendance, marks entry, and student reports.</li>
+                        <li style="margin-bottom: 1rem;"><strong>Accountant Role:</strong> Focused on fee collection, ledger audit, and financial reporting.</li>
+                        <li style="margin-bottom: 1rem;"><strong>Admin Role:</strong> Full architectural control over the entire system.</li>
+                    </ul>
                 </div>
-                <div class="step-visual glass">
-                    <div style="height: 200px; display: flex; align-items: center; justify-content: center; color: var(--text-muted);">
-                        [Diagram: School Organizational Structure]
+                <div class="step-image-wrap">
+                    <div style="height: 350px; background: rgba(255,255,255,0.05); display: flex; align-items: center; justify-content: center; color: var(--text-muted); border-radius: 20px;">
+                        [Placeholder: rbac_permission_grid.png]
                     </div>
                 </div>
             </div>
 
-            <div class="mastery-box" style="background: linear-gradient(135deg, rgba(56, 189, 248, 0.1) 0%, transparent 100%); border-left-color: var(--accent);">
-                <h4 style="color: var(--accent); margin-bottom: 0.5rem; font-family: 'Outfit', sans-serif;">HR TIP: EMERGENCY CONTACTS</h4>
-                <p>We recommend always populating the 'Emergency Contact' field for staff members. In the event of a medical emergency on campus, this information is instantly accessible to administrators from the staff registry.</p>
+            <div class="step-row">
+                <div class="step-text">
+                    <span class="step-badge">Phase 3: Hierarchy</span>
+                    <h3>Departmental Structure</h3>
+                    <p>Define your school's organizational chart by creating custom departments. Assigning staff to departments enables streamlined internal communication and departmental reporting.</p>
+                    <div class="warning-box">
+                        <span class="box-label">Administrative Note</span>
+                        Deactivating a staff account will instantly revoke all system access across all devices but will preserve their historical records for audit purposes.
+                    </div>
+                </div>
+                <div class="step-image-wrap">
+                    <div style="height: 350px; background: rgba(255,255,255,0.05); display: flex; align-items: center; justify-content: center; color: var(--text-muted); border-radius: 20px;">
+                        [Placeholder: dept_org_chart.png]
+                    </div>
+                </div>
             </div>
 
         </section>
 
-        <footer>
-            <div style="display: flex; justify-content: space-between; align-items: center; padding: 4rem 0; border-top: 1px solid var(--glass-border);">
-                <a href="students.html" class="btn glass">← Previous: Students</a>
-                <a href="attendance.html" class="btn btn-primary">Next: Attendance Tracking →</a>
+        <div style="display: flex; justify-content: space-between; align-items: center; padding: 6rem 0; border-top: 1px solid var(--glass-border);">
+            <a href="academics.html" class="btn glass" style="padding: 1rem 2rem;">← Academic Mastery</a>
+            <div style="text-align: center;">
+                <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.5rem;">Deep Dive: Security</p>
+                <a href="rbac.html" class="btn btn-primary" style="padding: 1.2rem 3rem; font-size: 1.1rem;">Roles & Security →</a>
             </div>
-        </footer>
+        </div>
     </div>
+
+    <!-- Mega Footer -->
+    <footer class="mega-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="footer-logo">NEXUS SMS</a>
+                <p class="footer-desc">The next generation of educational administrative software. Streamlining operations for thousands of institutions globally.</p>
+                <div style="display: flex; gap: 1rem;">
+                    <a href="#" class="btn glass" style="padding: 0.6rem; min-width: 45px; display: flex; align-items: center; justify-content: center;">𝕏</a>
+                    <a href="#" class="btn glass" style="padding: 0.6rem; min-width: 45px; display: flex; align-items: center; justify-content: center;">𝑓</a>
+                    <a href="#" class="btn glass" style="padding: 0.6rem; min-width: 45px; display: flex; align-items: center; justify-content: center;">𝑖</a>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <h4>System Hubs</h4>
+                <ul>
+                    <li><a href="dashboard.html">Admin Dashboard</a></li>
+                    <li><a href="students.html">Student Portal</a></li>
+                    <li><a href="staff.html">Staff Registry</a></li>
+                    <li><a href="attendance.html">Attendance Logs</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4>Operations</h4>
+                <ul>
+                    <li><a href="fees.html">Fee Collection</a></li>
+                    <li><a href="academics.html">Academic Records</a></li>
+                    <li><a href="notifications.html">SMS Notifications</a></li>
+                    <li><a href="reports.html">Data Exports</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4>Help & Legal</h4>
+                <ul>
+                    <li><a href="faq.html">Documentation Home</a></li>
+                    <li><a href="rbac.html">Security Guide</a></li>
+                    <li><a href="contact.html">Support Desk</a></li>
+                    <li><a href="license.html">License Status</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container copy-bar">
+            <div>&copy; 2026 Nexus SMS Help Portal. All Rights Reserved.</div>
+            <div style="display: flex; gap: 2rem;">
+                <a href="#" style="color: var(--text-muted); text-decoration: none;">Privacy Policy</a>
+                <a href="#" style="color: var(--text-muted); text-decoration: none;">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
 
 </body>
 </html>

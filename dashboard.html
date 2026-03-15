@@ -17,111 +17,159 @@
             <a href="index.html" class="brand-logo">
                 <span>NEXUS</span> SMS
             </a>
-            <nav style="display: flex; gap: 2rem;">
-                <a href="index.html" style="color: var(--text-muted); text-decoration: none; font-weight: 500;">Home</a>
-                <a href="contact.html" style="color: var(--text-muted); text-decoration: none; font-weight: 500;">Contact Us</a>
-                <a href="../../" style="color: var(--accent); text-decoration: none; font-weight: 600;">Launch App →</a>
+            
+            <nav class="main-nav">
+                <div class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </div>
+                <div class="nav-item">
+                    <a href="#" class="nav-link">Modules ▾</a>
+                    <div class="dropdown">
+                        <a href="dashboard.html" class="dropdown-link">📊 Operational Dashboard</a>
+                        <a href="students.html" class="dropdown-link">🎓 Student Registry</a>
+                        <a href="attendance.html" class="dropdown-link">📅 Attendance Tracking</a>
+                        <a href="fees.html" class="dropdown-link">💰 Financial Management</a>
+                        <a href="academics.html" class="dropdown-link">📝 Academic & Grading</a>
+                        <a href="staff.html" class="dropdown-link">👥 Staff Management</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    <a href="#" class="nav-link">Resources ▾</a>
+                    <div class="dropdown">
+                        <a href="faq.html" class="dropdown-link">❓ Common FAQs</a>
+                        <a href="rbac.html" class="dropdown-link">🔐 Roles & Security</a>
+                        <a href="notifications.html" class="dropdown-link">🔔 Notification Engine</a>
+                        <a href="reports.html" class="dropdown-link">📥 Reports & Data</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    <a href="contact.html" class="nav-link">Support</a>
+                </div>
             </nav>
+
+            <a href="../../" class="btn btn-primary" style="padding: 0.6rem 1.5rem; font-size: 0.9rem;">Launch App →</a>
         </div>
     </header>
 
-    <div class="container" style="padding-top: 4rem;">
-        <h1 class="hero-title" style="font-size: 3rem;">Dashboard Operational Guide</h1>
-        <p class="hero-subtitle" style="margin-left: 0; text-align: left;">Master the command center of your school management system.</p>
+    <div class="container" style="padding-top: 6rem;">
+        <div style="max-width: 900px;">
+            <h1 class="hero-title" style="font-size: 4rem; text-align: left;">Dashboard Mastery</h1>
+            <p class="hero-subtitle" style="margin-left: 0; text-align: left; font-size: 1.5rem;">Your institutional command center. Monitor vital statistics, track financial health, and observe academic trends in real-time.</p>
+        </div>
 
         <section class="guide-section">
             
             <div class="step-row">
                 <div class="step-text">
-                    <span class="step-badge">Step 1</span>
-                    <h3>The Real-Time Snapshot</h3>
-                    <p>Upon logging in, your primary view is the Dashboard. This screen provides an immediate, live look at your school's vital statistics. No manual refreshing is required; the data updates dynamically as students register or payments are processed.</p>
+                    <span class="step-badge">Phase 1: Metrics</span>
+                    <h3>Real-Time Vital Counters</h3>
+                    <p>The dashboard primary tier features dynamic counter cards. These provide a live census of your institution—tracking <strong>Active Enrollments</strong>, <strong>Daily Attendance</strong>, and <strong>Financial Collection</strong> status at a glance.</p>
+                    <div class="pro-box">
+                        <span class="box-label">Efficiency Pro-Tip</span>
+                        Clicking any metric card will instantly trigger a "Deep Dive" report, taking you directly to the underlying data records for that specific metric.
+                    </div>
                 </div>
-                <div class="step-visual">
-                    <img src="dashboard_mockup.png" class="step-image" alt="Dashboard Mockup">
-                </div>
-            </div>
-
-            <div class="step-row">
-                <div class="step-text">
-                    <span class="step-badge">Step 2</span>
-                    <h3>Monitoring Key Metrics</h3>
-                    <p>Observe the four primary counter cards at the top. These track Total Students (Active), Staff Presence (Today), Monthly Collection (Revenue), and Academic Performance trends. Clicking any card will take you directly to the detailed report for that metric.</p>
-                </div>
-                <div class="step-visual glass">
-                    <div style="height: 300px; display: flex; align-items: center; justify-content: center; color: var(--text-muted);">
-                        [Infographic: Metric Card Explainer]
+                <div class="step-image-wrap">
+                    <div style="height: 350px; background: rgba(255,255,255,0.05); display: flex; align-items: center; justify-content: center; color: var(--text-muted); border-radius: 20px;">
+                        [Placeholder: dashboard_counters_preview.png]
                     </div>
                 </div>
             </div>
 
             <div class="step-row">
                 <div class="step-text">
-                    <span class="step-badge">Step 3</span>
-                    <h3>Academic Performance Chart</h3>
-                    <p>The central line chart displays grading trends across the school. You can filter this view by Class or Subject to identify academic strengths and weaknesses in your student body at a glance.</p>
+                    <span class="step-badge">Phase 2: Visuals</span>
+                    <h3>Operational Trend Analytics</h3>
+                    <p>Observe the pulse of your school through high-fidelity charts. The central analytics panel displays attendance cycles and fee collection velocity, allowing for informed administrative decision-making.</p>
+                    <ul>
+                        <li style="margin-bottom: 1rem;"><strong>Comparative Views:</strong> Compare performance across different classes or academic sessions.</li>
+                        <li style="margin-bottom: 1rem;"><strong>Export Ready:</strong> Every chart can be instantly converted to a high-resolution image for board presentations.</li>
+                    </ul>
                 </div>
-                <div class="step-visual glass">
-                    <div style="height: 300px; display: flex; align-items: center; justify-content: center; color: var(--text-muted);">
-                        [Chart: Academic Trends View]
+                <div class="step-image-wrap">
+                    <div style="height: 350px; background: rgba(255,255,255,0.05); display: flex; align-items: center; justify-content: center; color: var(--text-muted); border-radius: 20px;">
+                        [Placeholder: analytic_trends_chart.png]
                     </div>
                 </div>
             </div>
 
             <div class="step-row">
                 <div class="step-text">
-                    <span class="step-badge">Step 4</span>
-                    <h3>Recent Notifications Feed</h3>
-                    <p>On the right sidebar, the 'Activity Feed' highlights the latest system events—such as high-value fee collections, automated SMS failures, or emergency staff leave requests.</p>
-                </div>
-                <div class="step-visual glass">
-                    <div style="height: 300px; display: flex; align-items: center; justify-content: center; color: var(--text-muted);">
-                        [Sidebar: Activity Log Preview]
+                    <span class="step-badge">Phase 3: Awareness</span>
+                    <h3>The Live Activity Stream</h3>
+                    <p>On the dashboard periphery, the <strong>System Ledger</strong> logs every major action—from new student registrations to successful SMS transmissions—providing a timeline of institutional activity.</p>
+                    <div class="warning-box">
+                        <span class="box-label">Audit Note</span>
+                        The activity stream is role-filtered. Users will only see logs pertaining to their specific administrative permissions.
                     </div>
                 </div>
-            </div>
-
-            <div class="mastery-box">
-                <h4 style="color: var(--success); margin-bottom: 0.5rem; font-family: 'Outfit', sans-serif;">PRO TIP: DASHBOARD DRILL-DOWN</h4>
-                <p>Did you know? Double-clicking any data point on the Dashboard charts will open the specific student or transaction record in a modal for instant editing without leaving the page.</p>
+                <div class="step-image-wrap">
+                    <div style="height: 350px; background: rgba(255,255,255,0.05); display: flex; align-items: center; justify-content: center; color: var(--text-muted); border-radius: 20px;">
+                        [Placeholder: live_activity_ledger.png]
+                    </div>
+                </div>
             </div>
 
         </section>
 
-        <footer>
-            <div style="display: flex; justify-content: space-between; align-items: center; padding: 4rem 0; border-top: 1px solid var(--glass-border);">
-                <a href="index.html" class="btn glass">← Back to Hub</a>
-                <a href="students.html" class="btn btn-primary">Next: Student Management →</a>
+        <div style="display: flex; justify-content: space-between; align-items: center; padding: 6rem 0; border-top: 1px solid var(--glass-border);">
+            <a href="index.html" class="btn glass" style="padding: 1rem 2rem;">← Knowledge Hub Hub</a>
+            <div style="text-align: center;">
+                <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.5rem;">Next: Operations</p>
+                <a href="students.html" class="btn btn-primary" style="padding: 1.2rem 3rem; font-size: 1.1rem;">Student Registry →</a>
             </div>
-        </footer>
+        </div>
     </div>
 
     <!-- Mega Footer -->
     <footer class="mega-footer">
         <div class="container footer-grid">
             <div class="footer-brand">
-                <div class="footer-logo">NEXUS SMS</div>
-                <p style="color: var(--text-muted);">A comprehensive school management solution designed for modern educational institutions.</p>
+                <a href="index.html" class="footer-logo">NEXUS SMS</a>
+                <p class="footer-desc">The next generation of educational administrative software. Streamlining operations for thousands of institutions globally.</p>
+                <div style="display: flex; gap: 1rem;">
+                    <a href="#" class="btn glass" style="padding: 0.6rem; min-width: 45px; display: flex; align-items: center; justify-content: center;">𝕏</a>
+                    <a href="#" class="btn glass" style="padding: 0.6rem; min-width: 45px; display: flex; align-items: center; justify-content: center;">𝑓</a>
+                    <a href="#" class="btn glass" style="padding: 0.6rem; min-width: 45px; display: flex; align-items: center; justify-content: center;">𝑖</a>
+                </div>
             </div>
+            
             <div class="footer-links">
-                <h4>Quick Links</h4>
+                <h4>System Hubs</h4>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="dashboard.html">Dashboard</a></li>
-                    <li><a href="fees.html">Financials</a></li>
+                    <li><a href="dashboard.html">Admin Dashboard</a></li>
+                    <li><a href="students.html">Student Portal</a></li>
+                    <li><a href="staff.html">Staff Registry</a></li>
+                    <li><a href="attendance.html">Attendance Logs</a></li>
                 </ul>
             </div>
+
             <div class="footer-links">
-                <h4>Support</h4>
+                <h4>Operations</h4>
                 <ul>
-                    <li><a href="contact.html">Contact Us</a></li>
-                    <li><a href="license.html">License</a></li>
+                    <li><a href="fees.html">Fee Collection</a></li>
+                    <li><a href="academics.html">Academic Records</a></li>
+                    <li><a href="notifications.html">SMS Notifications</a></li>
+                    <li><a href="reports.html">Data Exports</a></li>
                 </ul>
             </div>
+
             <div class="footer-links">
-                <h4>Status</h4>
-                <p style="color: var(--success);">● System Operational</p>
-                <p style="color: var(--text-muted); font-size: 0.8rem; margin-top: 0.5rem;">Version 2.0.4</p>
+                <h4>Help & Legal</h4>
+                <ul>
+                    <li><a href="faq.html">Documentation Home</a></li>
+                    <li><a href="rbac.html">Security Guide</a></li>
+                    <li><a href="contact.html">Support Desk</a></li>
+                    <li><a href="license.html">License Status</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container copy-bar">
+            <div>&copy; 2026 Nexus SMS Help Portal. All Rights Reserved.</div>
+            <div style="display: flex; gap: 2rem;">
+                <a href="#" style="color: var(--text-muted); text-decoration: none;">Privacy Policy</a>
+                <a href="#" style="color: var(--text-muted); text-decoration: none;">Terms of Service</a>
             </div>
         </div>
     </footer>

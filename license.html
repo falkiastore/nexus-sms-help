@@ -17,71 +17,164 @@
             <a href="index.html" class="brand-logo">
                 <span>NEXUS</span> SMS
             </a>
-            <nav style="display: flex; gap: 2rem;">
-                <a href="index.html" style="color: var(--text-muted); text-decoration: none; font-weight: 500;">Home</a>
-                <a href="contact.html" style="color: var(--text-muted); text-decoration: none; font-weight: 500;">Contact Us</a>
-                <a href="../../" style="color: var(--accent); text-decoration: none; font-weight: 600;">Launch App →</a>
+            
+            <nav class="main-nav">
+                <div class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </div>
+                <div class="nav-item">
+                    <a href="#" class="nav-link">Modules ▾</a>
+                    <div class="dropdown">
+                        <a href="dashboard.html" class="dropdown-link">📊 Operational Dashboard</a>
+                        <a href="students.html" class="dropdown-link">🎓 Student Registry</a>
+                        <a href="attendance.html" class="dropdown-link">📅 Attendance Tracking</a>
+                        <a href="fees.html" class="dropdown-link">💰 Financial Management</a>
+                        <a href="academics.html" class="dropdown-link">📝 Academic & Grading</a>
+                        <a href="staff.html" class="dropdown-link">👥 Staff Management</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    <a href="#" class="nav-link">Resources ▾</a>
+                    <div class="dropdown">
+                        <a href="faq.html" class="dropdown-link">❓ Common FAQs</a>
+                        <a href="rbac.html" class="dropdown-link">🔐 Roles & Security</a>
+                        <a href="notifications.html" class="dropdown-link">🔔 Notification Engine</a>
+                        <a href="reports.html" class="dropdown-link">📥 Reports & Data</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    <a href="contact.html" class="nav-link">Support</a>
+                </div>
             </nav>
+
+            <a href="../../" class="btn btn-primary" style="padding: 0.6rem 1.5rem; font-size: 0.9rem;">Launch App →</a>
         </div>
     </header>
 
-    <div class="container" style="padding-top: 4rem;">
-        <h1 class="hero-title" style="font-size: 3rem;">License & Subscription Guide</h1>
-        <p class="hero-subtitle" style="margin-left: 0; text-align: left;">Secure your software investment and manage multi-school licenses.</p>
+    <div class="container" style="padding-top: 6rem;">
+        <div style="max-width: 900px;">
+            <h1 class="hero-title" style="font-size: 4rem; text-align: left;">License Management</h1>
+            <p class="hero-subtitle" style="margin-left: 0; text-align: left; font-size: 1.5rem;">Secure your institutional investment. Master the activation workflow, renewal cycles, and multi-school license distribution.</p>
+        </div>
 
         <section class="guide-section">
             
             <div class="step-row">
                 <div class="step-text">
-                    <span class="step-badge">Core Security</span>
-                    <h3>Product Activation</h3>
-                    <p>Upon installation, Nexus SMS requires a unique **Product Key** for activation. This key binds your software instance to your specific Google Cloud database. Never share this key with unauthorized personnel, as it grants full administrative access to your institution's data.</p>
+                    <span class="step-badge">Phase 1: Activation</span>
+                    <h3>Core Product Security</h3>
+                    <p>Every instance of Nexus SMS is secured by a unique <strong>Institutional Key</strong>. This key binds your data to your specific high-performance database instance, ensuring absolute privacy and data integrity.</p>
+                    <div class="pro-box">
+                        <span class="box-label">Security Note</span>
+                        Never share your activation key outside of the <strong>Super Admin</strong> tier. Lost keys can only be recovered through official support verification.
+                    </div>
                 </div>
-                <div class="step-visual glass" style="display: flex; align-items: center; justify-content: center; background: radial-gradient(circle, #6366f1 0%, transparent 70%);">
-                    <div style="font-size: 5rem;">🛡️</div>
-                </div>
-            </div>
-
-            <div class="step-row">
-                <div class="step-text">
-                    <span class="step-badge">Subscription</span>
-                    <h3>Expiry & Renewals</h3>
-                    <p>Your license is valid for a set term. You will see an 'Expiry Warning' on the main dashboard 30 days prior to the end of your term. To avoid service interruption, ensure you renew your subscription before the expiry date.</p>
-                </div>
-                <div class="step-visual glass" style="padding: 2rem; border-left: 6px solid #eab308; background: rgba(234, 179, 8, 0.05);">
-                    <h4 style="color: #eab308; margin-bottom: 1rem;">Subscription Alert</h4>
-                    <p style="font-size: 1.5rem; font-weight: 900; margin-bottom: 0.5rem;">14 Days Left</p>
-                    <p style="color: var(--text-muted); font-size: 0.8rem;">Renewal due by March 28, 2026</p>
-                </div>
-            </div>
-
-            <div class="step-row">
-                <div class="step-text">
-                    <span class="step-badge">Multi-Tenant</span>
-                    <h3>Corporate Management</h3>
-                    <p>For large organizations managing multiple schools, the **License Control Plane** provides a centralized view of all branch performances, aggregate collection data, and global license distribution status.</p>
-                </div>
-                <div class="step-visual glass">
-                    <div style="height: 200px; display: flex; align-items: center; justify-content: center; color: var(--text-muted);">
-                        [Diagram: Multi-School Cloud Architecture]
+                <div class="step-image-wrap">
+                    <div style="height: 350px; background: rgba(255,255,255,0.05); display: flex; align-items: center; justify-content: center; color: var(--text-muted); border-radius: 20px;">
+                        [Placeholder: license_activation_screen.png]
                     </div>
                 </div>
             </div>
 
-            <div class="mastery-box">
-                <h4 style="color: var(--accent); margin-bottom: 0.5rem; font-family: 'Outfit', sans-serif;">NOTE: LICENSE UPGRADES</h4>
-                <p>Upgrading your student limit does not require a software re-installation. Once your new tier is approved, the system limits will expand automatically in real-time across all your school branches.</p>
+            <div class="step-row">
+                <div class="step-text">
+                    <span class="step-badge">Phase 2: Continuity</span>
+                    <h3>Subscription & Renewal</h3>
+                    <p>Continuity is key to smooth school operations. Nexus provides automated 30-day expiry warnings on the main dashboard to ensure you have ample time to process renewals.</p>
+                    <ul>
+                        <li style="margin-bottom: 1rem;"><strong>Grace Period:</strong> We provide a 7-day administrative grace period post-expiry for critical data retrieval.</li>
+                        <li style="margin-bottom: 1rem;"><strong>Real-time Update:</strong> License renewals are pushed to your institution instantly upon payment verification.</li>
+                    </ul>
+                </div>
+                <div class="step-image-wrap">
+                    <div class="glass" style="padding: 2.5rem; border-left: 6px solid #eab308; background: rgba(234, 179, 8, 0.05); border-radius: 20px;">
+                        <h4 style="color: #eab308; margin-bottom: 1rem; font-family: 'Outfit', sans-serif;">Subscription Alert</h4>
+                        <p style="font-size: 1.8rem; font-weight: 900; margin-bottom: 0.5rem;">14 Days Remaining</p>
+                        <p style="color: var(--text-muted); font-size: 0.9rem;">Automatic renewal window is now open.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="step-row">
+                <div class="step-text">
+                    <span class="step-badge">Phase 3: Scale</span>
+                    <h3>Multi-School Control</h3>
+                    <p>For educational groups, the <strong>Nexus Control Plane</strong> allows for centralized management of multiple branches. Monitor aggregate financials and redistribute student slots across your network effortlessly.</p>
+                    <div class="warning-box">
+                        <span class="box-label">Scalability Note</span>
+                        Upgrading your student tier limit is a zero-downtime process. Your institutional capacity expands the moment your upgrade is processed.
+                    </div>
+                </div>
+                <div class="step-image-wrap">
+                    <div style="height: 350px; background: rgba(255,255,255,0.05); display: flex; align-items: center; justify-content: center; color: var(--text-muted); border-radius: 20px;">
+                        [Placeholder: multi_school_management_hub.png]
+                    </div>
+                </div>
             </div>
 
         </section>
 
-        <footer>
-            <div style="display: flex; justify-content: space-between; align-items: center; padding: 4rem 0; border-top: 1px solid var(--glass-border);">
-                <a href="settings.html" class="btn glass">← Previous: Settings</a>
-                <a href="index.html" class="btn btn-primary">Finish: Back to Hub →</a>
+        <div style="display: flex; justify-content: space-between; align-items: center; padding: 6rem 0; border-top: 1px solid var(--glass-border);">
+            <a href="faq.html" class="btn glass" style="padding: 1rem 2rem;">← Common FAQs</a>
+            <div style="text-align: center;">
+                <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.5rem;">Return Home</p>
+                <a href="index.html" class="btn btn-primary" style="padding: 1.2rem 3rem; font-size: 1.1rem;">Knowledge Hub Main →</a>
             </div>
-        </footer>
+        </div>
     </div>
+
+    <!-- Mega Footer -->
+    <footer class="mega-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="footer-logo">NEXUS SMS</a>
+                <p class="footer-desc">The next generation of educational administrative software. Streamlining operations for thousands of institutions globally.</p>
+                <div style="display: flex; gap: 1rem;">
+                    <a href="#" class="btn glass" style="padding: 0.6rem; min-width: 45px; display: flex; align-items: center; justify-content: center;">𝕏</a>
+                    <a href="#" class="btn glass" style="padding: 0.6rem; min-width: 45px; display: flex; align-items: center; justify-content: center;">𝑓</a>
+                    <a href="#" class="btn glass" style="padding: 0.6rem; min-width: 45px; display: flex; align-items: center; justify-content: center;">𝑖</a>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <h4>System Hubs</h4>
+                <ul>
+                    <li><a href="dashboard.html">Admin Dashboard</a></li>
+                    <li><a href="students.html">Student Portal</a></li>
+                    <li><a href="staff.html">Staff Registry</a></li>
+                    <li><a href="attendance.html">Attendance Logs</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4>Operations</h4>
+                <ul>
+                    <li><a href="fees.html">Fee Collection</a></li>
+                    <li><a href="academics.html">Academic Records</a></li>
+                    <li><a href="notifications.html">SMS Notifications</a></li>
+                    <li><a href="reports.html">Data Exports</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4>Help & Legal</h4>
+                <ul>
+                    <li><a href="faq.html">Documentation Home</a></li>
+                    <li><a href="rbac.html">Security Guide</a></li>
+                    <li><a href="contact.html">Support Desk</a></li>
+                    <li><a href="license.html">License Status</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container copy-bar">
+            <div>&copy; 2026 Nexus SMS Help Portal. All Rights Reserved.</div>
+            <div style="display: flex; gap: 2rem;">
+                <a href="#" style="color: var(--text-muted); text-decoration: none;">Privacy Policy</a>
+                <a href="#" style="color: var(--text-muted); text-decoration: none;">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
 
 </body>
 </html>

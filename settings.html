@@ -17,76 +17,167 @@
             <a href="index.html" class="brand-logo">
                 <span>NEXUS</span> SMS
             </a>
-            <nav style="display: flex; gap: 2rem;">
-                <a href="index.html" style="color: var(--text-muted); text-decoration: none; font-weight: 500;">Home</a>
-                <a href="contact.html" style="color: var(--text-muted); text-decoration: none; font-weight: 500;">Contact Us</a>
-                <a href="../../" style="color: var(--accent); text-decoration: none; font-weight: 600;">Launch App →</a>
+            
+            <nav class="main-nav">
+                <div class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </div>
+                <div class="nav-item">
+                    <a href="#" class="nav-link">Modules ▾</a>
+                    <div class="dropdown">
+                        <a href="dashboard.html" class="dropdown-link">📊 Operational Dashboard</a>
+                        <a href="students.html" class="dropdown-link">🎓 Student Registry</a>
+                        <a href="attendance.html" class="dropdown-link">📅 Attendance Tracking</a>
+                        <a href="fees.html" class="dropdown-link">💰 Financial Management</a>
+                        <a href="academics.html" class="dropdown-link">📝 Academic & Grading</a>
+                        <a href="staff.html" class="dropdown-link">👥 Staff Management</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    <a href="#" class="nav-link">Resources ▾</a>
+                    <div class="dropdown">
+                        <a href="faq.html" class="dropdown-link">❓ Common FAQs</a>
+                        <a href="rbac.html" class="dropdown-link">🔐 Roles & Security</a>
+                        <a href="notifications.html" class="dropdown-link">🔔 Notification Engine</a>
+                        <a href="reports.html" class="dropdown-link">📥 Reports & Data</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    <a href="contact.html" class="nav-link">Support</a>
+                </div>
             </nav>
+
+            <a href="../../" class="btn btn-primary" style="padding: 0.6rem 1.5rem; font-size: 0.9rem;">Launch App →</a>
         </div>
     </header>
 
-    <div class="container" style="padding-top: 4rem;">
-        <h1 class="hero-title" style="font-size: 3rem;">System Configuration Manual</h1>
-        <p class="hero-subtitle" style="margin-left: 0; text-align: left;">Customize Nexus SMS branding, academic years, and system parameters.</p>
+    <div class="container" style="padding-top: 6rem;">
+        <div style="max-width: 900px;">
+            <h1 class="hero-title" style="font-size: 4rem; text-align: left;">System Configuration</h1>
+            <p class="hero-subtitle" style="margin-left: 0; text-align: left; font-size: 1.5rem;">Tailor Nexus SMS to your institution's specific needs. Manage global branding, academic sessions, and core operational defaults.</p>
+        </div>
 
         <section class="guide-section">
             
             <div class="step-row">
                 <div class="step-text">
-                    <span class="step-badge">Configuration 1</span>
-                    <h3>Official Branding & Identity</h3>
-                    <p>Your school's identity is central to all documentation. In <strong>Settings > School Profile</strong>, upload your official logo (high-resolution PNG/JPG recommended) and enter your school's full name, address, and contact details. This info is automatically injected into all PDF receipts and report cards.</p>
+                    <span class="step-badge">Phase 1: Profile</span>
+                    <h3>Institutional Identity</h3>
+                    <p>Your branding is the face of your institution. In <strong>System Settings</strong>, upload your high-resolution logo and define official school metadata including address and contact lines.</p>
+                    <div class="pro-box">
+                        <span class="box-label">Global Sync</span>
+                        Updated branding is instantly applied to all generated PDF fee receipts, academic report cards, and SMS broadcast signatures.
+                    </div>
                 </div>
-                <div class="step-visual glass" style="display: flex; align-items: center; justify-content: center; background: radial-gradient(circle, var(--accent) 0%, transparent 70%);">
-                    <div class="glass" style="padding: 1rem; border-radius: 12px; background: white;">
-                        <img src="logo.png" style="width: 120px;" alt="Logo Mockup">
+                <div class="step-image-wrap">
+                    <div style="height: 350px; background: rgba(255,255,255,0.05); display: flex; align-items: center; justify-content: center; color: var(--text-muted); border-radius: 20px;">
+                        [Placeholder: branding_wizard_preview.png]
                     </div>
                 </div>
             </div>
 
             <div class="step-row">
                 <div class="step-text">
-                    <span class="step-badge">Configuration 2</span>
-                    <h3>Academic Calendar & Holidays</h3>
-                    <p>Define your school's operating days. Use the <strong>Holidays</strong> sub-module to mark public holidays, winter/summer vacations, and unplanned leaves. The system uses this calendar to automatically calculate student attendance percentages and adjust fee due dates.</p>
+                    <span class="step-badge">Phase 2: Calendar</span>
+                    <h3>Academic Infrastructure</h3>
+                    <p>Establish the foundation of your academic year. Configure session start/end dates and mark institutional holidays to ensure accurate attendance calculation and billing cycles.</p>
+                    <ul>
+                        <li style="margin-bottom: 1rem;"><strong>Holiday Logic:</strong> Marked holidays automatically exclude students from periodic attendance alerts.</li>
+                        <li style="margin-bottom: 1rem;"><strong>Session Rollover:</strong> Use the archive feature to preserve historical data while transitioning to a new academic term.</li>
+                    </ul>
                 </div>
-                <div class="step-visual glass" style="padding: 2rem;">
-                    <div style="display: grid; grid-template-columns: repeat(7, 1fr); gap: 0.5rem; text-align: center; font-size: 0.7rem;">
-                        <div>S</div><div>M</div><div>T</div><div>W</div><div>T</div><div>F</div><div>S</div>
-                        <div style="background: rgba(255,100,100,0.2); border-radius: 4px;">1</div><div>2</div><div>3</div><div>4</div><div>5</div><div>6</div><div style="background: rgba(255,100,100,0.2); border-radius: 4px;">7</div>
-                        <div style="background: rgba(255,100,100,0.2); border-radius: 4px;">8</div><div style="background: var(--accent); color: white; border-radius: 4px; font-weight: 900;">9</div><div>10</div><div>11</div><div>12</div><div>13</div><div style="background: rgba(255,100,100,0.2); border-radius: 4px;">14</div>
+                <div class="step-image-wrap">
+                    <div class="glass" style="padding: 2.5rem; background: var(--surface); border-radius: 20px;">
+                        <div style="display: grid; grid-template-columns: repeat(7, 1fr); gap: 0.6rem; text-align: center; font-size: 0.8rem;">
+                            <div style="font-weight: 800; color: var(--accent);">S</div><div>M</div><div>T</div><div>W</div><div>T</div><div>F</div><div style="font-weight: 800; color: var(--accent);">S</div>
+                            <div style="color: var(--text-muted);">26</div><div style="color: var(--text-muted);">27</div><div style="color: var(--text-muted);">28</div><div style="color: var(--text-muted);">29</div><div>1</div><div>2</div><div>3</div>
+                            <div>4</div><div>5</div><div style="background: var(--accent); color: white; border-radius: 5px;">6</div><div>7</div><div>8</div><div>9</div><div>10</div>
+                        </div>
+                        <p style="text-align: center; margin-top: 1.5rem; font-size: 0.85rem; color: var(--text-muted);">System Calendar Sync</p>
                     </div>
-                    <p style="text-align: center; margin-top: 1rem; font-size: 0.8rem; color: var(--text-muted);">Dynamic Calendar View</p>
                 </div>
             </div>
 
             <div class="step-row">
                 <div class="step-text">
-                    <span class="step-badge">Configuration 3</span>
-                    <h3>License & Usage Caps</h3>
-                    <p>Monitor your Nexus SMS license. View your current active student limit and subscription expiry date. If you need to increase your school's capacity, you can initiate a 'Capacity Upgrade' request directly from the License Dashboard.</p>
-                </div>
-                <div class="step-visual glass">
-                    <div style="height: 200px; display: flex; align-items: center; justify-content: center; color: var(--text-muted);">
-                        [Chart: License Usage Meter]
+                    <span class="step-badge">Phase 3: Safeguards</span>
+                    <h3>Privacy & Security Defaults</h3>
+                    <p>As the primary administrator, you control system-wide security policies. Define session timeout durations, 2FA requirements for the finance team, and global data export privileges.</p>
+                    <div class="warning-box">
+                        <span class="box-label">Critical Setup</span>
+                        Always ensure the 'Primary Admin Account' is secured with a unique organizational email and strong multi-factor authentication.
                     </div>
                 </div>
-            </div>
-
-            <div class="mastery-box">
-                <h4 style="color: var(--success); margin-bottom: 0.5rem; font-family: 'Outfit', sans-serif;">CRITICAL: DATA PRIVACY</h4>
-                <p>Only the 'School Administrator' should have access to the Settings module. Ensure you set strong passwords for accounts with configuration privileges to protect sensitive institutional data.</p>
+                <div class="step-image-wrap">
+                    <div style="height: 350px; background: rgba(255,255,255,0.05); display: flex; align-items: center; justify-content: center; color: var(--text-muted); border-radius: 20px;">
+                        [Placeholder: security_policy_panel.png]
+                    </div>
+                </div>
             </div>
 
         </section>
 
-        <footer>
-            <div style="display: flex; justify-content: space-between; align-items: center; padding: 4rem 0; border-top: 1px solid var(--glass-border);">
-                <a href="reports.html" class="btn glass">← Previous: Reports</a>
-                <a href="license.html" class="btn btn-primary">Next: License Control →</a>
+        <div style="display: flex; justify-content: space-between; align-items: center; padding: 6rem 0; border-top: 1px solid var(--glass-border);">
+            <a href="reports.html" class="btn glass" style="padding: 1rem 2rem;">← Reports & Data</a>
+            <div style="text-align: center;">
+                <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.5rem;">Access Management</p>
+                <a href="license.html" class="btn btn-primary" style="padding: 1.2rem 3rem; font-size: 1.1rem;">License Control →</a>
             </div>
-        </footer>
+        </div>
     </div>
+
+    <!-- Mega Footer -->
+    <footer class="mega-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="footer-logo">NEXUS SMS</a>
+                <p class="footer-desc">The next generation of educational administrative software. Streamlining operations for thousands of institutions globally.</p>
+                <div style="display: flex; gap: 1rem;">
+                    <a href="#" class="btn glass" style="padding: 0.6rem; min-width: 45px; display: flex; align-items: center; justify-content: center;">𝕏</a>
+                    <a href="#" class="btn glass" style="padding: 0.6rem; min-width: 45px; display: flex; align-items: center; justify-content: center;">𝑓</a>
+                    <a href="#" class="btn glass" style="padding: 0.6rem; min-width: 45px; display: flex; align-items: center; justify-content: center;">𝑖</a>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <h4>System Hubs</h4>
+                <ul>
+                    <li><a href="dashboard.html">Admin Dashboard</a></li>
+                    <li><a href="students.html">Student Portal</a></li>
+                    <li><a href="staff.html">Staff Registry</a></li>
+                    <li><a href="attendance.html">Attendance Logs</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4>Operations</h4>
+                <ul>
+                    <li><a href="fees.html">Fee Collection</a></li>
+                    <li><a href="academics.html">Academic Records</a></li>
+                    <li><a href="notifications.html">SMS Notifications</a></li>
+                    <li><a href="reports.html">Data Exports</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4>Help & Legal</h4>
+                <ul>
+                    <li><a href="faq.html">Documentation Home</a></li>
+                    <li><a href="rbac.html">Security Guide</a></li>
+                    <li><a href="contact.html">Support Desk</a></li>
+                    <li><a href="license.html">License Status</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container copy-bar">
+            <div>&copy; 2026 Nexus SMS Help Portal. All Rights Reserved.</div>
+            <div style="display: flex; gap: 2rem;">
+                <a href="#" style="color: var(--text-muted); text-decoration: none;">Privacy Policy</a>
+                <a href="#" style="color: var(--text-muted); text-decoration: none;">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
 
 </body>
 </html>

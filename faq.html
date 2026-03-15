@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frequently Asked Questions - Nexus SMS</title>
+    <link rel="stylesheet" href="help-styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=Outfit:wght@400;600;800;900&display=swap" rel="stylesheet">
+    <style>
+        .faq-item {
+            margin-bottom: 1.5rem;
+            border-radius: 20px;
+            overflow: hidden;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--glass-border);
+            transition: all 0.3s ease;
+        }
+        .faq-item:hover {
+            background: rgba(255, 255, 255, 0.06);
+            transform: translateY(-2px);
+        }
+        .faq-trigger {
+            width: 100%;
+            padding: 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: none;
+            border: none;
+            color: var(--text-light);
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.2rem;
+            font-weight: 600;
+            text-align: left;
+            cursor: pointer;
+        }
+        .faq-content {
+            padding: 0 2rem 2rem 2rem;
+            color: var(--text-muted);
+            line-height: 1.8;
+            display: none;
+        }
+        .faq-item.active .faq-content {
+            display: block;
+        }
+        .faq-item.active .faq-icon {
+            transform: rotate(45deg);
+        }
+        .faq-icon {
+            transition: transform 0.3s ease;
+            font-size: 1.5rem;
+            color: var(--accent);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Premium Branding Bar -->
+    <header class="branding-bar">
+        <div class="container branding-content">
+            <a href="index.html" class="brand-logo">
+                <span>NEXUS</span> SMS
+            </a>
+            
+            <nav class="main-nav">
+                <div class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </div>
+                <div class="nav-item">
+                    <a href="#" class="nav-link">Modules ▾</a>
+                    <div class="dropdown">
+                        <a href="dashboard.html" class="dropdown-link">📊 Operational Dashboard</a>
+                        <a href="students.html" class="dropdown-link">🎓 Student Registry</a>
+                        <a href="attendance.html" class="dropdown-link">📅 Attendance Tracking</a>
+                        <a href="fees.html" class="dropdown-link">💰 Financial Management</a>
+                        <a href="academics.html" class="dropdown-link">📝 Academic & Grading</a>
+                        <a href="staff.html" class="dropdown-link">👥 Staff Management</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    <a href="#" class="nav-link">Resources ▾</a>
+                    <div class="dropdown">
+                        <a href="faq.html" class="dropdown-link">❓ Common FAQs</a>
+                        <a href="rbac.html" class="dropdown-link">🔐 Roles & Security</a>
+                        <a href="notifications.html" class="dropdown-link">🔔 Notification Engine</a>
+                        <a href="reports.html" class="dropdown-link">📥 Reports & Data</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    <a href="contact.html" class="nav-link">Support</a>
+                </div>
+            </nav>
+
+            <a href="../../" class="btn btn-primary" style="padding: 0.6rem 1.5rem; font-size: 0.9rem;">Launch App →</a>
+        </div>
+    </header>
+
+    <div class="container" style="padding-top: 6rem; padding-bottom: 6rem;">
+        <div style="max-width: 800px; margin: 0 auto;">
+            <div style="text-align: center; margin-bottom: 5rem;">
+                <h1 class="hero-title" style="font-size: 4rem;">Common Inquiries</h1>
+                <p class="hero-subtitle" style="margin: 0 auto; font-size: 1.3rem;">Instant answers to the most frequent questions from our school administrators.</p>
+            </div>
+
+            <div class="faq-accordion">
+                
+                <div class="faq-item">
+                    <button class="faq-trigger">
+                        <span>How do I process a bulk promotion for a whole class?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-content">
+                        Navigate to <strong>Students > Bulk Operations > Promotion Engine</strong>. Select the 'Source Class' and the 'Destination Class'. The system will move all active students to the new class and update their enrollment session automatically.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-trigger">
+                        <span>Why are my SMS notifications not being delivered?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-content">
+                        Double-check the following: 
+                        <br>1. Ensure your API Key is correctly configured in <strong>Global Settings</strong>.
+                        <br>2. Verify the student's parent number is in the correct international format.
+                        <br>3. Check your SMS credit balance with your provider.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-trigger">
+                        <span>How can I correct an error in a finalized fee receipt?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-content">
+                        To maintain audit integrity, receipts cannot be edited. Instead, a user with <strong>Billing Admin</strong> rights must 'Void' the original transaction, which will revert the dues to 'Unpaid' status, allowing you to post a corrected transaction.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-trigger">
+                        <span>Can I customize the school logo on PDF report cards?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-content">
+                        Yes. Upload your high-resolution PNG logo in <strong>System Settings > Branding</strong>. The Nexus Print Engine will automatically update all generated PDFs (Challans, Receipts, Reports) with your new branding.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-trigger">
+                        <span>Is there a limit to the number of students I can register?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-content">
+                        Nexus SMS is built on high-performance cloud infrastructure. There are no software limits on student registration. Performance is optimized for institutions ranging from 100 to 10,000+ students.
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="mastery-box" style="margin-top: 5rem; text-align: center;">
+                <h3 style="font-family: 'Outfit', sans-serif; margin-bottom: 1rem;">Still have questions?</h3>
+                <p style="margin-bottom: 2rem;">Our technical support team is standing by to assist with complex institutional setups.</p>
+                <a href="contact.html" class="btn btn-primary" style="padding: 1rem 3rem;">Connect with Support</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('.faq-trigger').forEach(trigger => {
+            trigger.addEventListener('click', () => {
+                const item = trigger.parentElement;
+                item.classList.toggle('active');
+            });
+        });
+    </script>
+
+    <!-- Mega Footer -->
+    <footer class="mega-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="footer-logo">NEXUS SMS</a>
+                <p class="footer-desc">The next generation of educational administrative software. Streamlining operations for thousands of institutions globally.</p>
+            </div>
+            <div class="footer-links">
+                <h4>System Hubs</h4>
+                <ul>
+                    <li><a href="dashboard.html">Admin Dashboard</a></li>
+                    <li><a href="students.html">Student Portal</a></li>
+                    <li><a href="staff.html">Staff Registry</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Help & Legal</h4>
+                <ul>
+                    <li><a href="faq.html">Documentation Home</a></li>
+                    <li><a href="rbac.html">Security Guide</a></li>
+                    <li><a href="contact.html">Support Desk</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
