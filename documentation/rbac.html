@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roles & Security (RBAC) - Nexus SMS</title>
+    <link rel="stylesheet" href="help-styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=Outfit:wght@400;600;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Premium Branding Bar -->
+    <header class="branding-bar">
+        <div class="container branding-content">
+            <a href="index.html" class="brand-logo">
+                <span>NEXUS</span> SMS
+            </a>
+            
+            <nav class="main-nav">
+                <div class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </div>
+                <div class="nav-item">
+                    <a href="#" class="nav-link">Modules ▾</a>
+                    <div class="dropdown">
+                        <a href="dashboard.html" class="dropdown-link">📊 Operational Dashboard</a>
+                        <a href="students.html" class="dropdown-link">🎓 Student Registry</a>
+                        <a href="attendance.html" class="dropdown-link">📅 Attendance Tracking</a>
+                        <a href="fees.html" class="dropdown-link">💰 Financial Management</a>
+                        <a href="academics.html" class="dropdown-link">📝 Academic & Grading</a>
+                        <a href="staff.html" class="dropdown-link">👥 Staff Management</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    <a href="#" class="nav-link">Resources ▾</a>
+                    <div class="dropdown">
+                        <a href="faq.html" class="dropdown-link">❓ Common FAQs</a>
+                        <a href="rbac.html" class="dropdown-link">🔐 Roles & Security</a>
+                        <a href="notifications.html" class="dropdown-link">🔔 Notification Engine</a>
+                        <a href="reports.html" class="dropdown-link">📥 Reports & Data</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    <a href="contact.html" class="nav-link">Support</a>
+                </div>
+            </nav>
+
+            <a href="../../" class="btn btn-primary" style="padding: 0.6rem 1.5rem; font-size: 0.9rem;">Launch App →</a>
+        </div>
+    </header>
+
+    <div class="container" style="padding-top: 6rem; padding-bottom: 6rem;">
+        <div style="max-width: 900px; margin-bottom: 4rem;">
+            <h1 class="hero-title" style="font-size: 4rem; text-align: left;">Security & Permission Architecture</h1>
+            <p class="hero-subtitle" style="margin-left: 0; text-align: left; font-size: 1.5rem;">Nexus SMS protects your institutional data through a rigorous Role-Based Access Control (RBAC) model, ensuring every user has exactly the access they need—and nothing more.</p>
+        </div>
+
+        <section class="guide-section">
+            <div class="glass" style="padding: 3rem; border-radius: 30px; margin-bottom: 4rem;">
+                <h2 style="font-family: 'Outfit', sans-serif; font-size: 2.5rem; margin-bottom: 2rem;">User Tier Breakdown</h2>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
+                    <div class="glass" style="padding: 2rem; border-radius: 20px; border-top: 4px solid var(--accent);">
+                        <div style="font-size: 2rem; margin-bottom: 1rem;">👑</div>
+                        <h3 style="margin-bottom: 1rem;">Super Administrator</h3>
+                        <p style="color: var(--text-muted); font-size: 0.95rem;">Unrestricted access to the entire portal. Capable of modifying system core settings, license management, and master data purging.</p>
+                    </div>
+                    
+                    <div class="glass" style="padding: 2rem; border-radius: 20px; border-top: 4px solid var(--warning);">
+                        <div style="font-size: 2rem; margin-bottom: 1rem;">💼</div>
+                        <h3 style="margin-bottom: 1rem;">Principal / Manager</h3>
+                        <p style="color: var(--text-muted); font-size: 0.95rem;">High-level oversight of all modules. Can view financial reports, staff performance, and global student metrics.</p>
+                    </div>
+
+                    <div class="glass" style="padding: 2rem; border-radius: 20px; border-top: 4px solid var(--success);">
+                        <div style="font-size: 2rem; margin-bottom: 1rem;">📝</div>
+                        <h3 style="margin-bottom: 1rem;">Academic Staff</h3>
+                        <p style="color: var(--text-muted); font-size: 0.95rem;">Permissions focused on classroom management: Attendance marking, mark entry, and student profile views.</p>
+                    </div>
+
+                    <div class="glass" style="padding: 2rem; border-radius: 20px; border-top: 4px solid #38bdf8;">
+                        <div style="font-size: 2rem; margin-bottom: 1rem;">💰</div>
+                        <h3 style="margin-bottom: 1rem;">Accountant</h3>
+                        <p style="color: var(--text-muted); font-size: 0.95rem;">Restricted to the Financial module. Handles fee collections, receipt generation, and ledger audits.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="step-row">
+                <div class="step-text">
+                    <span class="step-badge">Security Feature</span>
+                    <h3>The 'RequireRole' Guard</h3>
+                    <p>Every internal API call in Nexus SMS is protected by a server-side guard. If a user tries to access a restricted function via URL manipulation, the system will instantly terminate the request and log a security violation.</p>
+                    <div class="warning-box">
+                        <span class="box-label">Administrative Action</span>
+                        If you notice a staff member has left the institution, deactivate their account immediately. Reactivation can only be performed by a Super Administrator.
+                    </div>
+                </div>
+                <div class="step-image-wrap">
+                    <div style="height: 350px; background: rgba(255,255,255,0.05); display: flex; align-items: center; justify-content: center; color: var(--text-muted); border-radius: 20px;">
+                        [Placeholder: server_security_log.png]
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="mastery-box" style="margin-top: 4rem;">
+            <h4 style="color: var(--accent); margin-bottom: 0.5rem; font-family: 'Outfit', sans-serif;">TWO-FACTOR AUTHENTICATION (BETA)</h4>
+            <p>We are currently piloting 2FA for Super Admin accounts. If you wish to join the pilot program and add an extra layer of security to your master account, please contact Nexus Support.</p>
+        </div>
+
+        <div style="display: flex; justify-content: center; padding: 6rem 0;">
+            <a href="index.html" class="btn btn-primary" style="padding: 1.2rem 4rem; font-size: 1.1rem;">Return to Main Hub</a>
+        </div>
+    </div>
+
+    <!-- Mega Footer -->
+    <footer class="mega-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="footer-logo">NEXUS SMS</a>
+                <p class="footer-desc">The next generation of educational administrative software. Streamlining operations for thousands of institutions globally.</p>
+            </div>
+            
+            <div class="footer-links">
+                <h4>System Hubs</h4>
+                <ul>
+                    <li><a href="dashboard.html">Admin Dashboard</a></li>
+                    <li><a href="students.html">Student Portal</a></li>
+                    <li><a href="staff.html">Staff Registry</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4>Operations</h4>
+                <ul>
+                    <li><a href="fees.html">Fee Collection</a></li>
+                    <li><a href="academics.html">Academic Records</a></li>
+                    <li><a href="notifications.html">SMS Notifications</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4>Help & Legal</h4>
+                <ul>
+                    <li><a href="faq.html">Documentation Home</a></li>
+                    <li><a href="rbac.html">Security Guide</a></li>
+                    <li><a href="contact.html">Support Desk</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

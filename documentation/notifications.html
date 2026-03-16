@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notification Engine Guide - Nexus SMS</title>
+    <link rel="stylesheet" href="help-styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=Outfit:wght@400;600;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Premium Branding Bar -->
+    <header class="branding-bar">
+        <div class="container branding-content">
+            <a href="index.html" class="brand-logo">
+                <span>NEXUS</span> SMS
+            </a>
+            
+            <nav class="main-nav">
+                <div class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </div>
+                <div class="nav-item">
+                    <a href="#" class="nav-link">Modules ▾</a>
+                    <div class="dropdown">
+                        <a href="dashboard.html" class="dropdown-link">📊 Operational Dashboard</a>
+                        <a href="students.html" class="dropdown-link">🎓 Student Registry</a>
+                        <a href="attendance.html" class="dropdown-link">📅 Attendance Tracking</a>
+                        <a href="fees.html" class="dropdown-link">💰 Financial Management</a>
+                        <a href="academics.html" class="dropdown-link">📝 Academic & Grading</a>
+                        <a href="staff.html" class="dropdown-link">👥 Staff Management</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    <a href="#" class="nav-link">Resources ▾</a>
+                    <div class="dropdown">
+                        <a href="faq.html" class="dropdown-link">❓ Common FAQs</a>
+                        <a href="rbac.html" class="dropdown-link">🔐 Roles & Security</a>
+                        <a href="notifications.html" class="dropdown-link">🔔 Notification Engine</a>
+                        <a href="reports.html" class="dropdown-link">📥 Reports & Data</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    <a href="contact.html" class="nav-link">Support</a>
+                </div>
+            </nav>
+
+            <a href="../../" class="btn btn-primary" style="padding: 0.6rem 1.5rem; font-size: 0.9rem;">Launch App →</a>
+        </div>
+    </header>
+
+    <div class="container" style="padding-top: 6rem;">
+        <div style="max-width: 900px;">
+            <h1 class="hero-title" style="font-size: 4rem; text-align: left;">Communication Central</h1>
+            <p class="hero-subtitle" style="margin-left: 0; text-align: left; font-size: 1.5rem;">The heart of school-to-home engagement. Manage automated alerts, bulk broadcasts, and verify system delivery logs.</p>
+        </div>
+
+        <section class="guide-section">
+            
+            <div class="step-row">
+                <div class="step-text">
+                    <span class="step-badge">Phase 1: Attendance</span>
+                    <h3>Instant Absence Alerts</h3>
+                    <p>Building a culture of accountability starts with zero communication gap. Whenever attendance is saved, Nexus instantly identifies absent students and queues a personalized SMS to their guardians.</p>
+                    <div class="pro-box">
+                        <span class="box-label">Setup Pro-Tip</span>
+                        Ensure all numbers are stored in the <strong>International Format</strong> (e.g., +44 prefix) to ensure the global SMS bridge transmits your messages without delay.
+                    </div>
+                </div>
+                <div class="step-image-wrap">
+                    <div class="glass" style="padding: 2rem; background: var(--surface);">
+                        <div class="glass" style="max-width: 280px; margin: 0 auto; padding: 1.2rem; border-radius: 20px 20px 20px 0; background: #2563eb; color: white;">
+                            <p style="font-size: 0.85rem; line-height: 1.4;">Dear Parent, your child <strong>Salman</strong> is marked ABSENT today. Please contact the office for any queries. - Nexus SMS</p>
+                        </div>
+                        <p style="text-align: center; margin-top: 1rem; font-size: 0.8rem; color: var(--text-muted);">Real-time SMS Preview</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="step-row">
+                <div class="step-text">
+                    <span class="step-badge">Phase 2: Billing</span>
+                    <h3>Financial Confirmations</h3>
+                    <p>Establish trust by providing instant digital receipts. Every time a fee transaction is posted, the system sends an automated SMS confirmation including the amount paid and the remaining arrears.</p>
+                    <ul>
+                        <li style="margin-bottom: 1rem;"><strong>Verification:</strong> Parents receive instant peace of mind that their payment reached the institution.</li>
+                        <li style="margin-bottom: 1rem;"><strong>Transparency:</strong> Arrears alerts encourage timely payment of future dues.</li>
+                    </ul>
+                </div>
+                <div class="step-image-wrap">
+                    <div style="height: 350px; background: rgba(255,255,255,0.05); display: flex; align-items: center; justify-content: center; color: var(--text-muted); border-radius: 20px;">
+                        [Placeholder: billing_sms_config.png]
+                    </div>
+                </div>
+            </div>
+
+            <div class="step-row">
+                <div class="step-text">
+                    <span class="step-badge">Phase 3: Broadcast</span>
+                    <h3>Institutional Broadcasting</h3>
+                    <p>Need to announce a campus closure or a change in schedule? Use the <strong>Global Broadcast</strong> module to send custom announcements to specific classes or the entire institutional roster in one click.</p>
+                    <div class="warning-box">
+                        <span class="box-label">Regulation Note</span>
+                        Always verify your local telecom regulations regarding marketing vs. transactional SMS headers to ensure high delivery rates.
+                    </div>
+                </div>
+                <div class="step-image-wrap">
+                    <div style="height: 350px; background: rgba(255,255,255,0.05); display: flex; align-items: center; justify-content: center; color: var(--text-muted); border-radius: 20px;">
+                        [Placeholder: bulk_broadcast_wizard.png]
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <div style="display: flex; justify-content: space-between; align-items: center; padding: 6rem 0; border-top: 1px solid var(--glass-border);">
+            <a href="academics.html" class="btn glass" style="padding: 1rem 2rem;">← Academic Mastery</a>
+            <div style="text-align: center;">
+                <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.5rem;">Data Mastery</p>
+                <a href="reports.html" class="btn btn-primary" style="padding: 1.2rem 3rem; font-size: 1.1rem;">Reporting & Data →</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mega Footer -->
+    <footer class="mega-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="footer-logo">NEXUS SMS</a>
+                <p class="footer-desc">The next generation of educational administrative software. Streamlining operations for thousands of institutions globally.</p>
+                <div style="display: flex; gap: 1rem;">
+                    <a href="#" class="btn glass" style="padding: 0.6rem; min-width: 45px; display: flex; align-items: center; justify-content: center;">𝕏</a>
+                    <a href="#" class="btn glass" style="padding: 0.6rem; min-width: 45px; display: flex; align-items: center; justify-content: center;">𝑓</a>
+                    <a href="#" class="btn glass" style="padding: 0.6rem; min-width: 45px; display: flex; align-items: center; justify-content: center;">𝑖</a>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <h4>System Hubs</h4>
+                <ul>
+                    <li><a href="dashboard.html">Admin Dashboard</a></li>
+                    <li><a href="students.html">Student Portal</a></li>
+                    <li><a href="staff.html">Staff Registry</a></li>
+                    <li><a href="attendance.html">Attendance Logs</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4>Operations</h4>
+                <ul>
+                    <li><a href="fees.html">Fee Collection</a></li>
+                    <li><a href="academics.html">Academic Records</a></li>
+                    <li><a href="notifications.html">SMS Notifications</a></li>
+                    <li><a href="reports.html">Data Exports</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4>Help & Legal</h4>
+                <ul>
+                    <li><a href="faq.html">Documentation Home</a></li>
+                    <li><a href="rbac.html">Security Guide</a></li>
+                    <li><a href="contact.html">Support Desk</a></li>
+                    <li><a href="license.html">License Status</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container copy-bar">
+            <div>&copy; 2026 Nexus SMS Help Portal. All Rights Reserved.</div>
+            <div style="display: flex; gap: 2rem;">
+                <a href="#" style="color: var(--text-muted); text-decoration: none;">Privacy Policy</a>
+                <a href="#" style="color: var(--text-muted); text-decoration: none;">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
