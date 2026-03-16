@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Attendance Tracking Guide - Nexus SMS</title>
+    <title>My Account Guide - Nexus SMS</title>
     <link rel="stylesheet" href="help-styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -53,100 +53,95 @@
 
     <div class="container" style="padding-top: 6rem;">
         <div style="max-width: 900px;">
-            <h1 class="hero-title" style="font-size: 4rem; text-align: left;">Attendance Mastery</h1>
-            <p class="hero-subtitle" style="margin-left: 0; text-align: left; font-size: 1.5rem;">Efficiently track daily presence across all classes, automate parent alerts for absent students, and generate consolidated monthly reports.</p>
+            <h1 class="hero-title" style="font-size: 4rem; text-align: left;">My Account</h1>
+            <p class="hero-subtitle" style="margin-left: 0; text-align: left; font-size: 1.5rem;">Manage your personal profile, update your password, and maintain your professional presence within Nexus SMS.</p>
         </div>
 
         <section class="guide-section">
             
-            <!-- Phase 1: Class & Date Selection -->
+            <!-- Section 1: Profile Overview -->
             <div class="step-row">
                 <div class="step-text">
-                    <span class="step-badge">Phase 1: Selection</span>
-                    <h3>Class & Date Selection</h3>
-                    <p>Enter the attendance module and select the specific <strong>Class</strong> from the dropdown. Choose the target date using the date picker — today's date is selected by default. The system instantly fetches the student roster based on current academic enrollment.</p>
-                    <div class="pro-box">
-                        <span class="box-label">Efficiency Tip</span>
-                        Teachers are automatically shown only the classes assigned to them, reducing selection time. Administrators can access any class.
-                    </div>
-                </div>
-                <div class="step-image-wrap">
-                    <div style="height: 350px; background: rgba(255,255,255,0.05); display: flex; align-items: center; justify-content: center; color: var(--text-muted); border-radius: 20px;">
-                        [Image: attendance_class_filter.png]
-                    </div>
-                </div>
-            </div>
-
-            <!-- Phase 2: Smart Marking -->
-            <div class="step-row">
-                <div class="step-text">
-                    <span class="step-badge">Phase 2: Marking</span>
-                    <h3>Smart Attendance Marking</h3>
-                    <p>By default, all students are marked as <strong>'Present'</strong> to save time — Nexus uses an optimized storage model where only non-present statuses are recorded. Use the toggle buttons to change any student's status to <strong>Absent</strong>, <strong>Late</strong>, or <strong>Leave</strong>.</p>
+                    <span class="step-badge">Profile</span>
+                    <h3>Your Staff Profile</h3>
+                    <p>The <strong>My Account</strong> module displays your complete professional profile as recorded in the Staff sheet. This includes your name, email, role, designation, phone number, and joining date.</p>
                     <ul>
-                        <li style="margin-bottom: 0.5rem;"><strong>Status Options:</strong> Present (default), Absent, Late, Leave</li>
-                        <li style="margin-bottom: 0.5rem;"><strong>Visual Feedback:</strong> Each status is color-coded for instant recognition</li>
-                        <li style="margin-bottom: 0.5rem;"><strong>Storage Optimization:</strong> Only non-present records are stored, keeping the database lean</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>Full Name:</strong> Your official name as registered by the Admin</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>Login Email:</strong> The email used for authentication (cannot be changed here)</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>Role:</strong> Admin, Teacher, or Accountant — assigned by administrator</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>Status:</strong> Active or Inactive account status</li>
                     </ul>
                 </div>
                 <div class="step-image-wrap">
                     <div style="height: 350px; background: rgba(255,255,255,0.05); display: flex; align-items: center; justify-content: center; color: var(--text-muted); border-radius: 20px;">
-                        [Image: attendance_marking_grid.png]
+                        [Image: my_account_profile.png]
                     </div>
                 </div>
             </div>
 
-            <!-- Phase 3: Save & Confirmation -->
+            <!-- Section 2: Profile Editing -->
             <div class="step-row">
                 <div class="step-text">
-                    <span class="step-badge">Phase 3: Submission</span>
-                    <h3>Save & Confirmation</h3>
-                    <p>Click <strong>'Save Attendance'</strong> to finalize the records. A confirmation dialog ensures no accidental saves. Once confirmed, the system locks the attendance for that class and date.</p>
+                    <span class="step-badge">Edit</span>
+                    <h3>Updating Your Information</h3>
+                    <p>You can update certain fields of your profile directly from the My Account page. Editable fields include your <strong>phone number</strong>, <strong>designation</strong>, and <strong>profile photo</strong>.</p>
+                    <div class="pro-box">
+                        <span class="box-label">Photo Upload</span>
+                        Upload a professional photo via URL. The photo is stored as a reference and appears in your profile card and sidebar avatar throughout the app.
+                    </div>
+                </div>
+                <div class="step-image-wrap">
+                    <div class="glass" style="padding: 2.5rem; background: var(--surface); border-radius: 20px;">
+                        <div style="text-align: center; margin-bottom: 1.5rem;">
+                            <div style="width: 80px; height: 80px; border-radius: 50%; background: linear-gradient(135deg, var(--accent), #a855f7); margin: 0 auto 1rem; display: flex; align-items: center; justify-content: center; font-size: 2rem;">👤</div>
+                            <h4 style="margin: 0;">Staff Profile</h4>
+                        </div>
+                        <div style="display: grid; gap: 0.8rem; font-size: 0.85rem;">
+                            <div style="display: flex; justify-content: space-between; padding: 0.6rem; background: rgba(255,255,255,0.05); border-radius: 8px;">
+                                <span>Name</span><strong>Ahmad Khan</strong>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; padding: 0.6rem; background: rgba(255,255,255,0.05); border-radius: 8px;">
+                                <span>Role</span><strong style="color: var(--accent);">Admin</strong>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; padding: 0.6rem; background: rgba(255,255,255,0.05); border-radius: 8px;">
+                                <span>Phone</span><strong>+92 300 1234567</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 3: Password Change -->
+            <div class="step-row">
+                <div class="step-text">
+                    <span class="step-badge">Security</span>
+                    <h3>Changing Your Password</h3>
+                    <p>You can change your password at any time from the My Account page. You'll need to provide your <strong>current password</strong>, then enter and confirm a <strong>new password</strong>.</p>
                     <div class="warning-box">
-                        <span class="box-label">Double-Save Guard</span>
-                        Nexus SMS features a safety lock to prevent duplicate attendance marking for the same class on the same day. If attendance has already been saved, the system will alert you and offer the option to modify the existing record instead.
+                        <span class="box-label">Important Rules</span>
+                        The new password must be at least 6 characters. After changing, your session is refreshed automatically — no need to log in again.
                     </div>
                 </div>
                 <div class="step-image-wrap">
-                    <div style="height: 350px; background: rgba(255,255,255,0.05); display: flex; align-items: center; justify-content: center; color: var(--text-muted); border-radius: 20px;">
-                        [Image: attendance_save_confirm.png]
-                    </div>
-                </div>
-            </div>
-
-            <!-- Phase 4: SMS Dispatch -->
-            <div class="step-row">
-                <div class="step-text">
-                    <span class="step-badge">Phase 4: Alerts</span>
-                    <h3>Automated SMS Dispatch</h3>
-                    <p>When attendance is saved, the <strong>Nexus Notification Engine</strong> automatically sends SMS alerts to parents of all students marked as 'Absent'. The message format is customizable via Settings.</p>
-                    <div class="pro-box">
-                        <span class="box-label">SMS Template</span>
-                        Default message: <em>"Dear Parent, [StudentName] was marked absent today from school."</em> — This can be customized in the Notification Settings.
-                    </div>
-                </div>
-                <div class="step-image-wrap">
-                    <div style="height: 350px; background: rgba(255,255,255,0.05); display: flex; align-items: center; justify-content: center; color: var(--text-muted); border-radius: 20px;">
-                        [Image: attendance_sms_sent.png]
-                    </div>
-                </div>
-            </div>
-
-            <!-- Phase 5: Reports -->
-            <div class="step-row">
-                <div class="step-text">
-                    <span class="step-badge">Phase 5: Analytics</span>
-                    <h3>Dashboard Integration</h3>
-                    <p>Attendance data flows directly into the <strong>Admin Dashboard</strong>. The attendance bar chart shows daily, weekly, or monthly trends. The KPI card displays today's attendance rate with class-level breakdowns.</p>
-                    <ul>
-                        <li style="margin-bottom: 0.5rem;"><strong>Today View:</strong> Per-class attendance percentages in the bar chart</li>
-                        <li style="margin-bottom: 0.5rem;"><strong>7-Day / 30-Day:</strong> Historical trend across all classes combined</li>
-                        <li style="margin-bottom: 0.5rem;"><strong>Holiday Exclusion:</strong> Marked holidays are automatically excluded from attendance calculations</li>
-                    </ul>
-                </div>
-                <div class="step-image-wrap">
-                    <div style="height: 350px; background: rgba(255,255,255,0.05); display: flex; align-items: center; justify-content: center; color: var(--text-muted); border-radius: 20px;">
-                        [Image: dashboard_attendance_chart.png]
+                    <div class="glass" style="padding: 2.5rem; background: var(--surface); border-radius: 20px;">
+                        <h4 style="margin: 0 0 1.5rem; text-align: center;">🔑 Change Password</h4>
+                        <div style="display: grid; gap: 1rem;">
+                            <div>
+                                <label style="font-size: 0.8rem; color: var(--text-muted); display: block; margin-bottom: 0.3rem;">Current Password</label>
+                                <div style="padding: 0.6rem; background: rgba(255,255,255,0.05); border-radius: 8px; border: 1px solid var(--glass-border);">••••••••</div>
+                            </div>
+                            <div>
+                                <label style="font-size: 0.8rem; color: var(--text-muted); display: block; margin-bottom: 0.3rem;">New Password</label>
+                                <div style="padding: 0.6rem; background: rgba(255,255,255,0.05); border-radius: 8px; border: 1px solid var(--glass-border);">••••••••••</div>
+                            </div>
+                            <div>
+                                <label style="font-size: 0.8rem; color: var(--text-muted); display: block; margin-bottom: 0.3rem;">Confirm Password</label>
+                                <div style="padding: 0.6rem; background: rgba(255,255,255,0.05); border-radius: 8px; border: 1px solid var(--glass-border);">••••••••••</div>
+                            </div>
+                            <div style="text-align: center; margin-top: 0.5rem;">
+                                <span style="display: inline-block; padding: 0.6rem 2rem; background: var(--accent); color: white; border-radius: 8px; font-weight: 600;">Update Password</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -154,10 +149,10 @@
         </section>
 
         <div style="display: flex; justify-content: space-between; align-items: center; padding: 6rem 0; border-top: 1px solid var(--glass-border);">
-            <a href="students.html" class="btn glass" style="padding: 1rem 2rem;">← Student Registry</a>
+            <a href="login-guide.html" class="btn glass" style="padding: 1rem 2rem;">← Login Guide</a>
             <div style="text-align: center;">
-                <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.5rem;">Next: Financial Operations</p>
-                <a href="fees.html" class="btn btn-primary" style="padding: 1.2rem 3rem; font-size: 1.1rem;">Financial Management →</a>
+                <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.5rem;">Next: Your Command Center</p>
+                <a href="dashboard.html" class="btn btn-primary" style="padding: 1.2rem 3rem; font-size: 1.1rem;">Dashboard Mastery →</a>
             </div>
         </div>
     </div>

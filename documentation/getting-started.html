@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Operational Dashboard Guide - Nexus SMS</title>
+    <title>Getting Started - Nexus SMS</title>
     <link rel="stylesheet" href="help-styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -53,29 +53,24 @@
 
     <div class="container" style="padding-top: 6rem;">
         <div style="max-width: 900px;">
-            <h1 class="hero-title" style="font-size: 4rem; text-align: left;">Dashboard Mastery</h1>
-            <p class="hero-subtitle" style="margin-left: 0; text-align: left; font-size: 1.5rem;">Your school's command center. Real-time KPIs, predictive analytics, attendance trends, and financial intelligence — all in one glance.</p>
+            <h1 class="hero-title" style="font-size: 4rem; text-align: left;">Getting Started</h1>
+            <p class="hero-subtitle" style="margin-left: 0; text-align: left; font-size: 1.5rem;">Your complete onboarding guide. From first login to a fully operational school management system in under 30 minutes.</p>
         </div>
 
         <section class="guide-section">
             
-            <!-- Section 1: KPI Cards -->
+            <!-- Step 1: System Overview -->
             <div class="step-row">
                 <div class="step-text">
-                    <span class="step-badge">Intelligence Hub</span>
-                    <h3>KPI Metric Cards</h3>
-                    <p>The top of the Admin Dashboard displays <strong>live KPI cards</strong> showing your school's vital statistics at a glance:</p>
+                    <span class="step-badge">Step 1: Understand</span>
+                    <h3>What is Nexus SMS?</h3>
+                    <p>Nexus SMS is a <strong>cloud-powered School Management System</strong> built on Google Sheets and Google Apps Script. It provides a complete suite of tools for managing students, staff, attendance, fees, academics, and communications — all from a single web application.</p>
                     <ul>
-                        <li style="margin-bottom: 0.5rem;"><strong>👨‍🎓 Students:</strong> Total active enrolled students</li>
-                        <li style="margin-bottom: 0.5rem;"><strong>👩‍🏫 Staff:</strong> Total registered staff members</li>
-                        <li style="margin-bottom: 0.5rem;"><strong>🏫 Classes:</strong> Number of class groups configured</li>
-                        <li style="margin-bottom: 0.5rem;"><strong>💰 Fees Collected:</strong> Revenue collected in the selected date range</li>
-                        <li style="margin-bottom: 0.5rem;"><strong>✅ Attendance:</strong> Overall attendance rate (today/7d/30d)</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>Zero Installation:</strong> Runs entirely in your browser via Google Apps Script</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>Google Sheets Backend:</strong> Your data lives securely in Google Sheets you own</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>Role-Based Access:</strong> Admin, Teacher, and Accountant roles with tailored dashboards</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>Multi-Tenant:</strong> Licensed per school with centralized license management</li>
                     </ul>
-                    <div class="pro-box">
-                        <span class="box-label">Time Range Filters</span>
-                        Use the <strong>Today / 7 Days / 30 Days</strong> filter pills at the top to change the KPI context. All metrics update dynamically.
-                    </div>
                 </div>
                 <div class="step-image-wrap">
                     <div style="height: 350px; background: rgba(255,255,255,0.05); display: flex; align-items: center; justify-content: center; color: var(--text-muted); border-radius: 20px;">
@@ -84,101 +79,94 @@
                 </div>
             </div>
 
-            <!-- Section 2: Grade Insights -->
+            <!-- Step 2: First Login -->
             <div class="step-row">
                 <div class="step-text">
-                    <span class="step-badge">Academic Intelligence</span>
-                    <h3>Grade Insights Panel</h3>
-                    <p>Below the KPI cards, three insight panels provide instant academic intelligence:</p>
-                    <ul>
-                        <li style="margin-bottom: 0.5rem;"><strong>🏆 Top Students:</strong> Ranked by overall percentage across all subjects</li>
-                        <li style="margin-bottom: 0.5rem;"><strong>⚠️ Weak Students:</strong> Students scoring below the passing threshold</li>
-                        <li style="margin-bottom: 0.5rem;"><strong>📉 Weak Subjects:</strong> Subjects with low class-wide averages</li>
-                    </ul>
-                    <p>These insights are automatically computed from your Grade/Exam records and update as marks are entered.</p>
+                    <span class="step-badge">Step 2: Login</span>
+                    <h3>Your First Login</h3>
+                    <p>Navigate to your school's Nexus SMS web app URL. You'll be presented with the <strong>Login Screen</strong>. Enter the email address registered in the Staff sheet and the temporary password provided by your administrator.</p>
+                    <div class="pro-box">
+                        <span class="box-label">Default Password</span>
+                        The initial temporary password for all new accounts is <strong>123456</strong>. You will be required to change it immediately upon first login.
+                    </div>
                 </div>
                 <div class="step-image-wrap">
                     <div style="height: 350px; background: rgba(255,255,255,0.05); display: flex; align-items: center; justify-content: center; color: var(--text-muted); border-radius: 20px;">
-                        [Image: dashboard_grade_insights.png]
+                        [Image: login_screen.png]
                     </div>
                 </div>
             </div>
 
-            <!-- Section 3: Fees Donut -->
+            <!-- Step 3: Password Change -->
             <div class="step-row">
                 <div class="step-text">
-                    <span class="step-badge">Financial Overview</span>
-                    <h3>Fees Collection Donut</h3>
-                    <p>The <strong>Collected vs Overdue</strong> doughnut chart provides a visual split of your school's financial health. The center displays the overall collection percentage.</p>
-                    <div class="pro-box">
-                        <span class="box-label">Unfiltered Metric</span>
-                        Unlike other KPIs, the fees donut always shows <strong>total lifecycle data</strong> — it is not filtered by the date range selector. This gives you the true financial picture.
+                    <span class="step-badge">Step 3: Secure</span>
+                    <h3>Force Password Change</h3>
+                    <p>On your first login, the system will redirect you to the <strong>Password Change Screen</strong>. You must set a new password (minimum 6 characters) before accessing any modules.</p>
+                    <div class="warning-box">
+                        <span class="box-label">Security Requirement</span>
+                        You cannot skip the password change step. This ensures all accounts have unique, secure passwords from day one.
                     </div>
-                </div>
-                <div class="step-image-wrap">
-                    <img src="assets/dashboard_fees_donut.png" alt="Fees Collection Donut Chart" style="width: 100%; border-radius: 20px; border: 1px solid var(--glass-border);">
-                </div>
-            </div>
-
-            <!-- Section 4: Attendance Chart -->
-            <div class="step-row">
-                <div class="step-text">
-                    <span class="step-badge">Attendance Analytics</span>
-                    <h3>Attendance Trend Chart</h3>
-                    <p>A dynamic bar chart visualizes attendance patterns. The chart behavior changes based on your selected filter:</p>
-                    <ul>
-                        <li style="margin-bottom: 0.5rem;"><strong>Today:</strong> Shows per-class attendance percentages (Grade-01 A, Grade-02, etc.)</li>
-                        <li style="margin-bottom: 0.5rem;"><strong>7 Days / 30 Days:</strong> Shows the day-by-day attendance trend across all classes</li>
-                    </ul>
-                    <p>Classes with 0% indicate attendance has not yet been marked for today.</p>
                 </div>
                 <div class="step-image-wrap">
                     <div style="height: 350px; background: rgba(255,255,255,0.05); display: flex; align-items: center; justify-content: center; color: var(--text-muted); border-radius: 20px;">
-                        [Image: dashboard_attendance_chart.png]
+                        [Image: force_password_change.png]
                     </div>
                 </div>
             </div>
 
-            <!-- Section 5: Forecast Engine -->
+            <!-- Step 4: Initial Setup Checklist -->
             <div class="step-row">
                 <div class="step-text">
-                    <span class="step-badge">Predictive Engine</span>
-                    <h3>Collection Forecast</h3>
-                    <p>The <strong>Predictive Collection Forecast</strong> uses your current month's payment velocity to project end-of-month revenue. Three bars represent:</p>
+                    <span class="step-badge">Step 4: Configure</span>
+                    <h3>Administrator Setup Checklist</h3>
+                    <p>Once logged in as Admin, follow this sequence to get your school fully operational:</p>
                     <ul>
-                        <li style="margin-bottom: 0.5rem;"><strong>Already Collected:</strong> Total payments received this month so far</li>
-                        <li style="margin-bottom: 0.5rem;"><strong>Month-End Forecast:</strong> Projected total based on daily collection velocity</li>
-                        <li style="margin-bottom: 0.5rem;"><strong>Target:</strong> Total collectible amount (collected + outstanding due)</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>1. Settings → School Profile:</strong> Set your school name, address, and upload your logo</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>2. Settings → Classes:</strong> Create your class groups (e.g., Grade-01 A, Grade-02)</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>3. Staff Module:</strong> Add your teachers and accountants with their login emails</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>4. Students Module:</strong> Register your students and assign them to classes</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>5. Settings → Fee Structure:</strong> Define fee heads and monthly charges</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>6. Settings → SMS:</strong> Configure SMS provider for attendance notifications</li>
                     </ul>
                 </div>
                 <div class="step-image-wrap">
-                    <img src="assets/dashboard_forecast_forecast.png" alt="Predictive Collection Forecast" style="width: 100%; border-radius: 20px; border: 1px solid var(--glass-border);">
+                    <div style="height: 350px; background: rgba(255,255,255,0.05); display: flex; align-items: center; justify-content: center; color: var(--text-muted); border-radius: 20px;">
+                        [Image: settings_school_profile.png]
+                    </div>
                 </div>
             </div>
 
-            <!-- Section 6: Student Growth -->
+            <!-- Step 5: Navigation Overview -->
             <div class="step-row">
                 <div class="step-text">
-                    <span class="step-badge">Growth Analytics</span>
-                    <h3>Student Growth Trend</h3>
-                    <p>A line chart tracking the number of new student enrollments per month over time. This helps administrators visualize growth patterns and plan for capacity changes.</p>
+                    <span class="step-badge">Step 5: Navigate</span>
+                    <h3>Understanding the Sidebar</h3>
+                    <p>The app uses a <strong>sidebar navigation</strong> to switch between modules. Your available modules depend on your role:</p>
+                    <ul>
+                        <li style="margin-bottom: 0.5rem;"><strong>Admin:</strong> Dashboard, Students, Staff, Fees, Grades, Attendance, Notifications, Export, Settings</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>Teacher:</strong> Dashboard, Attendance, Grades</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>Accountant:</strong> Dashboard, Fees, Export</li>
+                    </ul>
                     <div class="pro-box">
-                        <span class="box-label">Data Source</span>
-                        Growth data is computed from the 'Admission Date' field in the Students registry. Ensure all students have valid admission dates for accurate trending.
+                        <span class="box-label">Quick Tip</span>
+                        The Dashboard is your home screen. It automatically loads after login and provides a high-level overview of your school's operational status.
                     </div>
                 </div>
                 <div class="step-image-wrap">
-                    <img src="assets/dashboard_student_growth.png" alt="Student Growth Trend Line Chart" style="width: 100%; border-radius: 20px; border: 1px solid var(--glass-border);">
+                    <div style="height: 350px; background: rgba(255,255,255,0.05); display: flex; align-items: center; justify-content: center; color: var(--text-muted); border-radius: 20px;">
+                        [Image: dashboard_filter_pills.png]
+                    </div>
                 </div>
             </div>
 
         </section>
 
         <div style="display: flex; justify-content: space-between; align-items: center; padding: 6rem 0; border-top: 1px solid var(--glass-border);">
-            <a href="getting-started.html" class="btn glass" style="padding: 1rem 2rem;">← Getting Started</a>
+            <a href="index.html" class="btn glass" style="padding: 1rem 2rem;">← Knowledge Hub</a>
             <div style="text-align: center;">
-                <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.5rem;">Next: Student Operations</p>
-                <a href="students.html" class="btn btn-primary" style="padding: 1.2rem 3rem; font-size: 1.1rem;">Student Registry →</a>
+                <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.5rem;">Next: Your Command Center</p>
+                <a href="dashboard.html" class="btn btn-primary" style="padding: 1.2rem 3rem; font-size: 1.1rem;">Dashboard Mastery →</a>
             </div>
         </div>
     </div>
