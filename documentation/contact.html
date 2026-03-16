@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +8,11 @@
     <link rel="stylesheet" href="help-styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=Outfit:wght@400;600;800;900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=Outfit:wght@400;600;800;900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
 
     <!-- Premium Branding Bar -->
@@ -17,7 +21,7 @@
             <a href="index.html" class="brand-logo">
                 <span>NEXUS</span> SMS
             </a>
-            
+
             <nav class="main-nav">
                 <div class="nav-item">
                     <a href="index.html" class="nav-link">Home</a>
@@ -54,70 +58,189 @@
     <div class="container" style="padding-top: 6rem;">
         <div style="text-align: center; margin-bottom: 6rem;">
             <h1 class="hero-title" style="font-size: 4rem;">Technical Support Desk</h1>
-            <p class="hero-subtitle" style="margin: 0 auto; max-width: 800px;">Our dedicated team is here to ensure your institution runs at peak efficiency. Reach out for technical assistance, professional training, or custom feature requests.</p>
+            <p class="hero-subtitle" style="margin: 0 auto; max-width: 800px;">Our dedicated team is here to ensure your
+                institution runs at peak efficiency. Reach out for technical assistance, professional training, or
+                custom feature requests.</p>
         </div>
 
         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; margin-bottom: 6rem;">
             <!-- Support Ticketing Form -->
-            <div class="glass" style="padding: 3rem; border-radius: 30px;">
-                <h2 style="font-family: 'Outfit', sans-serif; font-size: 2rem; margin-bottom: 2rem;">Priority Support Request</h2>
-                <form onsubmit="return false;" style="display: flex; flex-direction: column; gap: 2rem;">
+            <div class="glass" style="padding: 3rem; border-radius: 30px; position: relative;">
+                <h2 style="font-family: 'Outfit', sans-serif; font-size: 2rem; margin-bottom: 2rem;">Priority Support
+                    Request</h2>
+
+                <!-- Success Message (hidden by default) -->
+                <div id="formSuccess" style="display: none; text-align: center; padding: 3rem 2rem;">
+                    <div style="font-size: 4rem; margin-bottom: 1rem;">✅</div>
+                    <h3 style="font-family: 'Outfit', sans-serif; font-size: 1.6rem; margin-bottom: 1rem;">Request
+                        Submitted!</h3>
+                    <p style="color: var(--text-muted); margin-bottom: 2rem;">Your support ticket has been logged and an
+                        email confirmation sent. Our team will respond within 2 hours.</p>
+                    <button onclick="resetForm()" class="btn glass"
+                        style="padding: 0.8rem 2rem; cursor: pointer;">Submit Another Request</button>
+                </div>
+
+                <!-- Error Message (hidden by default) -->
+                <div id="formError"
+                    style="display: none; text-align: center; padding: 2rem; margin-bottom: 1.5rem; background: rgba(239, 68, 68, 0.1); border: 1px solid rgba(239, 68, 68, 0.3); border-radius: 16px;">
+                    <p style="color: #ef4444; font-weight: 600;">⚠️ <span id="errorText">Something went wrong. Please
+                            try again.</span></p>
+                </div>
+
+                <form id="supportForm" onsubmit="submitForm(event)"
+                    style="display: flex; flex-direction: column; gap: 2rem;">
                     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
                         <div style="display: flex; flex-direction: column; gap: 0.5rem;">
-                            <label style="font-weight: 600; font-size: 0.9rem; color: var(--text-muted);">Institution Name</label>
-                            <input type="text" class="glass" style="padding: 1.2rem; color: white;" placeholder="e.g. Nexus Academy">
+                            <label style="font-weight: 600; font-size: 0.9rem; color: var(--text-muted);">Institution
+                                Name *</label>
+                            <input type="text" id="institution" class="glass" style="padding: 1.2rem; color: white;"
+                                placeholder="e.g. Nexus Academy" required>
                         </div>
                         <div style="display: flex; flex-direction: column; gap: 0.5rem;">
-                            <label style="font-weight: 600; font-size: 0.9rem; color: var(--text-muted);">Admin Email</label>
-                            <input type="email" class="glass" style="padding: 1.2rem; color: white;" placeholder="admin@school.com">
+                            <label style="font-weight: 600; font-size: 0.9rem; color: var(--text-muted);">Admin Email
+                                *</label>
+                            <input type="email" id="adminEmail" class="glass" style="padding: 1.2rem; color: white;"
+                                placeholder="admin@school.com" required>
                         </div>
                     </div>
-                    
+
                     <div style="display: flex; flex-direction: column; gap: 0.5rem;">
-                        <label style="font-weight: 600; font-size: 0.9rem; color: var(--text-muted);">System Module</label>
-                        <select class="glass" style="padding: 1.2rem; color: white; background: var(--surface);">
+                        <label style="font-weight: 600; font-size: 0.9rem; color: var(--text-muted);">System
+                            Module</label>
+                        <select id="systemModule" class="glass"
+                            style="padding: 1.2rem; color: white; background: var(--surface);">
                             <option>Student Lifecycle</option>
                             <option>Financials & Auditing</option>
                             <option>Academic Infrastructure</option>
+                            <option>Attendance & Tracking</option>
                             <option>Server & Security</option>
                             <option>Other / Feature Request</option>
                         </select>
                     </div>
 
                     <div style="display: flex; flex-direction: column; gap: 0.5rem;">
-                        <label style="font-weight: 600; font-size: 0.9rem; color: var(--text-muted);">Technical Detail</label>
-                        <textarea class="glass" style="padding: 1.2rem; color: white; min-height: 180px;" placeholder="Please describe your technical query or feature requirement in detail..."></textarea>
+                        <label style="font-weight: 600; font-size: 0.9rem; color: var(--text-muted);">Technical Detail
+                            *</label>
+                        <textarea id="messageBody" class="glass"
+                            style="padding: 1.2rem; color: white; min-height: 180px;"
+                            placeholder="Please describe your technical query or feature requirement in detail..."
+                            required></textarea>
                     </div>
 
-                    <button class="btn btn-primary" style="padding: 1.2rem; font-size: 1rem;">Submit Support Ticket</button>
-                    <p style="font-size: 0.85rem; color: var(--text-muted); text-align: center;">Average Response Time: <span style="color: var(--accent); font-weight: 700;">Under 2 Hours</span></p>
+                    <button type="submit" id="submitBtn" class="btn btn-primary"
+                        style="padding: 1.2rem; font-size: 1rem; cursor: pointer; position: relative;">
+                        <span id="btnText">Submit Support Ticket</span>
+                        <span id="btnSpinner" style="display: none;">⏳ Submitting...</span>
+                    </button>
+                    <p style="font-size: 0.85rem; color: var(--text-muted); text-align: center;">Average Response Time:
+                        <span style="color: var(--accent); font-weight: 700;">Under 2 Hours</span>
+                    </p>
                 </form>
             </div>
+
+            <script>
+                // ══════════════════════════════════════════════════════════════
+                //  IMPORTANT: Replace the URL below with your deployed
+                //  Google Apps Script Web App URL.
+                //  Deploy → New Deployment → Web App → Copy URL
+                // ══════════════════════════════════════════════════════════════
+                const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycby6KA3e2uO2sKtHaGVG9uwxvLAyFwbBs_4Fc67qx56wIWq_1bODN2xI0jxahgOFbVvFEw/exec';
+
+                async function submitForm(e) {
+                    e.preventDefault();
+
+                    // Hide previous errors
+                    document.getElementById('formError').style.display = 'none';
+
+                    // Collect form data
+                    const payload = {
+                        institution: document.getElementById('institution').value.trim(),
+                        email: document.getElementById('adminEmail').value.trim(),
+                        module: document.getElementById('systemModule').value,
+                        message: document.getElementById('messageBody').value.trim()
+                    };
+
+                    // Client-side validation
+                    if (!payload.institution || !payload.email || !payload.message) {
+                        showError('Please fill in all required fields.');
+                        return;
+                    }
+
+                    // Show loading state
+                    const btn = document.getElementById('submitBtn');
+                    btn.disabled = true;
+                    document.getElementById('btnText').style.display = 'none';
+                    document.getElementById('btnSpinner').style.display = 'inline';
+
+                    try {
+                        const response = await fetch(APPS_SCRIPT_URL, {
+                            method: 'POST',
+                            mode: 'no-cors',  // Required for Apps Script
+                            headers: { 'Content-Type': 'application/json' },
+                            body: JSON.stringify(payload)
+                        });
+
+                        // With no-cors mode, we can't read the response body,
+                        // but if fetch didn't throw, the request was sent successfully
+                        document.getElementById('supportForm').style.display = 'none';
+                        document.getElementById('formSuccess').style.display = 'block';
+
+                    } catch (error) {
+                        showError('Network error. Please check your connection and try again.');
+                    } finally {
+                        btn.disabled = false;
+                        document.getElementById('btnText').style.display = 'inline';
+                        document.getElementById('btnSpinner').style.display = 'none';
+                    }
+                }
+
+                function showError(msg) {
+                    document.getElementById('errorText').textContent = msg;
+                    document.getElementById('formError').style.display = 'block';
+                }
+
+                function resetForm() {
+                    document.getElementById('supportForm').reset();
+                    document.getElementById('supportForm').style.display = 'flex';
+                    document.getElementById('formSuccess').style.display = 'none';
+                    document.getElementById('formError').style.display = 'none';
+                }
+            </script>
 
             <!-- Global Support Hub -->
             <div style="display: flex; flex-direction: column; gap: 2rem;">
                 <h2 style="font-family: 'Outfit', sans-serif; font-size: 2rem;">Alternative Channels</h2>
-                
-                <div class="glass" style="display: flex; align-items: center; gap: 2rem; border-left: 6px solid #25d366; padding: 2.5rem; border-radius: 20px;">
+
+                <div class="glass"
+                    style="display: flex; align-items: center; gap: 2rem; border-left: 6px solid #25d366; padding: 2.5rem; border-radius: 20px;">
                     <div style="font-size: 3rem;">💬</div>
                     <div>
                         <h4 style="font-size: 1.3rem; margin-bottom: 0.5rem;">WhatsApp Concierge</h4>
-                        <p style="color: var(--text-muted); margin-bottom: 0.8rem; font-size: 0.95rem;">Rapid chat support for data entry or attendance emergencies.</p>
-                        <a href="#" style="color: #25d366; font-weight: 800; text-decoration: none; font-size: 1.1rem;">Chat with Engineer →</a>
+                        <p style="color: var(--text-muted); margin-bottom: 0.8rem; font-size: 0.95rem;">Rapid chat
+                            support for data entry or attendance emergencies.</p>
+                        <a href="#"
+                            style="color: #25d366; font-weight: 800; text-decoration: none; font-size: 1.1rem;">Chat
+                            with Engineer →</a>
                     </div>
                 </div>
 
-                <div class="glass" style="display: flex; align-items: center; gap: 2rem; border-left: 6px solid var(--accent); padding: 2.5rem; border-radius: 20px;">
+                <div class="glass"
+                    style="display: flex; align-items: center; gap: 2rem; border-left: 6px solid var(--accent); padding: 2.5rem; border-radius: 20px;">
                     <div style="font-size: 3rem;">📧</div>
                     <div>
                         <h4 style="font-size: 1.3rem; margin-bottom: 0.5rem;">Enterprise Helpdesk</h4>
-                        <p style="color: var(--text-muted); margin-bottom: 0.8rem; font-size: 0.95rem;">Official institutional correspondence and feature roadmaps.</p>
-                        <a href="mailto:support@nexussms.com" style="color: var(--accent); font-weight: 800; text-decoration: none; font-size: 1.1rem;">support@nexussms.com →</a>
+                        <p style="color: var(--text-muted); margin-bottom: 0.8rem; font-size: 0.95rem;">Official
+                            institutional correspondence and feature roadmaps.</p>
+                        <a href="mailto:support@nexussms.com"
+                            style="color: var(--accent); font-weight: 800; text-decoration: none; font-size: 1.1rem;">support@nexussms.com
+                            →</a>
                     </div>
                 </div>
 
                 <div class="glass" style="padding: 2.5rem; background: var(--primary-gradient); border-radius: 25px;">
-                    <h4 style="font-size: 1.5rem; font-weight: 900; margin-bottom: 1.5rem; font-family: 'Outfit', sans-serif;">Coverage Window</h4>
+                    <h4
+                        style="font-size: 1.5rem; font-weight: 900; margin-bottom: 1.5rem; font-family: 'Outfit', sans-serif;">
+                        Coverage Window</h4>
                     <div style="display: flex; justify-content: space-between; margin-bottom: 1rem;">
                         <span>Monday - Friday</span>
                         <span style="font-weight: 800;">09:00 - 18:00</span>
@@ -126,7 +249,8 @@
                         <span>Institutional Saturday</span>
                         <span style="font-weight: 800;">10:00 - 14:00</span>
                     </div>
-                    <p style="font-size: 0.85rem; color: rgba(255,255,255,0.7); line-height: 1.6;">Technical leads are available 24/7 for license-critical server renewals and institutional security alerts.</p>
+                    <p style="font-size: 0.85rem; color: rgba(255,255,255,0.7); line-height: 1.6;">Technical leads are
+                        available 24/7 for license-critical server renewals and institutional security alerts.</p>
                 </div>
             </div>
         </div>
@@ -137,14 +261,18 @@
         <div class="container footer-grid">
             <div class="footer-brand">
                 <a href="index.html" class="footer-logo">NEXUS SMS</a>
-                <p class="footer-desc">The next generation of educational administrative software. Streamlining operations for thousands of institutions globally.</p>
+                <p class="footer-desc">The next generation of educational administrative software. Streamlining
+                    operations for thousands of institutions globally.</p>
                 <div style="display: flex; gap: 1rem;">
-                    <a href="#" class="btn glass" style="padding: 0.6rem; min-width: 45px; display: flex; align-items: center; justify-content: center;">𝕏</a>
-                    <a href="#" class="btn glass" style="padding: 0.6rem; min-width: 45px; display: flex; align-items: center; justify-content: center;">𝑓</a>
-                    <a href="#" class="btn glass" style="padding: 0.6rem; min-width: 45px; display: flex; align-items: center; justify-content: center;">𝑖</a>
+                    <a href="#" class="btn glass"
+                        style="padding: 0.6rem; min-width: 45px; display: flex; align-items: center; justify-content: center;">𝕏</a>
+                    <a href="#" class="btn glass"
+                        style="padding: 0.6rem; min-width: 45px; display: flex; align-items: center; justify-content: center;">𝑓</a>
+                    <a href="#" class="btn glass"
+                        style="padding: 0.6rem; min-width: 45px; display: flex; align-items: center; justify-content: center;">𝑖</a>
                 </div>
             </div>
-            
+
             <div class="footer-links">
                 <h4>System Hubs</h4>
                 <ul>
@@ -186,4 +314,5 @@
     </footer>
 
 </body>
+
 </html>
