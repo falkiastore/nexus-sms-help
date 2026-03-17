@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Operational Dashboard Guide - Nexus SMS</title>
+    <title>Login & Authentication Guide - Nexus SMS</title>
     <link rel="stylesheet" href="help-styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -53,122 +53,105 @@
 
     <div class="container" style="padding-top: 6rem;">
         <div style="max-width: 900px;">
-            <h1 class="hero-title" style="font-size: 4rem; text-align: left;">Dashboard Mastery</h1>
-            <p class="hero-subtitle" style="margin-left: 0; text-align: left; font-size: 1.5rem;">Your school's command center. Real-time KPIs, predictive analytics, attendance trends, and financial intelligence — all in one glance.</p>
+            <h1 class="hero-title" style="font-size: 4rem; text-align: left;">Login & Authentication</h1>
+            <p class="hero-subtitle" style="margin-left: 0; text-align: left; font-size: 1.5rem;">Understand how Nexus SMS secures your institution's data with password-based authentication, session management, and mandatory password policies.</p>
         </div>
 
         <section class="guide-section">
             
-            <!-- Section 1: KPI Cards -->
+            <!-- Section 1: Login Screen -->
             <div class="step-row">
                 <div class="step-text">
-                    <span class="step-badge">Intelligence Hub</span>
-                    <h3>KPI Metric Cards</h3>
-                    <p>The top of the Admin Dashboard displays <strong>live KPI cards</strong> showing your school's vital statistics at a glance:</p>
+                    <span class="step-badge">Authentication</span>
+                    <h3>The Login Screen</h3>
+                    <p>Nexus SMS uses a <strong>custom password-based authentication system</strong>. When you open the app URL, you'll see the Login screen where you enter your registered email and password.</p>
                     <ul>
-                        <li style="margin-bottom: 0.5rem;"><strong>👨‍🎓 Students:</strong> Total active enrolled students</li>
-                        <li style="margin-bottom: 0.5rem;"><strong>👩‍🏫 Staff:</strong> Total registered staff members</li>
-                        <li style="margin-bottom: 0.5rem;"><strong>🏫 Classes:</strong> Number of class groups configured</li>
-                        <li style="margin-bottom: 0.5rem;"><strong>💰 Fees Collected:</strong> Revenue collected in the selected date range</li>
-                        <li style="margin-bottom: 0.5rem;"><strong>✅ Attendance:</strong> Overall attendance rate (today/7d/30d)</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>Login ID:</strong> Your email address as registered in the Staff sheet</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>Password:</strong> Your personal password (temporary on first login)</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>Multi-Tenant:</strong> The system automatically finds your school's data based on your email</li>
                     </ul>
-                    <div class="pro-box">
-                        <span class="box-label">Time Range Filters</span>
-                        Use the <strong>Today / 7 Days / 30 Days</strong> filter pills at the top to change the KPI context. All metrics update dynamically.
+                </div>
+                <div class="step-image-wrap">
+                    <div style="height: 350px; background: rgba(255,255,255,0.05); display: flex; align-items: center; justify-content: center; color: var(--text-muted); border-radius: 20px;">
+                        [Image: login_screen.png]
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 2: Force Password Change -->
+            <div class="step-row">
+                <div class="step-text">
+                    <span class="step-badge">Security</span>
+                    <h3>Mandatory Password Change</h3>
+                    <p>First-time users or users whose passwords have been reset by an Admin are required to set a new password before accessing the system. This enforces <strong>zero shared-password risk</strong>.</p>
+                    <div class="warning-box">
+                        <span class="box-label">Password Rules</span>
+                        New passwords must be at least 6 characters. The system hashes all passwords with SHA-256 and a unique salt per user — plaintext passwords are never stored.
                     </div>
                 </div>
                 <div class="step-image-wrap">
                     <div style="height: 350px; background: rgba(255,255,255,0.05); display: flex; align-items: center; justify-content: center; color: var(--text-muted); border-radius: 20px;">
-                        [Image: dashboard_kpi_cards.png]
+                        [Image: force_password_change.png]
                     </div>
                 </div>
             </div>
 
-            <!-- Section 2: Grade Insights -->
+            <!-- Section 3: Session Management -->
             <div class="step-row">
                 <div class="step-text">
-                    <span class="step-badge">Academic Intelligence</span>
-                    <h3>Grade Insights Panel</h3>
-                    <p>Below the KPI cards, three insight panels provide instant academic intelligence:</p>
+                    <span class="step-badge">Sessions</span>
+                    <h3>Session Management</h3>
+                    <p>After successful login, Nexus creates a <strong>secure session</strong> valid for 8 hours. The session is stored across multiple layers (cache + persistent properties) for reliability.</p>
                     <ul>
-                        <li style="margin-bottom: 0.5rem;"><strong>🏆 Top Students:</strong> Ranked by overall percentage across all subjects</li>
-                        <li style="margin-bottom: 0.5rem;"><strong>⚠️ Weak Students:</strong> Students scoring below the passing threshold</li>
-                        <li style="margin-bottom: 0.5rem;"><strong>📉 Weak Subjects:</strong> Subjects with low class-wide averages</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>Duration:</strong> 8-hour session lifetime from login</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>Auto-Redirect:</strong> Expired sessions redirect you back to the login screen</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>Multi-Tab Safe:</strong> Sessions work across multiple browser tabs</li>
                     </ul>
-                    <p>These insights are automatically computed from your Grade/Exam records and update as marks are entered.</p>
+                    <div class="pro-box">
+                        <span class="box-label">Mobile Access</span>
+                        You can bookmark the app URL with your session ID for quick access on mobile devices. Sessions persist even if you close and reopen the browser.
+                    </div>
+                </div>
+                <div class="step-image-wrap">
+                    <div class="glass" style="padding: 2.5rem; background: var(--surface); border-radius: 20px;">
+                        <div style="text-align: center; margin-bottom: 1.5rem;">
+                            <div style="font-size: 3rem;">🔒</div>
+                            <h4 style="margin: 1rem 0 0.5rem;">Session Active</h4>
+                        </div>
+                        <div style="display: grid; gap: 1rem; font-size: 0.85rem;">
+                            <div style="display: flex; justify-content: space-between; padding: 0.5rem; background: rgba(255,255,255,0.05); border-radius: 8px;">
+                                <span>Status</span><strong style="color: #22c55e;">Active</strong>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; padding: 0.5rem; background: rgba(255,255,255,0.05); border-radius: 8px;">
+                                <span>Expires In</span><strong>7h 45m</strong>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; padding: 0.5rem; background: rgba(255,255,255,0.05); border-radius: 8px;">
+                                <span>Auth Mode</span><strong>Password</strong>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; padding: 0.5rem; background: rgba(255,255,255,0.05); border-radius: 8px;">
+                                <span>Encryption</span><strong>SHA-256 + Salt</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 4: Role-Based Redirection -->
+            <div class="step-row">
+                <div class="step-text">
+                    <span class="step-badge">Roles</span>
+                    <h3>Role-Based Dashboard Loading</h3>
+                    <p>After login, Nexus automatically loads the dashboard appropriate for your role. Each role sees a different set of KPIs and modules:</p>
+                    <ul>
+                        <li style="margin-bottom: 0.5rem;"><strong>Admin Dashboard:</strong> Full metrics — students, staff, revenue, attendance, grade insights, forecasting</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>Teacher Dashboard:</strong> Class count, student count, attendance status, pending grades</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>Accountant Dashboard:</strong> Total collected, total due, today's collection, overdue students</li>
+                    </ul>
                 </div>
                 <div class="step-image-wrap">
                     <div style="height: 350px; background: rgba(255,255,255,0.05); display: flex; align-items: center; justify-content: center; color: var(--text-muted); border-radius: 20px;">
-                        [Image: dashboard_grade_insights.png]
+                        [Image: dashboard_teacher_view.png]
                     </div>
-                </div>
-            </div>
-
-            <!-- Section 3: Fees Donut -->
-            <div class="step-row">
-                <div class="step-text">
-                    <span class="step-badge">Financial Overview</span>
-                    <h3>Fees Collection Donut</h3>
-                    <p>The <strong>Collected vs Overdue</strong> doughnut chart provides a visual split of your school's financial health. The center displays the overall collection percentage.</p>
-                    <div class="pro-box">
-                        <span class="box-label">Unfiltered Metric</span>
-                        Unlike other KPIs, the fees donut always shows <strong>total lifecycle data</strong> — it is not filtered by the date range selector. This gives you the true financial picture.
-                    </div>
-                </div>
-                <div class="step-image-wrap">
-                    <img src="assets/dashboard_fees_donut.png" alt="Fees Collection Donut Chart" style="width: 100%; border-radius: 20px; border: 1px solid var(--glass-border);">
-                </div>
-            </div>
-
-            <!-- Section 4: Attendance Chart -->
-            <div class="step-row">
-                <div class="step-text">
-                    <span class="step-badge">Attendance Analytics</span>
-                    <h3>Attendance Trend Chart</h3>
-                    <p>A dynamic bar chart visualizes attendance patterns. The chart behavior changes based on your selected filter:</p>
-                    <ul>
-                        <li style="margin-bottom: 0.5rem;"><strong>Today:</strong> Shows per-class attendance percentages (Grade-01 A, Grade-02, etc.)</li>
-                        <li style="margin-bottom: 0.5rem;"><strong>7 Days / 30 Days:</strong> Shows the day-by-day attendance trend across all classes</li>
-                    </ul>
-                    <p>Classes with 0% indicate attendance has not yet been marked for today.</p>
-                </div>
-                <div class="step-image-wrap">
-                    <div style="height: 350px; background: rgba(255,255,255,0.05); display: flex; align-items: center; justify-content: center; color: var(--text-muted); border-radius: 20px;">
-                        [Image: dashboard_attendance_chart.png]
-                    </div>
-                </div>
-            </div>
-
-            <!-- Section 5: Forecast Engine -->
-            <div class="step-row">
-                <div class="step-text">
-                    <span class="step-badge">Predictive Engine</span>
-                    <h3>Collection Forecast</h3>
-                    <p>The <strong>Predictive Collection Forecast</strong> uses your current month's payment velocity to project end-of-month revenue. Three bars represent:</p>
-                    <ul>
-                        <li style="margin-bottom: 0.5rem;"><strong>Already Collected:</strong> Total payments received this month so far</li>
-                        <li style="margin-bottom: 0.5rem;"><strong>Month-End Forecast:</strong> Projected total based on daily collection velocity</li>
-                        <li style="margin-bottom: 0.5rem;"><strong>Target:</strong> Total collectible amount (collected + outstanding due)</li>
-                    </ul>
-                </div>
-                <div class="step-image-wrap">
-                    <img src="assets/dashboard_forecast_forecast.png" alt="Predictive Collection Forecast" style="width: 100%; border-radius: 20px; border: 1px solid var(--glass-border);">
-                </div>
-            </div>
-
-            <!-- Section 6: Student Growth -->
-            <div class="step-row">
-                <div class="step-text">
-                    <span class="step-badge">Growth Analytics</span>
-                    <h3>Student Growth Trend</h3>
-                    <p>A line chart tracking the number of new student enrollments per month over time. This helps administrators visualize growth patterns and plan for capacity changes.</p>
-                    <div class="pro-box">
-                        <span class="box-label">Data Source</span>
-                        Growth data is computed from the 'Admission Date' field in the Students registry. Ensure all students have valid admission dates for accurate trending.
-                    </div>
-                </div>
-                <div class="step-image-wrap">
-                    <img src="assets/dashboard_student_growth.png" alt="Student Growth Trend Line Chart" style="width: 100%; border-radius: 20px; border: 1px solid var(--glass-border);">
                 </div>
             </div>
 
@@ -177,8 +160,8 @@
         <div style="display: flex; justify-content: space-between; align-items: center; padding: 6rem 0; border-top: 1px solid var(--glass-border);">
             <a href="getting-started.html" class="btn glass" style="padding: 1rem 2rem;">← Getting Started</a>
             <div style="text-align: center;">
-                <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.5rem;">Next: Student Operations</p>
-                <a href="students.html" class="btn btn-primary" style="padding: 1.2rem 3rem; font-size: 1.1rem;">Student Registry →</a>
+                <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.5rem;">Next: Your Profile</p>
+                <a href="my-account.html" class="btn btn-primary" style="padding: 1.2rem 3rem; font-size: 1.1rem;">My Account →</a>
             </div>
         </div>
     </div>

@@ -60,18 +60,54 @@
                 <a href="#explore" class="btn btn-primary">Start Exploring</a>
                 <a href="contact.html" class="btn glass" style="border-radius: 14px;">Connect with Support</a>
             </div>
+            
+            <!-- Dashboard Preview -->
+            <div style="margin-top: 4rem; position: relative;">
+                <div style="background: linear-gradient(180deg, rgba(37, 99, 235, 0.1) 0%, rgba(0,0,0,0) 100%); border-radius: 24px; padding: 1rem; border: 1px solid var(--glass-border);">
+                    <img src="assets/dashboard_student_growth.png" alt="Nexus SMS Dashboard Preview" style="width: 100%; border-radius: 16px; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);">
+                </div>
+            </div>
         </div>
     </section>
 
     <div class="container" id="explore">
+        <!-- Onboarding Section -->
+        <h2 style="font-family: 'Outfit', sans-serif; font-size: 2.5rem; margin-bottom: 3rem; border-left: 6px solid #22c55e; padding-left: 1.5rem; line-height: 1;">Start Here</h2>
+        <div class="grid">
+            <a href="getting-started.html" class="module-card glass" style="border: 1px solid rgba(34, 197, 94, 0.3);">
+                <div class="module-icon">🚀</div>
+                <h3 class="module-title">Getting Started</h3>
+                <p class="module-desc" style="color: var(--text-muted);">New to Nexus SMS? Start here. System overview, first login, and the complete setup checklist.</p>
+                <div style="color: #22c55e; margin-top: auto; font-weight: 700; display: flex; align-items: center; gap: 0.5rem; padding-top: 1.5rem;">
+                    Begin Setup <span>→</span>
+                </div>
+            </a>
+            <a href="login-guide.html" class="module-card glass" style="border: 1px solid rgba(34, 197, 94, 0.3);">
+                <div class="module-icon">🔑</div>
+                <h3 class="module-title">Login & Authentication</h3>
+                <p class="module-desc" style="color: var(--text-muted);">Password login, force password change, session management, and role-based dashboard loading.</p>
+                <div style="color: #22c55e; margin-top: auto; font-weight: 700; display: flex; align-items: center; gap: 0.5rem; padding-top: 1.5rem;">
+                    Learn More <span>→</span>
+                </div>
+            </a>
+            <a href="my-account.html" class="module-card glass" style="border: 1px solid rgba(34, 197, 94, 0.3);">
+                <div class="module-icon">👤</div>
+                <h3 class="module-title">My Account</h3>
+                <p class="module-desc" style="color: var(--text-muted);">View and update your profile, change your password, and manage your personal settings.</p>
+                <div style="color: #22c55e; margin-top: auto; font-weight: 700; display: flex; align-items: center; gap: 0.5rem; padding-top: 1.5rem;">
+                    Manage Profile <span>→</span>
+                </div>
+            </a>
+        </div>
+
         <!-- Module Grid -->
-        <h2 style="font-family: 'Outfit', sans-serif; font-size: 2.5rem; margin-bottom: 3rem; border-left: 6px solid var(--accent); padding-left: 1.5rem; line-height: 1;">Functional Core</h2>
+        <h2 style="font-family: 'Outfit', sans-serif; font-size: 2.5rem; margin: 6rem 0 3rem; border-left: 6px solid var(--accent); padding-left: 1.5rem; line-height: 1;">Functional Core</h2>
         <div class="grid">
             <!-- Dashboard -->
             <a href="dashboard.html" class="module-card glass">
                 <div class="module-icon">📊</div>
                 <h3 class="module-title">Operational Dashboard</h3>
-                <p class="module-desc" style="color: var(--text-muted);">Real-time school status, high-level academic tracking, and administrative highlights in one central view.</p>
+                <p class="module-desc" style="color: var(--text-muted);">Real-time KPIs, predictive forecasting, attendance trends, and financial intelligence in one glance.</p>
                 <div style="color: var(--accent); margin-top: auto; font-weight: 700; display: flex; align-items: center; gap: 0.5rem; padding-top: 1.5rem;">
                     Examine Feature Detail <span>→</span>
                 </div>
@@ -81,7 +117,7 @@
             <a href="students.html" class="module-card glass">
                 <div class="module-icon">🎓</div>
                 <h3 class="module-title">Student Registry</h3>
-                <p class="module-desc" style="color: var(--text-muted);">Comprehensive profile management, admission workflows, parent data linkage, and academic history.</p>
+                <p class="module-desc" style="color: var(--text-muted);">Comprehensive profile management, admission workflows, parent data linkage, and lifecycle actions.</p>
                 <div style="color: var(--accent); margin-top: auto; font-weight: 700; display: flex; align-items: center; gap: 0.5rem; padding-top: 1.5rem;">
                     Examine Feature Detail <span>→</span>
                 </div>
@@ -91,7 +127,7 @@
             <a href="attendance.html" class="module-card glass">
                 <div class="module-icon">📅</div>
                 <h3 class="module-title">Attendance Tracking</h3>
-                <p class="module-desc" style="color: var(--text-muted);">Daily marking automation, holiday management, and instant SMS alerts for absent students.</p>
+                <p class="module-desc" style="color: var(--text-muted);">Smart marking with auto-present defaults, class filtering, and automated SMS alerts for absent students.</p>
                 <div style="color: var(--accent); margin-top: auto; font-weight: 700; display: flex; align-items: center; gap: 0.5rem; padding-top: 1.5rem;">
                     Examine Feature Detail <span>→</span>
                 </div>
@@ -100,8 +136,8 @@
             <!-- Fees -->
             <a href="fees.html" class="module-card glass">
                 <div class="module-icon">💰</div>
-                <h3 class="module-title">Financial Audit</h3>
-                <p class="module-desc" style="color: var(--text-muted);">The billing engine: Challan generation, partial payment handling, and exhaustive revenue reporting.</p>
+                <h3 class="module-title">Financial Management</h3>
+                <p class="module-desc" style="color: var(--text-muted);">Fee structure setup, payment recording, collection tracking, predictive forecasting, and receipt generation.</p>
                 <div style="color: var(--accent); margin-top: auto; font-weight: 700; display: flex; align-items: center; gap: 0.5rem; padding-top: 1.5rem;">
                     Examine Feature Detail <span>→</span>
                 </div>
@@ -111,7 +147,7 @@
             <a href="academics.html" class="module-card glass">
                 <div class="module-icon">📝</div>
                 <h3 class="module-title">Academic & Grades</h3>
-                <p class="module-desc" style="color: var(--text-muted);">Exam scheduling, custom grading scales, and the automated generation of professional report cards.</p>
+                <p class="module-desc" style="color: var(--text-muted);">Exam creation, rapid marks entry, custom grading scales, and branded PDF report card generation.</p>
                 <div style="color: var(--accent); margin-top: auto; font-weight: 700; display: flex; align-items: center; gap: 0.5rem; padding-top: 1.5rem;">
                     Examine Feature Detail <span>→</span>
                 </div>
@@ -121,7 +157,37 @@
             <a href="staff.html" class="module-card glass">
                 <div class="module-icon">👥</div>
                 <h3 class="module-title">Staff Management</h3>
-                <p class="module-desc" style="color: var(--text-muted);">Manage employee records, define roles (RBAC), and assign classes to teachers effortlessly.</p>
+                <p class="module-desc" style="color: var(--text-muted);">Employee registry, role assignment (RBAC), class assignment, password management, and profile actions.</p>
+                <div style="color: var(--accent); margin-top: auto; font-weight: 700; display: flex; align-items: center; gap: 0.5rem; padding-top: 1.5rem;">
+                    Examine Feature Detail <span>→</span>
+                </div>
+            </a>
+
+            <!-- Settings -->
+            <a href="settings.html" class="module-card glass">
+                <div class="module-icon">⚙️</div>
+                <h3 class="module-title">System Settings</h3>
+                <p class="module-desc" style="color: var(--text-muted);">School profile, theme customization, class management, holidays, fee structure, and SMS configuration.</p>
+                <div style="color: var(--accent); margin-top: auto; font-weight: 700; display: flex; align-items: center; gap: 0.5rem; padding-top: 1.5rem;">
+                    Examine Feature Detail <span>→</span>
+                </div>
+            </a>
+
+            <!-- Notifications -->
+            <a href="notifications.html" class="module-card glass">
+                <div class="module-icon">🔔</div>
+                <h3 class="module-title">Notification Engine</h3>
+                <p class="module-desc" style="color: var(--text-muted);">Automated attendance alerts, fee reminders, broadcast messaging, and real-time notification center.</p>
+                <div style="color: var(--accent); margin-top: auto; font-weight: 700; display: flex; align-items: center; gap: 0.5rem; padding-top: 1.5rem;">
+                    Examine Feature Detail <span>→</span>
+                </div>
+            </a>
+
+            <!-- Reports -->
+            <a href="reports.html" class="module-card glass">
+                <div class="module-icon">📥</div>
+                <h3 class="module-title">Reports & Data</h3>
+                <p class="module-desc" style="color: var(--text-muted);">Export student data, fee transactions, attendance reports, and academic report cards in standard formats.</p>
                 <div style="color: var(--accent); margin-top: auto; font-weight: 700; display: flex; align-items: center; gap: 0.5rem; padding-top: 1.5rem;">
                     Examine Feature Detail <span>→</span>
                 </div>

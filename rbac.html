@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Roles & Security (RBAC) - Nexus SMS</title>
+    <title>Roles & Security Guide - Nexus SMS</title>
     <link rel="stylesheet" href="help-styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,17 +11,11 @@
 </head>
 <body>
 
-    <!-- Premium Branding Bar -->
     <header class="branding-bar">
         <div class="container branding-content">
-            <a href="index.html" class="brand-logo">
-                <span>NEXUS</span> SMS
-            </a>
-            
+            <a href="index.html" class="brand-logo"><span>NEXUS</span> SMS</a>
             <nav class="main-nav">
-                <div class="nav-item">
-                    <a href="index.html" class="nav-link">Home</a>
-                </div>
+                <div class="nav-item"><a href="index.html" class="nav-link">Home</a></div>
                 <div class="nav-item">
                     <a href="#" class="nav-link">Modules ▾</a>
                     <div class="dropdown">
@@ -42,77 +36,174 @@
                         <a href="reports.html" class="dropdown-link">📥 Reports & Data</a>
                     </div>
                 </div>
-                <div class="nav-item">
-                    <a href="contact.html" class="nav-link">Support</a>
-                </div>
+                <div class="nav-item"><a href="contact.html" class="nav-link">Support</a></div>
             </nav>
-
             <a href="../../" class="btn btn-primary" style="padding: 0.6rem 1.5rem; font-size: 0.9rem;">Launch App →</a>
         </div>
     </header>
 
-    <div class="container" style="padding-top: 6rem; padding-bottom: 6rem;">
-        <div style="max-width: 900px; margin-bottom: 4rem;">
-            <h1 class="hero-title" style="font-size: 4rem; text-align: left;">Security & Permission Architecture</h1>
-            <p class="hero-subtitle" style="margin-left: 0; text-align: left; font-size: 1.5rem;">Nexus SMS protects your institutional data through a rigorous Role-Based Access Control (RBAC) model, ensuring every user has exactly the access they need—and nothing more.</p>
+    <div class="container" style="padding-top: 6rem;">
+        <div style="max-width: 900px;">
+            <h1 class="hero-title" style="font-size: 4rem; text-align: left;">Roles & Security</h1>
+            <p class="hero-subtitle" style="margin-left: 0; text-align: left; font-size: 1.5rem;">Understand how Nexus SMS protects your data with role-based access control, password security, and session management.</p>
         </div>
 
         <section class="guide-section">
-            <div class="glass" style="padding: 3rem; border-radius: 30px; margin-bottom: 4rem;">
-                <h2 style="font-family: 'Outfit', sans-serif; font-size: 2.5rem; margin-bottom: 2rem;">User Tier Breakdown</h2>
-                
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
-                    <div class="glass" style="padding: 2rem; border-radius: 20px; border-top: 4px solid var(--accent);">
-                        <div style="font-size: 2rem; margin-bottom: 1rem;">👑</div>
-                        <h3 style="margin-bottom: 1rem;">Super Administrator</h3>
-                        <p style="color: var(--text-muted); font-size: 0.95rem;">Unrestricted access to the entire portal. Capable of modifying system core settings, license management, and master data purging.</p>
-                    </div>
-                    
-                    <div class="glass" style="padding: 2rem; border-radius: 20px; border-top: 4px solid var(--warning);">
-                        <div style="font-size: 2rem; margin-bottom: 1rem;">💼</div>
-                        <h3 style="margin-bottom: 1rem;">Principal / Manager</h3>
-                        <p style="color: var(--text-muted); font-size: 0.95rem;">High-level oversight of all modules. Can view financial reports, staff performance, and global student metrics.</p>
-                    </div>
-
-                    <div class="glass" style="padding: 2rem; border-radius: 20px; border-top: 4px solid var(--success);">
-                        <div style="font-size: 2rem; margin-bottom: 1rem;">📝</div>
-                        <h3 style="margin-bottom: 1rem;">Academic Staff</h3>
-                        <p style="color: var(--text-muted); font-size: 0.95rem;">Permissions focused on classroom management: Attendance marking, mark entry, and student profile views.</p>
-                    </div>
-
-                    <div class="glass" style="padding: 2rem; border-radius: 20px; border-top: 4px solid #38bdf8;">
-                        <div style="font-size: 2rem; margin-bottom: 1rem;">💰</div>
-                        <h3 style="margin-bottom: 1rem;">Accountant</h3>
-                        <p style="color: var(--text-muted); font-size: 0.95rem;">Restricted to the Financial module. Handles fee collections, receipt generation, and ledger audits.</p>
+            
+            <!-- Section 1: Role Overview -->
+            <div class="step-row">
+                <div class="step-text">
+                    <span class="step-badge">Access Control</span>
+                    <h3>Role-Based Access (RBAC)</h3>
+                    <p>Nexus SMS implements a <strong>three-tier role system</strong>. Each user is assigned one role that determines what modules they can access and what actions they can perform.</p>
+                    <ul>
+                        <li style="margin-bottom: 0.5rem;"><strong>Admin:</strong> Complete access to all modules — Students, Staff, Fees, Grades, Attendance, Notifications, Export, and Settings</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>Teacher:</strong> Dashboard (class-specific), Attendance marking, Grade entry — limited to assigned classes</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>Accountant:</strong> Dashboard (finance-specific), Fees module, and Export — financial operations only</li>
+                    </ul>
+                </div>
+                <div class="step-image-wrap">
+                    <div class="glass" style="padding: 2.5rem; background: var(--surface); border-radius: 20px;">
+                        <h4 style="margin: 0 0 1.5rem; text-align: center;">🔐 Access Matrix</h4>
+                        <div style="display: grid; gap: 0.5rem; font-size: 0.8rem;">
+                            <div style="display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 0.5rem; padding: 0.5rem; font-weight: 700; border-bottom: 1px solid var(--glass-border);">
+                                <span>Module</span><span style="text-align:center;">Admin</span><span style="text-align:center;">Teacher</span><span style="text-align:center;">Accountant</span>
+                            </div>
+                            <div style="display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 0.5rem; padding: 0.4rem;">
+                                <span>Dashboard</span><span style="text-align:center;">✅ Full</span><span style="text-align:center;">✅ Class</span><span style="text-align:center;">✅ Finance</span>
+                            </div>
+                            <div style="display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 0.5rem; padding: 0.4rem;">
+                                <span>Students</span><span style="text-align:center;">✅</span><span style="text-align:center;">❌</span><span style="text-align:center;">❌</span>
+                            </div>
+                            <div style="display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 0.5rem; padding: 0.4rem;">
+                                <span>Staff</span><span style="text-align:center;">✅</span><span style="text-align:center;">❌</span><span style="text-align:center;">❌</span>
+                            </div>
+                            <div style="display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 0.5rem; padding: 0.4rem;">
+                                <span>Attendance</span><span style="text-align:center;">✅</span><span style="text-align:center;">✅</span><span style="text-align:center;">❌</span>
+                            </div>
+                            <div style="display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 0.5rem; padding: 0.4rem;">
+                                <span>Fees</span><span style="text-align:center;">✅</span><span style="text-align:center;">❌</span><span style="text-align:center;">✅</span>
+                            </div>
+                            <div style="display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 0.5rem; padding: 0.4rem;">
+                                <span>Grades</span><span style="text-align:center;">✅</span><span style="text-align:center;">✅</span><span style="text-align:center;">❌</span>
+                            </div>
+                            <div style="display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 0.5rem; padding: 0.4rem;">
+                                <span>Settings</span><span style="text-align:center;">✅</span><span style="text-align:center;">❌</span><span style="text-align:center;">❌</span>
+                            </div>
+                            <div style="display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 0.5rem; padding: 0.4rem;">
+                                <span>Export</span><span style="text-align:center;">✅</span><span style="text-align:center;">❌</span><span style="text-align:center;">✅</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
 
+            <!-- Section 2: Dashboard Variations -->
             <div class="step-row">
                 <div class="step-text">
-                    <span class="step-badge">Security Feature</span>
-                    <h3>The 'RequireRole' Guard</h3>
-                    <p>Every internal API call in Nexus SMS is protected by a server-side guard. If a user tries to access a restricted function via URL manipulation, the system will instantly terminate the request and log a security violation.</p>
-                    <div class="warning-box">
-                        <span class="box-label">Administrative Action</span>
-                        If you notice a staff member has left the institution, deactivate their account immediately. Reactivation can only be performed by a Super Administrator.
-                    </div>
+                    <span class="step-badge">Dashboards</span>
+                    <h3>Role-Specific Dashboards</h3>
+                    <p>Each role sees a <strong>completely different dashboard</strong> tailored to their responsibilities:</p>
+                    <ul>
+                        <li style="margin-bottom: 0.5rem;"><strong>Admin:</strong> Students, Staff, Classes, Fees, Attendance metrics + Grade Insights + Forecast + Student Growth</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>Teacher:</strong> My Classes count, My Students count, Attendance Status (Completed vs Pending), Pending Grades</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>Accountant:</strong> Total Collected, Total Due, Today's Collection, Overdue Students count</li>
+                    </ul>
                 </div>
                 <div class="step-image-wrap">
                     <div style="height: 350px; background: rgba(255,255,255,0.05); display: flex; align-items: center; justify-content: center; color: var(--text-muted); border-radius: 20px;">
-                        [Placeholder: server_security_log.png]
+                        [Image: dashboard_accountant_view.png]
                     </div>
                 </div>
             </div>
+
+            <!-- Section 3: Password Security -->
+            <div class="step-row">
+                <div class="step-text">
+                    <span class="step-badge">Password Policy</span>
+                    <h3>Password Security</h3>
+                    <p>Nexus SMS enforces strict password security:</p>
+                    <ul>
+                        <li style="margin-bottom: 0.5rem;"><strong>Hashing:</strong> All passwords are hashed with SHA-256 and a unique random salt per user</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>Force Change:</strong> First-time and reset passwords require immediate change</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>Minimum Length:</strong> 6 characters minimum</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>Admin Reset:</strong> Admins can force-reset any staff password from the Staff module</li>
+                    </ul>
+                    <div class="warning-box">
+                        <span class="box-label">Zero Plain-Text Storage</span>
+                        Nexus SMS never stores plain-text passwords. Even administrators cannot view a user's current password.
+                    </div>
+                </div>
+                <div class="step-image-wrap">
+                    <div class="glass" style="padding: 2.5rem; background: var(--surface); border-radius: 20px;">
+                        <div style="text-align: center; margin-bottom: 1.5rem;">
+                            <div style="font-size: 3rem;">🛡️</div>
+                            <h4 style="margin: 1rem 0 0.5rem;">Security Stack</h4>
+                        </div>
+                        <div style="display: grid; gap: 0.8rem; font-size: 0.85rem;">
+                            <div style="padding: 0.8rem; background: rgba(34, 197, 94, 0.1); border-radius: 10px; border-left: 3px solid #22c55e;">
+                                <strong>SHA-256</strong> — Industry-standard hashing
+                            </div>
+                            <div style="padding: 0.8rem; background: rgba(99, 102, 241, 0.1); border-radius: 10px; border-left: 3px solid var(--accent);">
+                                <strong>Unique Salt</strong> — Per-user random salt
+                            </div>
+                            <div style="padding: 0.8rem; background: rgba(245, 158, 11, 0.1); border-radius: 10px; border-left: 3px solid #f59e0b;">
+                                <strong>Force Change</strong> — Mandatory on first login
+                            </div>
+                            <div style="padding: 0.8rem; background: rgba(139, 92, 246, 0.1); border-radius: 10px; border-left: 3px solid #8b5cf6;">
+                                <strong>8-hour Sessions</strong> — Auto-expire
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 4: Session Security -->
+            <div class="step-row">
+                <div class="step-text">
+                    <span class="step-badge">Sessions</span>
+                    <h3>Session Security</h3>
+                    <p>User sessions are cryptographically secure with multiple layers of storage for reliability:</p>
+                    <ul>
+                        <li style="margin-bottom: 0.5rem;"><strong>Duration:</strong> 8-hour sessions with automatic expiration</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>Storage:</strong> Dual-layer using Google Cache Service + Properties Service</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>Token Generation:</strong> Unique session IDs generated using crypto-secure methods</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>Logout:</strong> Sessions are destroyed on explicit logout</li>
+                    </ul>
+                    <div class="pro-box">
+                        <span class="box-label">Reliability</span>
+                        If the fast cache layer expires, Nexus falls back to the persistent Properties layer. Sessions survive cache flushes automatically.
+                    </div>
+                </div>
+                <div class="step-image-wrap">
+                    <div class="glass" style="padding: 2.5rem; background: var(--surface); border-radius: 20px;">
+                        <h4 style="margin: 0 0 1.5rem; text-align: center;">⏱️ Session Lifecycle</h4>
+                        <div style="display: grid; gap: 0.6rem; font-size: 0.85rem;">
+                            <div style="display: flex; justify-content: space-between; padding: 0.6rem; background: rgba(255,255,255,0.05); border-radius: 8px;">
+                                <span>Login</span><strong style="color: #22c55e;">→ Session Created</strong>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; padding: 0.6rem; background: rgba(255,255,255,0.05); border-radius: 8px;">
+                                <span>Active</span><strong>0–8 hours</strong>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; padding: 0.6rem; background: rgba(255,255,255,0.05); border-radius: 8px;">
+                                <span>Expiry</span><strong style="color: #f59e0b;">→ Auto Redirect to Login</strong>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; padding: 0.6rem; background: rgba(255,255,255,0.05); border-radius: 8px;">
+                                <span>Logout</span><strong style="color: #ef4444;">→ Session Destroyed</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </section>
 
-        <div class="mastery-box" style="margin-top: 4rem;">
-            <h4 style="color: var(--accent); margin-bottom: 0.5rem; font-family: 'Outfit', sans-serif;">TWO-FACTOR AUTHENTICATION (BETA)</h4>
-            <p>We are currently piloting 2FA for Super Admin accounts. If you wish to join the pilot program and add an extra layer of security to your master account, please contact Nexus Support.</p>
-        </div>
-
-        <div style="display: flex; justify-content: center; padding: 6rem 0;">
-            <a href="index.html" class="btn btn-primary" style="padding: 1.2rem 4rem; font-size: 1.1rem;">Return to Main Hub</a>
+        <div style="display: flex; justify-content: space-between; align-items: center; padding: 6rem 0; border-top: 1px solid var(--glass-border);">
+            <a href="notifications.html" class="btn glass" style="padding: 1rem 2rem;">← Notifications</a>
+            <div style="text-align: center;">
+                <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.5rem;">Common Questions</p>
+                <a href="faq.html" class="btn btn-primary" style="padding: 1.2rem 3rem; font-size: 1.1rem;">FAQs →</a>
+            </div>
         </div>
     </div>
 
@@ -122,34 +213,19 @@
             <div class="footer-brand">
                 <a href="index.html" class="footer-logo">NEXUS SMS</a>
                 <p class="footer-desc">The next generation of educational administrative software. Streamlining operations for thousands of institutions globally.</p>
+                <div style="display: flex; gap: 1rem;">
+                    <a href="#" class="btn glass" style="padding: 0.6rem; min-width: 45px; display: flex; align-items: center; justify-content: center;">𝕏</a>
+                    <a href="#" class="btn glass" style="padding: 0.6rem; min-width: 45px; display: flex; align-items: center; justify-content: center;">𝑓</a>
+                    <a href="#" class="btn glass" style="padding: 0.6rem; min-width: 45px; display: flex; align-items: center; justify-content: center;">𝑖</a>
+                </div>
             </div>
-            
-            <div class="footer-links">
-                <h4>System Hubs</h4>
-                <ul>
-                    <li><a href="dashboard.html">Admin Dashboard</a></li>
-                    <li><a href="students.html">Student Portal</a></li>
-                    <li><a href="staff.html">Staff Registry</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-links">
-                <h4>Operations</h4>
-                <ul>
-                    <li><a href="fees.html">Fee Collection</a></li>
-                    <li><a href="academics.html">Academic Records</a></li>
-                    <li><a href="notifications.html">SMS Notifications</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-links">
-                <h4>Help & Legal</h4>
-                <ul>
-                    <li><a href="faq.html">Documentation Home</a></li>
-                    <li><a href="rbac.html">Security Guide</a></li>
-                    <li><a href="contact.html">Support Desk</a></li>
-                </ul>
-            </div>
+            <div class="footer-links"><h4>System Hubs</h4><ul><li><a href="dashboard.html">Admin Dashboard</a></li><li><a href="students.html">Student Portal</a></li><li><a href="staff.html">Staff Registry</a></li><li><a href="attendance.html">Attendance Logs</a></li></ul></div>
+            <div class="footer-links"><h4>Operations</h4><ul><li><a href="fees.html">Fee Collection</a></li><li><a href="academics.html">Academic Records</a></li><li><a href="notifications.html">SMS Notifications</a></li><li><a href="reports.html">Data Exports</a></li></ul></div>
+            <div class="footer-links"><h4>Help & Legal</h4><ul><li><a href="faq.html">Documentation Home</a></li><li><a href="rbac.html">Security Guide</a></li><li><a href="contact.html">Support Desk</a></li><li><a href="license.html">License Status</a></li></ul></div>
+        </div>
+        <div class="container copy-bar">
+            <div>&copy; 2026 Nexus SMS Help Portal. All Rights Reserved.</div>
+            <div style="display: flex; gap: 2rem;"><a href="#" style="color: var(--text-muted); text-decoration: none;">Privacy Policy</a><a href="#" style="color: var(--text-muted); text-decoration: none;">Terms of Service</a></div>
         </div>
     </footer>
 

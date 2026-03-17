@@ -14,14 +14,9 @@
     <!-- Premium Branding Bar -->
     <header class="branding-bar">
         <div class="container branding-content">
-            <a href="index.html" class="brand-logo">
-                <span>NEXUS</span> SMS
-            </a>
-            
+            <a href="index.html" class="brand-logo"><span>NEXUS</span> SMS</a>
             <nav class="main-nav">
-                <div class="nav-item">
-                    <a href="index.html" class="nav-link">Home</a>
-                </div>
+                <div class="nav-item"><a href="index.html" class="nav-link">Home</a></div>
                 <div class="nav-item">
                     <a href="#" class="nav-link">Modules ▾</a>
                     <div class="dropdown">
@@ -42,68 +37,122 @@
                         <a href="reports.html" class="dropdown-link">📥 Reports & Data</a>
                     </div>
                 </div>
-                <div class="nav-item">
-                    <a href="contact.html" class="nav-link">Support</a>
-                </div>
+                <div class="nav-item"><a href="contact.html" class="nav-link">Support</a></div>
             </nav>
-
             <a href="../../" class="btn btn-primary" style="padding: 0.6rem 1.5rem; font-size: 0.9rem;">Launch App →</a>
         </div>
     </header>
 
     <div class="container" style="padding-top: 6rem;">
         <div style="max-width: 900px;">
-            <h1 class="hero-title" style="font-size: 4rem; text-align: left;">Financial Control</h1>
-            <p class="hero-subtitle" style="margin-left: 0; text-align: left; font-size: 1.5rem;">Audit with confidence. Total control over fee structures, automated monthly billing, and real-time revenue intelligence.</p>
+            <h1 class="hero-title" style="font-size: 4rem; text-align: left;">Financial Management</h1>
+            <p class="hero-subtitle" style="margin-left: 0; text-align: left; font-size: 1.5rem;">Complete control over fee structures, payment recording, collection tracking, and financial forecasting — all automated within a single module.</p>
         </div>
 
         <section class="guide-section">
             
+            <!-- Section 1: Fee Structure -->
             <div class="step-row">
                 <div class="step-text">
-                    <span class="step-badge">Phase 1: Setup</span>
-                    <h3>Fee Head Architecture</h3>
-                    <p>Financial accuracy begins with correctly defined <strong>Fee Heads</strong>. You can configure recurring charges (Tuition) and one-time chargers (Admission/Activity) across different student categories.</p>
-                    <div class="pro-box">
-                        <span class="box-label">Financial Tip: Bulk Assignment</span>
-                        Nexus allows you to define a 'Master Fee Plan' for an entire class level, which then propagates to all enrolled students automatically.
-                    </div>
-                </div>
-                <div class="step-image-wrap">
-                    <img src="financials_mockup.png" class="step-image" alt="Financial Dashboard View">
-                </div>
-            </div>
-
-            <div class="step-row">
-                <div class="step-text">
-                    <span class="step-badge">Phase 2: Billing</span>
-                    <h3>The Batch Billing Engine</h3>
-                    <p>At the start of each month, the <strong>Nexus Billing Engine</strong> processes thousands of student accounts. It calculates arrears, applies current charges, and factors in scholarship deductions.</p>
+                    <span class="step-badge">Foundation</span>
+                    <h3>Fee Structure Setup</h3>
+                    <p>Before collecting any fees, define your <strong>Fee Heads</strong> in Settings → Fee Structure. Fee heads represent the different charge categories (Tuition, Transport, Lab Fees, etc.).</p>
                     <ul>
-                        <li style="margin-bottom: 1rem;"><strong>Challan Generation:</strong> Batch-generate PDF challans for parent distribution.</li>
-                        <li style="margin-bottom: 1rem;"><strong>Arrears Logic:</strong> Unpaid dues are carried forward automatically to the next month's totals.</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>Recurring Fees:</strong> Monthly charges that auto-apply to billing cycles</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>One-Time Fees:</strong> Admission charges, exam fees, etc.</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>Per-Class Rates:</strong> Different fee amounts for different class levels</li>
                     </ul>
                 </div>
                 <div class="step-image-wrap">
                     <div style="height: 350px; background: rgba(255,255,255,0.05); display: flex; align-items: center; justify-content: center; color: var(--text-muted); border-radius: 20px;">
-                        [Placeholder: batch_billing_wizard.png]
+                        [Image: fees_structure_setup.png]
                     </div>
                 </div>
             </div>
 
+            <!-- Section 2: Fee Register -->
             <div class="step-row">
                 <div class="step-text">
-                    <span class="step-badge">Phase 3: Audit</span>
-                    <h3>Collection Intelligence</h3>
-                    <p>Monitor your school's liquidity with real-time collection dashboards. Identify payment trends and generate <strong>Defaulter Lists</strong> with a single click.</p>
-                    <div class="warning-box">
-                        <span class="box-label">Audit Safety</span>
-                        Once a transaction is finalized and a receipt is issued, any corrections require administrative 'Voiding' rights to maintain a tamper-proof audit trail.
+                    <span class="step-badge">Ledger</span>
+                    <h3>The Fee Register</h3>
+                    <p>The Fee Register is a comprehensive student-wise ledger showing <strong>total due</strong>, <strong>total collected</strong>, and <strong>outstanding balance</strong> for every student. Filter by class to focus on specific groups.</p>
+                    <div class="pro-box">
+                        <span class="box-label">Smart Summary</span>
+                        The register header shows aggregate totals: Total Fee, Total Collected, Total Due, and the number of students with outstanding balances.
                     </div>
                 </div>
                 <div class="step-image-wrap">
                     <div style="height: 350px; background: rgba(255,255,255,0.05); display: flex; align-items: center; justify-content: center; color: var(--text-muted); border-radius: 20px;">
-                        [Placeholder: revenue_audit_chart.png]
+                        [Image: fees_register_table.png]
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 3: Record Payment -->
+            <div class="step-row">
+                <div class="step-text">
+                    <span class="step-badge">Collection</span>
+                    <h3>Recording Payments</h3>
+                    <p>Click the <strong>payment icon</strong> next to any student to open the payment recording dialog. Enter the amount, select the payment method (Cash, Bank Transfer, Online), and submit.</p>
+                    <ul>
+                        <li style="margin-bottom: 0.5rem;"><strong>Partial Payments:</strong> Accept any amount — the balance updates automatically</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>Transaction Log:</strong> Each payment creates a timestamped entry in the Fee Transactions sheet</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>Instant Update:</strong> Dashboard KPIs and charts reflect payments immediately</li>
+                    </ul>
+                </div>
+                <div class="step-image-wrap">
+                    <div style="height: 350px; background: rgba(255,255,255,0.05); display: flex; align-items: center; justify-content: center; color: var(--text-muted); border-radius: 20px;">
+                        [Image: fees_record_payment.png]
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 4: Collection Intelligence -->
+            <div class="step-row">
+                <div class="step-text">
+                    <span class="step-badge">Analytics</span>
+                    <h3>Collection Intelligence</h3>
+                    <p>The Dashboard's financial section provides two critical visualizations from your fee data:</p>
+                    <ul>
+                        <li style="margin-bottom: 0.5rem;"><strong>Fees Donut:</strong> Collected vs Overdue with center collection percentage</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>Predictive Forecast:</strong> Month-end collection projection based on payment velocity</li>
+                    </ul>
+                </div>
+                <div class="step-image-wrap">
+                    <img src="assets/dashboard_fees_donut.png" alt="Fees Collection Donut" style="width: 100%; border-radius: 20px; border: 1px solid var(--glass-border);">
+                </div>
+            </div>
+
+            <!-- Section 5: Forecast -->
+            <div class="step-row">
+                <div class="step-text">
+                    <span class="step-badge">Forecasting</span>
+                    <h3>Revenue Audit Forecast</h3>
+                    <p>The <strong>Predictive Collection Forecast</strong> analyzes your current month's daily collection rate and extrapolates to estimate month-end totals. Three bars compare: Already Collected, Projected Total, and the Target.</p>
+                    <div class="warning-box">
+                        <span class="box-label">Forecast Accuracy</span>
+                        Forecasts are most accurate after the first week of each month when sufficient data points establish a reliable velocity pattern.
+                    </div>
+                </div>
+                <div class="step-image-wrap">
+                    <img src="assets/dashboard_forecast_forecast.png" alt="Revenue Forecast Chart" style="width: 100%; border-radius: 20px; border: 1px solid var(--glass-border);">
+                </div>
+            </div>
+
+            <!-- Section 6: Receipts -->
+            <div class="step-row">
+                <div class="step-text">
+                    <span class="step-badge">Documentation</span>
+                    <h3>Challans & Receipts</h3>
+                    <p>Generate <strong>print-ready fee receipts</strong> branded with your school's logo, name, and contact information as configured in Settings. Each receipt includes the transaction details, student information, and a unique reference number.</p>
+                    <div class="pro-box">
+                        <span class="box-label">Branding Sync</span>
+                        Receipts automatically use the school logo, name, and primary color from your Settings → School Profile configuration.
+                    </div>
+                </div>
+                <div class="step-image-wrap">
+                    <div style="height: 350px; background: rgba(255,255,255,0.05); display: flex; align-items: center; justify-content: center; color: var(--text-muted); border-radius: 20px;">
+                        [Image: fees_receipt_pdf.png]
                     </div>
                 </div>
             </div>
@@ -111,10 +160,10 @@
         </section>
 
         <div style="display: flex; justify-content: space-between; align-items: center; padding: 6rem 0; border-top: 1px solid var(--glass-border);">
-            <a href="attendance.html" class="btn glass" style="padding: 1rem 2rem;">← Attendance Logs</a>
+            <a href="attendance.html" class="btn glass" style="padding: 1rem 2rem;">← Attendance</a>
             <div style="text-align: center;">
-                <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.5rem;">Next: Academic Rigor</p>
-                <a href="academics.html" class="btn btn-primary" style="padding: 1.2rem 3rem; font-size: 1.1rem;">Academics & Grades →</a>
+                <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.5rem;">Next: Academic Operations</p>
+                <a href="academics.html" class="btn btn-primary" style="padding: 1.2rem 3rem; font-size: 1.1rem;">Academic & Grading →</a>
             </div>
         </div>
     </div>
@@ -131,44 +180,13 @@
                     <a href="#" class="btn glass" style="padding: 0.6rem; min-width: 45px; display: flex; align-items: center; justify-content: center;">𝑖</a>
                 </div>
             </div>
-            
-            <div class="footer-links">
-                <h4>System Hubs</h4>
-                <ul>
-                    <li><a href="dashboard.html">Admin Dashboard</a></li>
-                    <li><a href="students.html">Student Portal</a></li>
-                    <li><a href="staff.html">Staff Registry</a></li>
-                    <li><a href="attendance.html">Attendance Logs</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-links">
-                <h4>Operations</h4>
-                <ul>
-                    <li><a href="fees.html">Fee Collection</a></li>
-                    <li><a href="academics.html">Academic Records</a></li>
-                    <li><a href="notifications.html">SMS Notifications</a></li>
-                    <li><a href="reports.html">Data Exports</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-links">
-                <h4>Help & Legal</h4>
-                <ul>
-                    <li><a href="faq.html">Documentation Home</a></li>
-                    <li><a href="rbac.html">Security Guide</a></li>
-                    <li><a href="contact.html">Support Desk</a></li>
-                    <li><a href="license.html">License Status</a></li>
-                </ul>
-            </div>
+            <div class="footer-links"><h4>System Hubs</h4><ul><li><a href="dashboard.html">Admin Dashboard</a></li><li><a href="students.html">Student Portal</a></li><li><a href="staff.html">Staff Registry</a></li><li><a href="attendance.html">Attendance Logs</a></li></ul></div>
+            <div class="footer-links"><h4>Operations</h4><ul><li><a href="fees.html">Fee Collection</a></li><li><a href="academics.html">Academic Records</a></li><li><a href="notifications.html">SMS Notifications</a></li><li><a href="reports.html">Data Exports</a></li></ul></div>
+            <div class="footer-links"><h4>Help & Legal</h4><ul><li><a href="faq.html">Documentation Home</a></li><li><a href="rbac.html">Security Guide</a></li><li><a href="contact.html">Support Desk</a></li><li><a href="license.html">License Status</a></li></ul></div>
         </div>
-
         <div class="container copy-bar">
             <div>&copy; 2026 Nexus SMS Help Portal. All Rights Reserved.</div>
-            <div style="display: flex; gap: 2rem;">
-                <a href="#" style="color: var(--text-muted); text-decoration: none;">Privacy Policy</a>
-                <a href="#" style="color: var(--text-muted); text-decoration: none;">Terms of Service</a>
-            </div>
+            <div style="display: flex; gap: 2rem;"><a href="#" style="color: var(--text-muted); text-decoration: none;">Privacy Policy</a><a href="#" style="color: var(--text-muted); text-decoration: none;">Terms of Service</a></div>
         </div>
     </footer>
 
