@@ -453,6 +453,27 @@ button { cursor:pointer; border:none; background:none; font-family:inherit; outl
   background:#eef2ff; color:#4f46e5; border:1px solid #e0e7ff;
 }
 
+.module-link {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  margin-top:14px;
+  padding:8px 12px;
+  border-radius:10px;
+  border:1px solid #d8e1ef;
+  background:#f8fbff;
+  color:#1d4ed8;
+  font-size:.82rem;
+  font-weight:700;
+  text-decoration:none;
+  transition:all var(--t);
+}
+.module-link:hover {
+  border-color:#a8b9d8;
+  background:#eef4ff;
+  transform:translateY(-2px);
+}
+
 /* ═══════════════════════════════════════════════════════════
    HOW IT WORKS — dark
    ═══════════════════════════════════════════════════════════ */
@@ -460,7 +481,7 @@ button { cursor:pointer; border:none; background:none; font-family:inherit; outl
 
 .steps-container { display:grid; grid-template-columns:repeat(3,1fr); gap:32px; }
 
-.step-card { text-align:center; position:relative; padding:36px 20px; }
+.step-card { text-align:center; position:relative; padding:36px 20px; display:block; color:inherit; text-decoration:none; }
 .step-number {
   width:46px; height:46px; border-radius:50%;
   background:linear-gradient(135deg,var(--gold),#b8922a);

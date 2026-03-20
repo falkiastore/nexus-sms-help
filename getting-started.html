@@ -1,4 +1,125 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en' dir='ltr'>
+<head>
+  <meta charset='UTF-8' />
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' />
+  <meta name='theme-color' content='#0f1b3d' />
+  <title>Getting Started | Nexus SMS</title>
+  <meta name='description' content='Single-page onboarding with 3 sections: Create Your School, Add Students & Staff, Start Managing.' />
+  <link rel='preconnect' href='https://fonts.googleapis.com' />
+  <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
+  <link href='https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Montserrat:wght@700;800;900&family=Noto+Nastaliq+Urdu:wght@400;700&display=swap' rel='stylesheet' />
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css' />
+  <link rel='stylesheet' href='styles.css' />
+  <link rel='stylesheet' href='module-pages.css' />
+</head>
+<body>
+<nav class='navbar' id='navbar'>
+  <div class='nav-container'>
+    <a href='index.html' class='nav-logo'>
+      <div class='logo-icon'><i class='fas fa-school'></i></div>
+      <span class='logo-text'>Nexus <span class='logo-accent'>SMS</span></span>
+    </a>
+    <div class='nav-links' id='navLinks'>
+      <a href='index.html#features' class='nav-link'>Features</a>
+      <a href='index.html#modules' class='nav-link'>Modules</a>
+      <a href='index.html#how-it-works' class='nav-link'>How It Works</a>
+      <a href='index.html#faq' class='nav-link'>FAQ</a>
+      <a href='index.html#contact' class='nav-link'>Contact</a>
+    </div>
+    <div class='nav-actions' id='navActions'>
+      <a href='index.html#contact' class='btn btn-outline-sm'>Request Trial</a>
+      <a href='index.html#demo' class='btn btn-border-sm'><i class='fas fa-play-circle'></i> Try Demo</a>
+      <a href='#' class='btn btn-gold-sm'><i class='fas fa-sign-in-alt'></i> Sign In</a>
+    </div>
+    <button class='hamburger' id='hamburger' aria-label='Toggle navigation'>
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
 
+<header class='module-hero'>
+  <div class='container' data-animate='fade-up'>
+    <div class='module-kicker'><i class='fas fa-route'></i> HOW IT WORKS</div>
+    <h1 class='module-title'>Getting Started</h1>
+    <p class='module-subtitle'>One page, 3 sections. Homepage HOW IT WORKS cards link directly to these anchors.</p>
+  </div>
+</header>
+
+<main class='module-main'>
+  <div class='container'>
+    <section class='getting-started-jump' data-animate='fade-up'>
+      <a class='jump-card' href='#create-school'><h3>1. Create Your School</h3><p>Set profile and secure first login.</p></a>
+      <a class='jump-card' href='#add-students-staff'><h3>2. Add Students &amp; Staff</h3><p>Populate operational registries.</p></a>
+      <a class='jump-card' href='#start-managing'><h3>3. Start Managing</h3><p>Run daily workflows from dashboard.</p></a>
+    </section>
+
+    <section class='flow-section' id='create-school'>
+      <h2 class='shot-title' data-animate='fade-up'>1. Create Your School</h2>
+      <p class='shot-subtitle' data-animate='fade-up'>Start with secure access and first setup steps.</p>
+      <div class='shot-grid'>
+        <article class='shot-card' data-animate='fade-up'><div class='shot-visual'><img src='images/getting_started_login.png' alt='getting started login' loading='lazy' /></div><div class='shot-caption'><strong>getting_started_login.png</strong><span>Login screen</span></div></article>
+        <article class='shot-card' data-animate='fade-up'><div class='shot-visual'><img src='images/login_password_change.png' alt='password change' loading='lazy' /></div><div class='shot-caption'><strong>login_password_change.png</strong><span>Force password change screen</span></div></article>
+      </div>
+    </section>
+
+    <section class='flow-section' id='add-students-staff'>
+      <h2 class='shot-title' data-animate='fade-up'>2. Add Students &amp; Staff</h2>
+      <p class='shot-subtitle' data-animate='fade-up'>Add core people records and navigate module setup.</p>
+      <div class='shot-grid'>
+        <article class='shot-card' data-animate='fade-up'><div class='shot-visual'><img src='images/getting_started_sidebar.png' alt='sidebar' loading='lazy' /></div><div class='shot-caption'><strong>getting_started_sidebar.png</strong><span>Sidebar navigation menu</span></div></article>
+        <article class='shot-card' data-animate='fade-up'><div class='shot-visual'><img src='images/students_registry_full.png' alt='students registry' loading='lazy' /></div><div class='shot-caption'><strong>students_registry_full.png</strong><span>Student registry onboarding</span></div></article>
+        <article class='shot-card' data-animate='fade-up'><div class='shot-visual'><img src='images/staff_registry_table.png' alt='staff registry' loading='lazy' /></div><div class='shot-caption'><strong>staff_registry_table.png</strong><span>Staff onboarding table</span></div></article>
+      </div>
+    </section>
+
+    <section class='flow-section' id='start-managing'>
+      <h2 class='shot-title' data-animate='fade-up'>3. Start Managing</h2>
+      <p class='shot-subtitle' data-animate='fade-up'>Begin operations and personal account management.</p>
+      <div class='shot-grid'>
+        <article class='shot-card' data-animate='fade-up'><div class='shot-visual'><img src='images/getting_started_dashboard.png' alt='dashboard' loading='lazy' /></div><div class='shot-caption'><strong>getting_started_dashboard.png</strong><span>Dashboard after login</span></div></article>
+        <article class='shot-card' data-animate='fade-up'><div class='shot-visual'><img src='images/my_account_profile.png' alt='my account profile' loading='lazy' /></div><div class='shot-caption'><strong>my_account_profile.png</strong><span>My Account profile view</span></div></article>
+        <article class='shot-card' data-animate='fade-up'><div class='shot-visual'><img src='images/my_account_edit.png' alt='my account edit' loading='lazy' /></div><div class='shot-caption'><strong>my_account_edit.png</strong><span>My Account edit form</span></div></article>
+      </div>
+    </section>
+
+    <div class='module-cta' data-animate='fade-up'>
+      <a href='index.html#contact' class='btn btn-gold'><i class='fas fa-paper-plane'></i> Request Trial</a>
+      <a href='index.html#how-it-works' class='btn btn-border'><i class='fas fa-arrow-left'></i> Back to How It Works</a>
+    </div>
+  </div>
+</main>
+
+<footer class='footer' id='footer'>
+  <div class='footer-bottom'>
+    <div class='container'>
+      <div class='footer-grid'>
+        <div class='footer-brand'>
+          <div class='footer-logo'><i class='fas fa-school'></i><span>Nexus SMS</span></div>
+          <p>The complete, Google-Sheets-powered school management system built for Pakistani schools.</p>
+        </div>
+        <div class='footer-links-group'>
+          <h4>Resources</h4>
+          <a href='index.html#how-it-works'>How It Works</a>
+          <a href='getting-started.html'>Getting Started</a>
+          <a href='index.html#faq'>FAQ</a>
+          <a href='index.html#contact'>Contact</a>
+        </div>
+        <div class='footer-links-group'>
+          <h4>Legal</h4>
+          <a href='privacy-policy.html'>Privacy Policy</a>
+          <a href='terms-of-service.html'>Terms of Service</a>
+          <a href='data-security.html'>Data &amp; Security</a>
+        </div>
+      </div>
+      <div class='footer-divider'></div>
+      <div class='footer-info'>
+        <p>&copy; 2026 Nexus SMS. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src='script.js'></script>
+</body>
 </html>
