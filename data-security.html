@@ -4,88 +4,87 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <meta name="theme-color" content="#0f1b3d" />
-  <title>Privacy Policy | Nexus SMS</title>
-  <meta name="description" content="Read the Nexus SMS Privacy Policy to understand how we collect, use, and protect school and visitor data." />
+  <title>Data &amp; Security | Nexus SMS</title>
+  <meta name="description" content="Understand how Nexus SMS protects school and visitor data through secure architecture, controls, and operational safeguards." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Montserrat:wght@700;800;900&family=Noto+Nastaliq+Urdu:wght@400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
   <link rel="stylesheet" href="styles.css" />
   <style>
-    .policy-hero {
+    .security-hero {
       position: relative;
       padding: 160px 0 72px;
       background:
-        radial-gradient(circle at 15% 20%, rgba(212, 168, 50, 0.2), transparent 40%),
-        radial-gradient(circle at 80% 10%, rgba(59, 130, 246, 0.18), transparent 38%),
+        radial-gradient(circle at 15% 20%, rgba(20, 184, 166, 0.18), transparent 40%),
+        radial-gradient(circle at 80% 10%, rgba(212, 168, 50, 0.18), transparent 38%),
         linear-gradient(160deg, var(--navy-darkest), var(--navy-mid));
       border-bottom: 1px solid rgba(255, 255, 255, 0.08);
     }
-    .policy-kicker {
+    .security-kicker {
       display: inline-flex;
       align-items: center;
       gap: 10px;
       padding: 8px 14px;
-      border: 1px solid var(--gold-border);
-      background: var(--gold-dim);
+      border: 1px solid rgba(20, 184, 166, 0.4);
+      background: rgba(20, 184, 166, 0.12);
       border-radius: 999px;
-      color: #f9e8ad;
+      color: #99f6e4;
       font-size: 0.8rem;
       font-weight: 700;
-      letter-spacing: 0.2px;
       margin-bottom: 16px;
     }
-    .policy-title {
+    .security-title {
       font-family: var(--font-heading);
       font-size: clamp(2rem, 5vw, 3.3rem);
       line-height: 1.1;
       margin-bottom: 14px;
       max-width: 900px;
     }
-    .policy-subtitle {
+    .security-subtitle {
       color: rgba(255, 255, 255, 0.78);
       font-size: 1rem;
-      max-width: 760px;
+      max-width: 800px;
     }
-    .policy-main {
+    .security-main {
       padding: 64px 0 90px;
       background: linear-gradient(180deg, #f6f9ff 0%, #f2f5fc 100%);
     }
-    .policy-grid {
+    .security-grid {
       display: grid;
       gap: 18px;
     }
-    .policy-card {
+    .security-card {
       background: #fff;
       border: 1px solid #e3e8f4;
       border-radius: 18px;
       box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
       padding: 24px;
     }
-    .policy-card h2 {
+    .security-card h2 {
       color: #0f1b3d;
       font-family: var(--font-heading);
       font-size: 1.15rem;
       margin-bottom: 10px;
     }
-    .policy-card p {
+    .security-card p {
       color: #334155;
       font-size: 0.96rem;
       line-height: 1.72;
     }
-    .policy-card ul {
+    .security-card ul {
       margin: 10px 0 0 18px;
       color: #334155;
       font-size: 0.95rem;
       line-height: 1.7;
     }
-    .policy-note {
+    .security-meta {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 16px;
       margin-top: 18px;
     }
-    .policy-note > div {
+    .security-meta > div {
       background: #fff;
       border: 1px dashed #cbd5e1;
       border-radius: 14px;
@@ -93,7 +92,7 @@
       color: #334155;
       font-size: 0.92rem;
     }
-    .policy-note strong {
+    .security-meta strong {
       color: #0f1b3d;
       display: block;
       margin-bottom: 6px;
@@ -101,17 +100,17 @@
       text-transform: uppercase;
       letter-spacing: 0.5px;
     }
-    .policy-cta {
+    .security-cta {
       margin-top: 26px;
       display: flex;
       flex-wrap: wrap;
       gap: 12px;
     }
     @media (max-width: 860px) {
-      .policy-main { padding: 50px 0 70px; }
-      .policy-card { padding: 20px; }
-      .policy-note { grid-template-columns: 1fr; }
-      .policy-hero { padding-top: 130px; }
+      .security-main { padding: 50px 0 70px; }
+      .security-card { padding: 20px; }
+      .security-meta { grid-template-columns: 1fr; }
+      .security-hero { padding-top: 130px; }
     }
   </style>
 </head>
@@ -144,102 +143,94 @@
   </div>
 </nav>
 
-<header class="policy-hero">
+<header class="security-hero">
   <div class="container" data-animate="fade-up">
-    <div class="policy-kicker"><i class="fas fa-shield-alt"></i> Privacy and Data Protection</div>
-    <h1 class="policy-title">Privacy Policy</h1>
-    <p class="policy-subtitle">
-      This policy explains how Nexus SMS collects, uses, and protects personal data when you use our website, request a demo, or run the Nexus SMS platform in your school operations.
+    <div class="security-kicker"><i class="fas fa-lock"></i> Platform Security</div>
+    <h1 class="security-title">Data &amp; Security</h1>
+    <p class="security-subtitle">
+      Nexus SMS is designed with practical security controls for schools. This page summarizes how we protect data, monitor access, and handle incidents.
     </p>
   </div>
 </header>
 
-<main class="policy-main">
+<main class="security-main">
   <div class="container">
-    <section class="policy-grid">
-      <article class="policy-card" data-animate="fade-up">
-        <h2>1. Effective Date</h2>
-        <p>This policy is effective from March 20, 2026. By using Nexus SMS website pages and services, you agree to the practices described below.</p>
+    <section class="security-grid">
+      <article class="security-card" data-animate="fade-up">
+        <h2>1. Security Architecture</h2>
+        <p>Nexus SMS runs on Google Sheets and Google Apps Script with role-based application controls. School data is logically separated and accessed through authorized workflows.</p>
       </article>
 
-      <article class="policy-card" data-animate="fade-up">
-        <h2>2. Information We Collect</h2>
-        <p>We collect only the information needed to provide school management services and support. This may include:</p>
+      <article class="security-card" data-animate="fade-up">
+        <h2>2. Access Control</h2>
         <ul>
-          <li>Contact form data such as school name, contact person, email, phone number, and message.</li>
-          <li>Operational school data entered by authorized users in Nexus SMS modules.</li>
-          <li>Technical usage data such as browser type, device type, and access logs for security and reliability.</li>
+          <li>Role-based permissions for Admin, Teacher, and Accountant access scopes.</li>
+          <li>Restricted visibility so users only see data required for their role.</li>
+          <li>Account-level controls to reduce unauthorized data exposure.</li>
         </ul>
       </article>
 
-      <article class="policy-card" data-animate="fade-up">
-        <h2>3. How We Use Information</h2>
+      <article class="security-card" data-animate="fade-up">
+        <h2>3. Authentication and Session Safeguards</h2>
         <ul>
-          <li>To respond to demo and support requests.</li>
-          <li>To configure and operate your school account.</li>
-          <li>To provide feature updates, maintenance, and service notifications.</li>
-          <li>To improve platform performance, quality, and security.</li>
+          <li>Password hashing and secure authentication flows.</li>
+          <li>Session controls and validation checks for active logins.</li>
+          <li>First-login password updates and lockout protections where configured.</li>
         </ul>
       </article>
 
-      <article class="policy-card" data-animate="fade-up">
-        <h2>4. Data Storage and Security</h2>
-        <p>Nexus SMS is built on Google Sheets and Google Apps Script. School data is stored in your authorized Google workspace/spreadsheet environment with role-based access controls. We apply reasonable technical and administrative safeguards to prevent unauthorized access, loss, misuse, or alteration of data.</p>
+      <article class="security-card" data-animate="fade-up">
+        <h2>4. Data Transmission and Handling</h2>
+        <p>Requests are transmitted over secure HTTPS channels. We avoid unnecessary data collection and process only the information needed for school operations, support, and platform reliability.</p>
       </article>
 
-      <article class="policy-card" data-animate="fade-up">
-        <h2>5. Data Sharing</h2>
-        <p>We do not sell your personal or school data. We only share data when:</p>
+      <article class="security-card" data-animate="fade-up">
+        <h2>5. Backups and Recovery</h2>
         <ul>
-          <li>It is required to deliver the service you requested.</li>
-          <li>It is required by law, regulation, or valid legal process.</li>
-          <li>You explicitly authorize the sharing.</li>
+          <li>Support for scheduled CSV/ZIP backups as configured by schools.</li>
+          <li>Email-based backup delivery for operational continuity.</li>
+          <li>Recovery plans based on available backup sets and school configuration.</li>
         </ul>
       </article>
 
-      <article class="policy-card" data-animate="fade-up">
-        <h2>6. Cookies and Analytics</h2>
-        <p>We may use basic cookies or analytics tools to understand website traffic and improve user experience. These tools help us monitor performance and optimize pages, not profile users for resale.</p>
+      <article class="security-card" data-animate="fade-up">
+        <h2>6. Monitoring and Logging</h2>
+        <p>We maintain operational logs for troubleshooting, performance checks, and investigation of abnormal activity. Logs are reviewed as needed to maintain platform integrity.</p>
       </article>
 
-      <article class="policy-card" data-animate="fade-up">
-        <h2>7. Data Retention</h2>
-        <p>We retain contact submissions for support and audit purposes and keep operational data according to your school service lifecycle, legal obligations, and backup requirements. You can request removal of contact records by contacting us.</p>
+      <article class="security-card" data-animate="fade-up">
+        <h2>7. Incident Response</h2>
+        <p>If a security issue is detected, we prioritize containment, root-cause analysis, and corrective actions. Affected schools are contacted through designated communication channels when required.</p>
       </article>
 
-      <article class="policy-card" data-animate="fade-up">
-        <h2>8. Your Rights</h2>
-        <p>You may request access, correction, or deletion of personal contact information we hold, subject to legal and operational constraints. For school-managed records, requests should come from authorized school administrators.</p>
+      <article class="security-card" data-animate="fade-up">
+        <h2>8. Shared Responsibility</h2>
+        <p>Security is a shared responsibility. Schools should enforce strong internal password practices, limit account sharing, and keep authorized contact details up to date for security communication.</p>
       </article>
 
-      <article class="policy-card" data-animate="fade-up">
-        <h2>9. Third-Party Links</h2>
-        <p>Our website may contain links to third-party services. Their privacy practices are governed by their own policies, and we encourage you to review them before sharing data.</p>
+      <article class="security-card" data-animate="fade-up">
+        <h2>9. Compliance and Policy Alignment</h2>
+        <p>Our data handling approach aligns with platform terms and privacy commitments. For legal details, review the Privacy Policy and Terms of Service pages.</p>
       </article>
 
-      <article class="policy-card" data-animate="fade-up">
-        <h2>10. Changes to This Policy</h2>
-        <p>We may update this Privacy Policy when features, legal requirements, or data practices change. The latest version will always be published on this page.</p>
-      </article>
-
-      <article class="policy-card" data-animate="fade-up">
-        <h2>11. Contact Us</h2>
-        <p>If you have questions about privacy or data handling, contact us at <a href="mailto:urduaiweb@gmail.com" style="color:#0f3ba9;font-weight:700;">urduaiweb@gmail.com</a>.</p>
+      <article class="security-card" data-animate="fade-up">
+        <h2>10. Contact for Security Matters</h2>
+        <p>For urgent security concerns, contact us at <a href="mailto:urduaiweb@gmail.com" style="color:#0f3ba9;font-weight:700;">urduaiweb@gmail.com</a>.</p>
       </article>
     </section>
 
-    <div class="policy-note" data-animate="fade-up">
-      <div>
-        <strong>Service Scope</strong>
-        This policy covers NexusWebsite pages and Nexus SMS platform operations.
-      </div>
+    <div class="security-meta" data-animate="fade-up">
       <div>
         <strong>Last Updated</strong>
-        March 20, 2026
+        March 21, 2026
+      </div>
+      <div>
+        <strong>Scope</strong>
+        NexusWebsite pages and Nexus SMS service operations.
       </div>
     </div>
 
-    <div class="policy-cta" data-animate="fade-up">
+    <div class="security-cta" data-animate="fade-up">
       <a href="index.html#contact" class="btn btn-gold"><i class="fas fa-envelope"></i> Contact Team</a>
       <a href="index.html" class="btn btn-border"><i class="fas fa-arrow-left"></i> Back to Homepage</a>
     </div>
