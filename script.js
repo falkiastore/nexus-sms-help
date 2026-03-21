@@ -117,8 +117,14 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     const title = card.querySelector('.shot-caption strong')?.textContent?.trim() || img.alt || 'Module screen';
-    const hint = card.querySelector('.shot-caption span')?.textContent?.trim() || 'This screen explains this step in the module.';
-    placeholder.textContent = `${title}: ${hint}`;
+    const fileName = (img.getAttribute('src') || '').split('/').pop() || 'screenshot.png';
+    placeholder.innerHTML = `
+      <div class="placeholder-wrap">
+        <i class="fas fa-image placeholder-icon" aria-hidden="true"></i>
+        <strong>${title}</strong>
+        <span>Add screenshot file: <code>${fileName}</code></span>
+      </div>
+    `;
 
     const showMissingState = () => {
       card.classList.add('missing-image');
@@ -322,4 +328,3 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
 });
-

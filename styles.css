@@ -114,6 +114,13 @@ button { cursor:pointer; border:none; background:none; font-family:inherit; outl
 }
 .btn-border:hover { border-color:rgba(255,255,255,.7); background:rgba(255,255,255,.07); transform:translateY(-2px); }
 
+.btn-whatsapp {
+  background:#25D366; color:#fff; box-shadow:0 4px 15px rgba(37,211,102,0.3);
+}
+.btn-whatsapp:hover {
+  background:#20ba5a; transform:translateY(-2px); box-shadow:0 8px 25px rgba(37,211,102,0.45);
+}
+
 /* Nav-size buttons */
 .btn-outline-sm { font-size:.82rem; padding:8px 16px; border-radius:var(--radius-sm); color:rgba(255,255,255,.7); transition:color var(--t); }
 .btn-outline-sm:hover { color:#fff; }
@@ -312,7 +319,6 @@ button { cursor:pointer; border:none; background:none; font-family:inherit; outl
    PRODUCT SHOWCASE — light section
    ═══════════════════════════════════════════════════════════ */
 .product-showcase { padding:var(--section-pad); }
-.light-section.product-showcase { }
 
 .showcase-tabs {
   display:flex; justify-content:center; gap:6px;
@@ -424,6 +430,7 @@ button { cursor:pointer; border:none; background:none; font-family:inherit; outl
 .module-deep-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:20px; }
 
 .module-deep-card {
+  display:block; text-decoration:none; color:inherit;
   padding:28px 26px; border-radius:var(--radius-lg);
   background:var(--light-card); border:1px solid var(--light-border);
   transition:all var(--t); box-shadow:var(--shadow-sm);
@@ -453,26 +460,6 @@ button { cursor:pointer; border:none; background:none; font-family:inherit; outl
   background:#eef2ff; color:#4f46e5; border:1px solid #e0e7ff;
 }
 
-.module-link {
-  display:inline-flex;
-  align-items:center;
-  gap:8px;
-  margin-top:14px;
-  padding:8px 12px;
-  border-radius:10px;
-  border:1px solid #d8e1ef;
-  background:#f8fbff;
-  color:#1d4ed8;
-  font-size:.82rem;
-  font-weight:700;
-  text-decoration:none;
-  transition:all var(--t);
-}
-.module-link:hover {
-  border-color:#a8b9d8;
-  background:#eef4ff;
-  transform:translateY(-2px);
-}
 
 /* ═══════════════════════════════════════════════════════════
    HOW IT WORKS — dark
@@ -607,8 +594,12 @@ button { cursor:pointer; border:none; background:none; font-family:inherit; outl
 }
 
 .contact-info { display:flex; flex-direction:column; gap:16px; }
+/* Desktop specific alignment */
+@media (min-width:1025px) {
+  .contact-info { justify-content:space-between; height:100%; }
+}
 .contact-info-card {
-  display:flex; align-items:flex-start; gap:16px;
+  display:flex; align-items:center; gap:16px;
   padding:20px 24px; border-radius:var(--radius-lg);
   background:var(--light-card); border:1px solid var(--light-border);
   box-shadow:var(--shadow-sm); transition:all var(--t);
