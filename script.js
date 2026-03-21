@@ -102,6 +102,40 @@ document.addEventListener('DOMContentLoaded', () => {
     navActions?.classList.remove('mobile-open');
   }));
 
+  // --- Module Screenshot Fallbacks -----------------------------------
+  // Show readable placeholders when guide screenshots are not available yet.
+  document.querySelectorAll('.shot-card').forEach(card => {
+    const visual = card.querySelector('.shot-visual');
+    const img = visual?.querySelector('img');
+    if (!visual || !img) return;
+
+    let placeholder = visual.querySelector('.shot-placeholder');
+    if (!placeholder) {
+      placeholder = document.createElement('div');
+      placeholder.className = 'shot-placeholder';
+      visual.appendChild(placeholder);
+    }
+
+    const title = card.querySelector('.shot-caption strong')?.textContent?.trim() || img.alt || 'Module screen';
+    const hint = card.querySelector('.shot-caption span')?.textContent?.trim() || 'This screen explains this step in the module.';
+    placeholder.textContent = `${title}: ${hint}`;
+
+    const showMissingState = () => {
+      card.classList.add('missing-image');
+    };
+
+    const clearMissingState = () => {
+      card.classList.remove('missing-image');
+    };
+
+    img.addEventListener('error', showMissingState);
+    img.addEventListener('load', clearMissingState);
+
+    if (img.complete && img.naturalWidth === 0) {
+      showMissingState();
+    }
+  });
+
   // ─── Keyword Rotator ─────────────────────────────────── 
   const keywords = document.querySelectorAll('.keyword');
   let kwIdx = 0;
@@ -288,5 +322,4 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
 });
-
 
