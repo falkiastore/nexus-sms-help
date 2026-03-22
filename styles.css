@@ -237,6 +237,18 @@ button { cursor:pointer; border:none; background:none; font-family:inherit; outl
   border-radius:50px; background:rgba(255,255,255,.07);
   border:1px solid rgba(255,255,255,.12); font-size:.82rem;
   color:rgba(255,255,255,.65); margin-bottom:28px; backdrop-filter:blur(10px);
+  z-index: 5;
+}
+
+.hero-preview .hero-badge {
+  position: absolute;
+  top: -160px;
+  left: 30px;
+  margin-bottom: 0;
+  background: rgba(10, 22, 40, 0.9);
+  border-color: rgba(212, 168, 50, 0.4);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(12px);
 }
 .badge-dot {
   width:7px; height:7px; border-radius:50%; background:var(--green);
@@ -664,8 +676,10 @@ button { cursor:pointer; border:none; background:none; font-family:inherit; outl
    ═══════════════════════════════════════════════════════════ */
 @media (max-width:1024px) {
   :root { --section-pad: 100px 0; }
-  .hero > .container { grid-template-columns:1fr; gap:48px; }
-  .hero-preview { display:none; }
+  .hero > .container { grid-template-columns:1fr; gap:36px; }
+  .hero-preview { display:flex; justify-content:center; order: -1; }
+  .preview-mockup, .preview-float-card { display:none; }
+  .hero-preview .hero-badge { position:relative; top:auto; left:auto; margin-bottom:10px; }
   .hero-content { text-align:center; }
   .hero-cta { justify-content:center; }
   .hero-stats { justify-content:center; flex-wrap:wrap; }

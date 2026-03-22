@@ -43,8 +43,8 @@ document.addEventListener('DOMContentLoaded', () => {
       title: 'Nexus SMS — Fee Management',
       tag: '<i class="fas fa-hand-holding-usd"></i> Fees',
       h3: 'Complete Fee Management',
-      desc: 'Flexible fee structures per class — admission, monthly, exam, and other fees. Auto-generate monthly charges on schedule. Track payments, identify defaulters, issue sequentially numbered receipts, and support JazzCash / EasyPaisa.',
-      list: ['Custom fee structure per class', 'Auto monthly charge generation', 'Sequential receipt numbering (e.g. RCPT-001)', 'Defaulter tracking & alerts', 'JazzCash / EasyPaisa support', 'Overdue grace days config']
+      desc: 'Flexible fee structures per class — admission, monthly, exam, and other fees. Auto-generate monthly charges on schedule. Track payments, identify defaulters, and support JazzCash & EasyPaisa.',
+      list: ['Custom fee structure per class', 'Auto monthly charge generation', 'Defaulter tracking & alerts', 'JazzCash support', 'EasyPaisa support', 'Overdue grace days config']
     },
     grades: {
       img: 'images/grades.png',
@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
       tag: '<i class="fas fa-cog"></i> Settings',
       h3: 'Comprehensive School Settings',
       desc: 'A 7-section settings panel covering every configurable aspect: General school profile, Academic configuration (year, terms, grading scale, pass mark), Attendance rules, Finance configuration, Notifications & news ticker, Backup schedule, and Security controls.',
-      list: ['School name, logo & contact details', 'Academic year, terms & grading scale', 'Attendance status & holiday configuration', 'Payment methods & receipt numbering', 'Notification toggles & custom templates', 'Automated backup schedule & email recipients']
+      list: ['School name, logo & contact details', 'Academic year, terms & grading scale', 'Attendance status & holiday configuration', 'Payment methods & policies', 'Notification toggles & custom templates', 'Automated backup schedule & email recipients']
     }
   };
 
