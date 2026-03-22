@@ -269,7 +269,8 @@ button { cursor:pointer; border:none; background:none; font-family:inherit; outl
 .hero-subtitle { font-size:1.1rem; color:rgba(255,255,255,.5); margin-bottom:36px; line-height:1.75; }
 .hero-subtitle strong { color:rgba(255,255,255,.85); }
 
-.hero-cta { display:flex; gap:14px; flex-wrap:wrap; margin-bottom:48px; }
+.hero-cta { display:flex; gap:12px; flex-wrap:nowrap; align-items:center; margin-bottom:48px; }
+.hero-cta .btn-lg { padding: 15px 22px; font-size: 0.95rem; }
 
 /* Hero stats */
 .hero-stats {
