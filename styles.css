@@ -130,6 +130,18 @@ button { cursor:pointer; border:none; background:none; font-family:inherit; outl
 .btn-gold-sm:hover { transform:translateY(-1px); box-shadow:0 4px 20px rgba(212,168,50,.5); }
 .btn-lang { font-family:var(--font-urdu); font-size:.95rem; color:rgba(255,255,255,.65); padding:6px 12px; border-radius:6px; transition:all var(--t); }
 .btn-lang:hover { color:#fff; background:rgba(255,255,255,.08); }
+.btn-hero {
+  background: linear-gradient(175deg, var(--navy-darkest) 0%, var(--navy) 55%, var(--navy-light) 100%);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+.btn-hero:hover {
+  background: linear-gradient(175deg, var(--navy) 0%, var(--navy-light) 55%, var(--navy-darkest) 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  border-color: rgba(255, 255, 255, 0.3);
+}
 
 /* ═══════════════════════════════════════════════════════════
    SECTION SHARED ELEMENTS
