@@ -1,11 +1,11 @@
 /* ═══════════════════════════════════════════════════════════
    NEXUS SMS — Complete Design System (v2)
-   Closely matches pakeducate.com aesthetics + Nexus SMS branding
+   Closely matches digitaloutwork.com aesthetics + Nexus SMS branding
    ═══════════════════════════════════════════════════════════ */
 
 /* ─── CSS Variables ────────────────────────────────────── */
 :root {
-  /* Core palette — exactly matching pakeducate.com */
+  /* Core palette — exactly matching digitaloutwork.com */
   --navy-darkest: #07101f;
   --navy-deep: #0a1628;
   --navy:       #0f1b3d;
@@ -14,14 +14,14 @@
   --navy-card:  #111e45;
   --navy-glass: rgba(15,27,61,0.6);
 
-  /* Gold — pulled from pakeducate.com CTAs */
+  /* Gold — pulled from digitaloutwork.com CTAs */
   --gold:       #d4a832;
   --gold-hover: #e0b83a;
   --gold-dim:   rgba(212,168,50,0.18);
   --gold-border:rgba(212,168,50,0.3);
   --gold-glow:  0 0 40px rgba(212,168,50,0.18);
 
-  /* Light sections (pakeducate.com alternates between dark & light) */
+  /* Light sections (digitaloutwork.com alternates between dark & light) */
   --light-bg:   #f5f7fc;
   --light-card: #ffffff;
   --light-border:#e2e8f0;
